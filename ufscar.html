@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cristiano Faustino # Web Developer, Software Developer, Sofware Engineer</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Cristiano Faustino's Portfolio">
+		<meta name="author" content="Cristiano Faustino">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+
+	</head>
+	<body>
+		<div id="topItems" class="container">
+			<div class="row">
+				<!-- Static navbar -->
+			      <nav class="navbar navbar-default" role="navigation">
+			        <div class="navbar-header  col-md-5 col-xs-12">
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			              <span class="sr-only">Toggle navigation</span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="index.html" id="link-header"><h1>Cristiano Faustino</h1></a>
+			          </div>
+			          <div id="navbar" class="navbar-collapse collapse  col-md-7  pull-right">
+			            <ul class="nav navbar-nav">
+			              <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+			              <li><a href="faustino-cristiano.pdf" target="_blank"><span class="glyphicon glyphicon-user"></span>  Resume</a></li>
+			              <li><a href="index.html#skills"><span class="glyphicon glyphicon-tower"></span>  Skills</a></li>
+			              <li><a href="https://www.linkedin.com/pub/cristiano-de-oliveira-faustino/93/ab2/609" target="_blank"><span class="fa fa-linkedin-square"></span>  Linkedln</a></li>
+			              <li><a href="contact.html"><span class="glyphicon glyphicon-comment"></span>  Contact</a></li>
+			              </ul>
+			          </div><!--/.nav-collapse -->
+			      </nav>
+			</div>
+		</div>
+		<div id="content" class="container">
+			<div class="row">
+				
+					<div class="page-header">
+					  <h1>UFSCar Human Resources</h1>
+					</div>
+					<div class="col-xs-12 col-md-12 content-project">
+						<p>I developed skills in Java, EJB, Hibernate, and JSF in the period that I worked for the Federal University of São Carlos. Their Human Resources web system was being developed, and constantly changing, so the changes were abroad, and a lot of problem solvinng techniques were needed.</p>
+						<p>I also participated in the modeling of the new Academic system for the university, dealing with UML, and database schema conception before and during the implementation of it.</p>
+						<br/>
+						<a href="javascript: history.go(-1)" class="back-button"><span class="glyphicon glyphicon-circle-arrow-left"></span>  Back</a>
+					</div>
+			</div>
+
+			</div>
+		<div id="footer">
+			<div class="container">
+				Cristiano Faustino's Portfolio © All rights reserved.
+			<span class="pull-right">Email: <a href="mailto:cristiadu@gmail.com">cristiadu@gmail.com</a></span>
+			</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.img-project').click(function(){
+				location.href = $(this).attr('id') + ".html";
+			});
+		});
+		</script>
+	</body>
+</html>
