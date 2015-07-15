@@ -1,0 +1,156 @@
+body
+{
+	background: #45484d; /* Old browsers */
+	color: #E5EEFF;
+	margin-bottom: 50px;
+}
+
+html
+{
+	position: relative;
+  	min-height: 100%;
+}
+
+html,body{
+	width: 100%;
+}
+
+
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+
+#footer {
+  position: absolute;
+  border-top: 1px solid #E5EEFF;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #4C5F7F;
+  color: #E5EEFF;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*  clear bootstrap header colors */
+.navbar-default {
+   background: inherit;
+   border: none;
+}
+
+.=#navbar{
+	height: 100px;
+}
+
+
+
+.navbar-default .navbar-nav > li > a, #link-header, .back-button, #footer a
+{
+	color: #B7BFCC;
+}
+
+.navbar-default .navbar-nav > li > a:hover, #link-header:hover, .back-button:hover, #footer a:hover
+{
+	color: #98BFFF;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar-nav:first-child
+	{
+		border-left: 1px solid #E5EEFF;
+	}
+
+	.navbar-nav li
+	{
+		padding-top: 35px;
+		border-right: 1px solid #E5EEFF;
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#navbar{
+		background-color: white;
+		margin-right: 2px;
+	}
+}
+
+
+#functions-text{
+
+	color: #98BFFF;
+	text-align: center;
+}
+
+#functions{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar-brand{
+	font-family: Century Gothic, sans-serif;
+}
+
+.project>div
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.project-label>h3
+{
+	padding-right: 10px;
+}
+
+.project-label
+{
+	 border-top: 1px solid #4C5F7F;
+}
+
+.project{
+	margin-left: 5%;
+	color: #4C5F7F;
+	height: 360px;
+	margin-bottom: 20px;
+	border: 3px #98BFFF solid;
+	background-color: #E5EEFF;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.project:hover
+{
+	border: 3px #4C5F7F solid;
+	cursor: pointer;
+
+}
+
+#show-menu{
+	padding-top: 60px;
+}
+
+
+
+.content-project img
+{
+	margin-bottom: 10px;
+}
+
+.img-icon-contacts
+{
+	width: 30px;
+	height: 30px;
+}
+

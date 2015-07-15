@@ -1,0 +1,50 @@
+[
+	{
+		"image": "images/php.png",
+		"text": "PHP"
+	},
+	{
+		"image": "images/jquery.png",
+		"text": "Jquery"
+	},
+	{
+		"image": "images/java.png",
+		"text": "Java"
+	},	
+	{
+		"image": "images/js.png",
+		"text": "Javascript"
+	},
+	{
+		"image": "images/aspmvc.png",
+		"text": "ASP.NET MVC"
+	},
+	{
+		"image": "images/sql.png",
+		"text": "SQL"
+	},
+	{
+		"image": "images/vb.png",
+		"text": "VB.NET"
+	},
+	{
+		"image": "images/c.png",
+		"text": "C Language"
+	},
+	{
+		"image": "images/cplusplus.png",
+		"text": "C++"
+	},
+	{
+		"image": "images/uml.png",
+		"text": "UML"
+	},
+	{
+		"image": "images/html.png",
+		"text": "HTML5"
+	},
+	{
+		"image": "images/languages.png",
+		"text": "Speak Portuguese & English"
+	}
+]

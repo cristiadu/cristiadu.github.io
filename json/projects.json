@@ -1,0 +1,40 @@
+[
+	{
+		"name": "name",
+		"companyName": "",
+		"fromDate": "",
+		"toDate": "",
+		"imagePrincipal": "",
+		"images": 
+				[
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					},
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					}
+				],
+		"descriptionHTML": ""
+	},
+	{
+		"name": "name",
+		"companyName": "",
+		"fromDate": "",
+		"toDate": "",
+		"imagePrincipal": "",
+		"images": 
+				[
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					},
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					}
+				],
+		"descriptionHTML": ""
+	}
+]
