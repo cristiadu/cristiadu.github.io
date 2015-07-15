@@ -108,3 +108,6 @@ footer a:hover, .aboutMe a:hover
    
 }
 
+.img-max-width{
+  max-width: 200px;
+}
