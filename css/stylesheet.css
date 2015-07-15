@@ -64,8 +64,8 @@ footer a:hover, .aboutMe a:hover
   /* W3C Markup */ 
   background-image: linear-gradient(to bottom, #4C5F7F 0%, #465770 100%);
 
-  border-top: 1px solid #E5EEFF;
-  border-bottom: 1px solid #E5EEFF;
+  border-top: 1px solid #98BFFF;
+  border-bottom: 1px solid #98BFFF;
 }
 
 #content
@@ -105,9 +105,26 @@ footer a:hover, .aboutMe a:hover
 /*  clear bootstrap header colors */
 .navbar-default {
    background: #45484d; 
-   
+
 }
 
-.img-max-width{
+.profileImg-max-width{
   max-width: 200px;
 }
+
+/* Fixing, using media queries, the brand inside the navbar */
+@media (max-width: 767px) {
+  .navbar-text h1
+  {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { 
+  .navbar-text h1
+  {
+    font-size: 29px;
+  }
+}
+/* End of the media queries */
+
