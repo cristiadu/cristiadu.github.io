@@ -10,7 +10,7 @@ body
   background: #45484d; /* Old browsers */
   color: #E5EEFF;
   margin-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 footer {
@@ -39,9 +39,7 @@ footer a:hover, .aboutMe a:hover
 
 .aboutMe
 {
-  margin-top: 50px;
-
-  
+ 
   /* IE10+ */ 
   background-image: -ms-linear-gradient(top, #4C5F7F 0%, #465770 100%);
 
@@ -66,7 +64,7 @@ footer a:hover, .aboutMe a:hover
 
 #content
 {
-  margin-top: 5%;
+  margin-top: 50px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -77,13 +75,30 @@ footer a:hover, .aboutMe a:hover
   height: 30px;
 }
 
-.aboutMe>.container>.row>div
+.content-aboutMe
 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .justifyParagraph
 {
   text-align: justify;
 }
+
+.navbar-text{
+  font-family: Century Gothic, sans-serif;
+}
+
+.navbar-text:hover
+{
+  color: #98BFFF;
+  text-decoration: none;
+}
+
+/*  clear bootstrap header colors */
+.navbar-default {
+   background: inherit;
+   border: none;
+}
+
