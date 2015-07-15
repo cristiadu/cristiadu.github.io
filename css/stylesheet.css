@@ -27,6 +27,12 @@ footer {
   padding-bottom: 10px;
 }
 
+/* I know this code below looks strange, but it's the way I found (without the use of media queries) to fix the problem of the colors being wrong inside the footer when the screen is the smallest. */
+footer .container-fluid
+{
+  background-color: #4C5F7F;
+}
+
 footer a, .aboutMe a
 {
   color: #B7BFCC;
