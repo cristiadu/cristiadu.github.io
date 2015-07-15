@@ -7,7 +7,7 @@ html
 
 body
 {
-  background: #45484d; /* Old browsers */
+  background: #45484d; 
   color: #E5EEFF;
   margin-bottom: 50px;
   padding-top: 100px;
@@ -98,7 +98,7 @@ footer a:hover, .aboutMe a:hover
 
 /*  clear bootstrap header colors */
 .navbar-default {
-   background: inherit;
-   border: none;
+   background: #45484d; 
+   
 }
 
