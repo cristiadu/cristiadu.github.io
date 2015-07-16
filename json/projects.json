@@ -1,5 +1,6 @@
 [
 	{
+		"id":"minisites",
 		"name": "Minisites",
 		"company": "Daitan Group",
 		"startDate": "12/04/2014",
@@ -19,6 +20,7 @@
 		"descriptionHTML": "ew"
 	},
 	{
+		"id":"minisites2",
 		"name": "Minisites",
 		"company": "Daitan Group",
 		"startDate": "12/04/2014",
