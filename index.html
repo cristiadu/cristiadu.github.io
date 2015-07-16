@@ -80,9 +80,43 @@
 					</div>
 				</div>
 			</article>
-			<article id="projects" ng-controller="projectsController">
 
+			<article id="projects" class="container" ng-controller="projectsController">
+				<div class="row">
+			
+					<div class="page-header">
+				  		<h1>Projects</h1>
+					</div>
+		
+				</div>
+				<div class="row">
+					
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default" ng-repeat="project in projects">
+
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										{{project.name}}
+									</a>
+								</h4>
+							</div>
+
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									
+									<<h4>Company:</h4> {{project.company}}
+									<h4>Started:</h4> {{project.startDate}} <h4>Ended:</h4> {{project.endDate}}
+									<img ng-src="{{project.imagePrincipal}}">
+									<p>{{project.description}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+				</div>
 			</article>
+
 			<article class="container" ng-controller="skillsController">
 				
 				<div class="row">

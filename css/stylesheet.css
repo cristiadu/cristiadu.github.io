@@ -68,6 +68,21 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
   border-bottom: 1px solid #98BFFF;
 }
 
+.panel-default{
+    border:1px solid #ECF0F7;
+}
+.panel-default>.panel-heading
+{
+
+  background-color: #36445B;
+
+}
+.panel-title
+{
+
+  color: #ECF0F7;
+}
+
 #content
 {
   margin-top: 50px;
