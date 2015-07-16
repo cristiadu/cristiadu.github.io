@@ -111,7 +111,7 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
   max-width: 200px;
 }
 
-/* Fixing, using media queries, the brand inside the navbar */
+/* Fixing, using media queries, the brand inside the navbar, and the menu items alignment*/
 @media (max-width: 767px) {
   .navbar-text h1
   {
@@ -125,7 +125,6 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
     font-size: 28.5px;
   }
 }
-/* End of the media queries */
 
 @media (min-width: 768px){
   .navbar-nav
@@ -133,3 +132,5 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
     padding-top: 30px;
   }
 }
+/* End of the media queries */
+
