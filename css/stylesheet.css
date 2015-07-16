@@ -33,12 +33,12 @@ footer .container-fluid
   background-color: #4C5F7F;
 }
 
-footer a, .aboutMe a
+footer a, .aboutMe a,.navbar-text>h1,#menu>ul>li>a
 {
   color: #B7BFCC;
 }
 
-footer a:hover, .aboutMe a:hover
+footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
 {
   color: #98BFFF;
 }
@@ -98,7 +98,6 @@ footer a:hover, .aboutMe a:hover
 
 .navbar-text:hover
 {
-  color: #98BFFF;
   text-decoration: none;
 }
 
