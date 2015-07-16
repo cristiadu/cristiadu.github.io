@@ -122,14 +122,19 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
 @media (min-width: 768px) and (max-width: 992px) { 
   .navbar-text h1
   {
-    font-size: 28.5px;
+    font-size: 27px;
+  }
+
+   .navbar-nav
+  {
+    padding-top: 28px;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 993px){
   .navbar-nav
   {
-    padding-top: 30px;
+    padding-top: 35px;
   }
 }
 /* End of the media queries */
