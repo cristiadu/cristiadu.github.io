@@ -127,3 +127,9 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
 }
 /* End of the media queries */
 
+@media (min-width: 768px){
+  .navbar-nav
+  {
+    padding-top: 30px;
+  }
+}
