@@ -105,9 +105,9 @@
 							<div id="{{project.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{project.id + 'heading'}}">
 								<div class="panel-body">
 									
-									<<h4>Company:</h4> {{project.company}}
-									<h4>Started:</h4> {{project.startDate}} <h4>Ended:</h4> {{project.endDate}}
-									<img ng-src="{{project.imagePrincipal}}">
+									<strong>Company:</strong> {{project.company}}
+									<strong>Started:</strong> {{project.startDate}} <strong>Ended:</strong> {{project.endDate}}
+									<img ng-src="{{project.imagePrincipal}}" class="img-responsive">
 									<p>{{project.descriptionHTML}}</p>
 								</div>
 							</div>
