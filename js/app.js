@@ -6,9 +6,8 @@ portfolioApp.controller('skillsController',['$scope','$http',function($scope,$ht
 	});
 }]);
 
-portfolioApp.controller('projectsController',['$scope','$http','$sce',function($scope,$http,$sce){
+portfolioApp.controller('projectsController',['$scope','$http',function($scope,$http){
 	$http.get('json/projects.json').success(function(data){
 		$scope.projects = data;
-		$scope.projects.descriptionHTML = $sce.trustAsHtml($scope.projects.descriptionHTML);
 	});
 }]);
