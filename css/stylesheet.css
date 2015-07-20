@@ -161,5 +161,6 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
 
 .vspacing-project-img
 {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
