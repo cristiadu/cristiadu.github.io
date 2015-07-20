@@ -12,4 +12,8 @@ $(document).ready(function(){
 			        window.location.hash = target;
 			    });
 			});
+
+		$('.nav-collapse').click('li', function() {
+		    $('.nav-collapse').collapse('hide');
+		});
 });
