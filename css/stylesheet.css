@@ -139,6 +139,13 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover
   }
 }
 
+@media (min-width: 768px) {
+  .pull-right-sm-md
+  {
+    float:right;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px) { 
   .navbar-text h1
   {
