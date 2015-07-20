@@ -1,11 +1,11 @@
 [
 	{
-		"id":"minisites",
-		"name": "Minisites",
-		"company": "Daitan Group",
-		"startDate": "12/04/2014",
-		"endDate": "01/15/2015",
-		"imagePrincipal": "images/php.png",
+		"id":"sms-access",
+		"name": "SMS-Access",
+		"company": "Telaeris",
+		"startDate": "06/23/2014",
+		"endDate": "01/27/2015",
+		"imagePrincipal": "images/sms.png",
 		"images": 
 				[
 					{
@@ -17,7 +17,37 @@
 						"imageAlt": "text"
 					}
 				],
-		"descriptionHTML": "ew"
+		"descriptionHTML": "<p>Created the SMS-Access system that, along with an embedded system - used for gate authentication through ID cards - called XPressFreedom (also provided by Telaeris), allows users to use their cellphone to access electronic gates, providing them an alternative way to enter those gates when they lost, or forgot their card.</p>
+
+						<p>The system also has an web-administration interface that allows admins to change user's and gate's data, including them to the database built, and allowing a more abroad control of the whole system. Permissions to gates are also controlled in the SMS-Access web-administration system, saving processing time inside the XPressFreedom board that controls a gate itself. </p>
+
+						<p>It was developed using ASP.NET MVC Framework, SQL Server Database, VB.NET, and the Twilio API for SMS messaging between the web system and users. The data security was considered, so were used computer security techniques to prevent network atacking (man-in-the-middle being the main one): The first method was to use two authentication factors at the time the user tries to access the system, so the user must has his smartphone and his password from the system for authentication purposes; the second method was to use a shared key between the system and the user, requesting that the user send it back with his password for the system.</p>
+
+						<p>The whole processing of sending access request to SMS-Access is the following:
+
+						<ol>
+							<li>User lost his card.</li>
+							<li>He sees a warning on the wall with one gate number from the system written on it, and saying that he can use SMS-Access to get into some gate needed.</li>
+							<li>He sends a text with the number of the gate to the SMS-Access phone number.</li>
+							<li>Twilio gets the message send, and send it to SMS-Access.</li>
+							<li>System processes the request, and see if user who made it has permission to the gate specified.</li>
+							<li>If it has permission, system sends sharedkey to user, requesting the password and shared key from it.</li>
+							<li>User sends shared key and password.</li>
+							<li>System verifies if everything is ok, and if it is, open the gate, and send the message \"Access granted!\" back.</li>
+						</ol>
+
+
+						<p>Below are some advantages of the SMS-Access system:</p>
+						
+						<ul>
+							<li>Get employees faster access to secure spaces from their phone.</li>
+							<li>Print new employee IDs/badges only when you really need to.</li>
+							<li>Save money and reduce security staff having to address access issues.</li>
+							<li>Use SMS as an alternative to securely authenticate employees.</li>
+							<li>Easily monitor employee entries and exits from the admin panel.</li>
+						</ul>
+
+						<p>Managing security with employees entering and exiting secure spaces is a great challenge and one that security professionals take on with pride everyday. But assisting employees who lost, misplaced, or forgot their IDs/badges is not and staffing the security office just to print IDs/badges is a waste. SMS-Access saves time and money, giving employees an alternative way to authenticate themselves using their phone when their ID/badge is not available. SMS Access opens doors to secure spaces through SMS messages getting employees in and back to work fast without directly involving security staff.</p>"
 	},
 	{
 		"id":"minisites2",
