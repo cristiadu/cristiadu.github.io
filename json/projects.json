@@ -3,8 +3,9 @@
 		"id":"sms-access",
 		"name": "SMS-Access",
 		"company": "Telaeris",
+		"type": "Entire Project (Internship)",
 		"startDate": "06/23/2014",
-		"endDate": "01/27/2015",
+		"endDate": "12/30/2014",
 		"imagePrincipal": "images/sms.png",
 		"images": 
 				[
@@ -17,14 +18,57 @@
 						"imageAlt": "text"
 					}
 				],
-		"descriptionHTML": "<p>Created the SMS-Access system that, along with an embedded system - used for gate authentication through ID cards - called XPressFreedom (also provided by Telaeris), allows users to use their cellphone to access electronic gates, providing them an alternative way to enter those gates when they lost, or forgot their card.</p> <p>The system also has an web-administration interface that allows admins to change user's and gate's data, including them to the database built, and allowing a more abroad control of the whole system. Permissions to gates are also controlled in the SMS-Access web-administration system, saving processing time inside the XPressFreedom board that controls a gate itself. </p> <p>It was developed using ASP.NET MVC Framework, SQL Server Database, VB.NET, and the Twilio API for SMS messaging between the web system and users. The data security was considered, so were used computer security techniques to prevent network atacking (man-in-the-middle being the main one): The first method was to use two authentication factors at the time the user tries to access the system, so the user must has his smartphone and his password from the system for authentication purposes; the second method was to use a shared key between the system and the user, requesting that the user send it back with his password for the system.</p> <p>The whole processing of sending access request to SMS-Access is the following: <ol> <li>User lost his card.</li> <li>He sees a warning on the wall with one gate number from the system written on it, and saying that he can use SMS-Access to get into some gate needed.</li> <li>He sends a text with the number of the gate to the SMS-Access phone number.</li> <li>Twilio gets the message send, and send it to SMS-Access.</li> <li>System processes the request, and see if user who made it has permission to the gate specified.</li> <li>If it has permission, system sends sharedkey to user, requesting the password and shared key from it.</li> <li>User sends shared key and password.</li> <li>System verifies if everything is ok, and if it is, open the gate, and send the message \"Access granted!\" back.</li> </ol> <p>Below are some advantages of the SMS-Access system:</p> <ul> <li>Get employees faster access to secure spaces from their phone.</li> <li>Print new employee IDs/badges only when you really need to.</li> <li>Save money and reduce security staff having to address access issues.</li> <li>Use SMS as an alternative to securely authenticate employees.</li> <li>Easily monitor employee entries and exits from the admin panel.</li> </ul> <p>Managing security with employees entering and exiting secure spaces is a great challenge and one that security professionals take on with pride everyday. But assisting employees who lost, misplaced, or forgot their IDs/badges is not and staffing the security office just to print IDs/badges is a waste. SMS-Access saves time and money, giving employees an alternative way to authenticate themselves using their phone when their ID/badge is not available. SMS Access opens doors to secure spaces through SMS messages getting employees in and back to work fast without directly involving security staff.</p>"
+		"descriptionHTML": "<p>Created the SMS-Access system that, along with an embedded system - used for gate authentication through ID cards - called XPressFreedom (also provided by Telaeris), allows users to use their cellphone to access electronic gates, providing them an alternative way to enter those gates when they lost, or forgot their card.</p> <p>The system also has an web-administration interface that allows admins to change user's and gate's data, including them to the database built, and allowing a more abroad control of the whole system. Permissions to gates are also controlled in the SMS-Access web-administration system, saving processing time inside the XPressFreedom board that controls a gate itself. </p> <p>It was developed using ASP.NET MVC Framework, SQL Server Database, VB.NET, and the Twilio API for SMS messaging between the web system and users. The data security was considered, so computer security techniques were used to prevent network atacking (man-in-the-middle being the main one): The first method was to use two authentication factors at the time the user tries to access the system, so the user must has his smartphone and his password from the system for authentication purposes; the second method was to use a shared key between the system and the user, requesting that the user send it back with his password for the system.</p> <p>The whole processing of sending access request to SMS-Access is the following: <ol> <li>User lost his card.</li> <li>He sees a warning on the wall with one gate number from the system written on it, and saying that he can use SMS-Access to get into some gate needed.</li> <li>He sends a text with the number of the gate to the SMS-Access phone number.</li> <li>Twilio gets the message send, and send it to SMS-Access.</li> <li>System processes the request, and see if user who made it has permission to the gate specified.</li> <li>If it has permission, system sends sharedkey to user, requesting the password and shared key from it.</li> <li>User sends shared key and password.</li> <li>System verifies if everything is ok, and if it is, open the gate, and send the message \"Access granted!\" back.</li> </ol> <p>Below are some advantages of the SMS-Access system:</p> <ul> <li>Get employees faster access to secure spaces from their phone.</li> <li>Print new employee IDs/badges only when you really need to.</li> <li>Save money and reduce security staff having to address access issues.</li> <li>Use SMS as an alternative to securely authenticate employees.</li> <li>Easily monitor employee entries and exits from the admin panel.</li> </ul> <p>Managing security with employees entering and exiting secure spaces is a great challenge and one that security professionals take on with pride everyday. But assisting employees who lost, misplaced, or forgot their IDs/badges is not and staffing the security office just to print IDs/badges is a waste. SMS-Access saves time and money, giving employees an alternative way to authenticate themselves using their phone when their ID/badge is not available. SMS Access opens doors to secure spaces through SMS messages getting employees in and back to work fast without directly involving security staff.</p>"
 	},
 	{
-		"id":"minisites2",
-		"name": "Minisites",
-		"company": "Daitan Group",
+		"id":"lost",
+		"name": "Lost in Translation",
+		"company": "University of California, San Diego",
+		"type": "Course Project",
 		"startDate": "12/04/2014",
 		"endDate": "01/15/2015",
+		"imagePrincipal": "images/lost-screen.png",
+		"images": 
+				[
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					},
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					}
+				],
+		"descriptionHTML": "<p>Lost in Translation is an academic project for the course of Introduction of Human Computer Interaction. This course was taught on UCSD between the months of January and March of 2014, and its main purpose was to make students develop an app using HCI methods, from the user need-finding to the final development and coding of the project.</p> <p>The type of user analyzed was the international student that gets into UCSD, Since they don't have too many friends or contacts inside the university, they would try to find an app to help them on a social and academic environment inside the college. After applying need-finding, the main needs for this type of student were found, and our group designed a prototype for a mobile app exclusively to help international students to achieve their goals.</p> <p>The app had four main functions: Connect, to meet new friends; Navigate, to find themselves on the campus; Plan, to have on hand a schedule for events specifically made for international students; and Translate, a dictionary with a translation function (even for slangs). </p> <p>Those functions were made focusing on four main problems international students have inside the UCSD campus environment. This app won as one of the 5 bests projects in the class, after an extensive Final Presentation day, where all the almost 60 projects were presented to a jury. The category Lost on Translation won was named \"Best Human Center.\"</p>"
+	},
+	{
+		"id":"dspace",
+		"name": "DSpace UFSCar Repository",
+		"company": "Federal University of São Carlos",
+		"type": "Scientific Initiation Project",
+		"startDate": "06/01/2013",
+		"endDate": "12/30/2013",
+		"imagePrincipal": "images/dspace.png",
+		"images": 
+				[
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					},
+					{
+						"imageURL": "image",
+						"imageAlt": "text"
+					}
+				],
+		"descriptionHTML": "<p>I planned and implemented a institutional repository for the Federal University of São Carlos using DSpace framework, considering metadata to facilitate the searching inside the repository itself; allowing that the entire scientific and administrative production of the university could be accessed by the internet in an abroad way.</p> <p>The implementation was part of the research paper I was doing.</p> <p>In this project I had a lot of problems because the professors and researchers didn't agree about uploading their papers by free into a repository, so we had an impasse because of that. Then I had problems with DSpace configuration.</p> <p>DSpace is a framework made by MIT to be used in repository creation, it was not good looking, but customizable, and it was really hard to install and configure. In the end of 3 months of research, between papers read, and discussions about the plans, I got the framework fully working and organized.</p>"
+	},
+	{
+		"id":"ufscar",
+		"name": "Human Resources UFSCar",
+		"company": "Federal University of São Carlos",
+		"type": "Programming Internship",
+		"startDate": "01/16/2012",
+		"endDate": "01/16/2013",
 		"imagePrincipal": "images/php.png",
 		"images": 
 				[
@@ -37,14 +81,15 @@
 						"imageAlt": "text"
 					}
 				],
-		"descriptionHTML": "Arett "
+		"descriptionHTML": "<p>I developed skills in Java, EJB, Hibernate, and JSF in the period that I worked for the Federal University of São Carlos. Their Human Resources web system was being developed, and constantly changing, so the changes were abroad, and a lot of problem solvinng techniques were needed.</p> <p>I also participated in the modeling of the new Academic system for the university, dealing with UML, and database schema conception before, and during, the implementation of it.</p>"
 	},
 	{
-		"id":"minisites3",
-		"name": "Minisites",
-		"company": "Daitan Group",
-		"startDate": "12/04/2014",
-		"endDate": "01/15/2015",
+		"id":"digicomm",
+		"name": "Digicomm ERP & CRM",
+		"company": "Digicomm Systems",
+		"type": "Programming Job",
+		"startDate": "11/15/2010",
+		"endDate": "03/11/2011",
 		"imagePrincipal": "images/php.png",
 		"images": 
 				[
@@ -57,14 +102,15 @@
 						"imageAlt": "text"
 					}
 				],
-		"descriptionHTML": "Arett "
+		"descriptionHTML": "<p>Programmed modules for the ERP and CRM system they had built for virtual stores made using Magento or Ikeda (two frameworks in PHP for virtual stores); using PHP, Jquery, MySQL, and thinking about the interface, not just about functionality.</p> <p>After a few months, they decided to make another ERP system from scratch; I participated actively in the process of making this system. Learning about Zend Framework, EXT JS, and some other new technologies at the time. I developed the skeleton of the application using the tools (Zend Framework, EXT JS, Jquery, etc) provided.</p>"
 	},
 	{
-		"id":"minisites4",
-		"name": "Minisites",
-		"company": "Daitan Group",
-		"startDate": "12/04/2014",
-		"endDate": "01/15/2015",
+		"id":"formedical",
+		"name": "ForMedical",
+		"company": "Alpphoria",
+		"type": "Programming Job",
+		"startDate": "01/11/2010",
+		"endDate": "11/12/2010",
 		"imagePrincipal": "images/php.png",
 		"images": 
 				[
@@ -77,46 +123,6 @@
 						"imageAlt": "text"
 					}
 				],
-		"descriptionHTML": "Arett "
-	},
-	{
-		"id":"minisites5",
-		"name": "Minisites",
-		"company": "Daitan Group",
-		"startDate": "12/04/2014",
-		"endDate": "01/15/2015",
-		"imagePrincipal": "images/php.png",
-		"images": 
-				[
-					{
-						"imageURL": "image",
-						"imageAlt": "text"
-					},
-					{
-						"imageURL": "image",
-						"imageAlt": "text"
-					}
-				],
-		"descriptionHTML": "Arett "
-	},
-	{
-		"id":"minisites6",
-		"name": "Minisites",
-		"company": "Daitan Group",
-		"startDate": "12/04/2014",
-		"endDate": "01/15/2015",
-		"imagePrincipal": "images/php.png",
-		"images": 
-				[
-					{
-						"imageURL": "image",
-						"imageAlt": "text"
-					},
-					{
-						"imageURL": "image",
-						"imageAlt": "text"
-					}
-				],
-		"descriptionHTML": "Arett "
+		"descriptionHTML": "<p>I was first hired to Alpphoria to work as a tester of their system made for ForMedical (a company that sells medical equipments, and gives technical support for it), but, after a while knowing how the system works, I started making my own changes into it; improving my skills, and helping other programmers to get the job done.</p> <p>The system was built using pure PHP, without any framework, and it used MySQL as its Database Management System. I used a lot of database Triggers, and stored procedures to get the harder tasks done faster, and cleaner than it was before. The system was complex, and a lot of changes were made. I also worked as support for the users for a while, picking up calls, fixing bugs, and creating a trusted relation between me (the programmer) and the users.</p>"
 	}
 ]
