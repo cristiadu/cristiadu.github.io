@@ -18,7 +18,4 @@ $(document).ready(function(){
 		    $('.navbar-collapse').collapse('hide');
 		});
 
-		// This code shows opened the first project on the project's list
-		$(".link-project").first().trigger('click');
-	
 });
