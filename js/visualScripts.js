@@ -19,6 +19,6 @@ $(document).ready(function(){
 		});
 
 		// This code shows opened the first project on the project's list
-		$(".panel-collapse").first().toggleClass("in");
+		$("#sms-access").toggleClass("in");
 	
 });
