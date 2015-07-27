@@ -19,7 +19,7 @@ $(document).ready(function(){
 		});
 
 		// This code shows opened the first project on the project's list
-		$("panel-collapse").first(function(){
+		$('.panel-collapse').first(function(){
 			$(this).collapse('show');
 		});
 });
