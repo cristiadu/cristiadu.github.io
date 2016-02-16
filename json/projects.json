@@ -1,5 +1,27 @@
 [
 	{
+	"id":"daitan-group",
+	"name": "Daitan Group: Testing & UX Internship",
+	"company": "Daitan Group",
+	"type": "Full-time Employee",
+	"startDate": "07/06/2015",
+	"endDate": "",
+	"imagePrincipal": "images/daitan.png",
+	"images":
+			[
+				{
+					"imageURL": "image",
+					"imageAlt": "text"
+				},
+				{
+					"imageURL": "image",
+					"imageAlt": "text"
+				}
+			],
+	"descriptionHTML": "<p> Daitan group is a company that offers outsourcing of IT tasks as its main product, mainly outsourcing of software development & testing. </p><p> Its work is widely appreciated by its clients because they offer fast and reliable solutions for the service these companies want. Daitan has a employee centered mindset, meaning that they are engaged on making their employees happy with their work attributions, and the benefits Daitan has to offer.</p>"
+
+	},
+	{
 		"id":"sms-access",
 		"name": "SMS-Access",
 		"company": "Telaeris",
@@ -8,7 +30,7 @@
 		"endDate": "12/30/2014",
 		"imagePrincipal": "images/sms.png",
 		"activeItem": "in",
-		"images": 
+		"images":
 				[
 					{
 						"imageURL": "image",
@@ -29,7 +51,7 @@
 		"startDate": "12/04/2014",
 		"endDate": "01/15/2015",
 		"imagePrincipal": "images/lost-screen.png",
-		"images": 
+		"images":
 				[
 					{
 						"imageURL": "image",
@@ -50,7 +72,7 @@
 		"startDate": "06/01/2013",
 		"endDate": "12/30/2013",
 		"imagePrincipal": "images/dspace.png",
-		"images": 
+		"images":
 				[
 					{
 						"imageURL": "image",
@@ -71,7 +93,7 @@
 		"startDate": "01/16/2012",
 		"endDate": "01/16/2013",
 		"imagePrincipal": "images/ufscarRH.png",
-		"images": 
+		"images":
 				[
 					{
 						"imageURL": "image",
@@ -92,7 +114,7 @@
 		"startDate": "11/15/2010",
 		"endDate": "03/11/2011",
 		"imagePrincipal": "images/digi.png",
-		"images": 
+		"images":
 				[
 					{
 						"imageURL": "image",
@@ -113,7 +135,7 @@
 		"startDate": "01/11/2010",
 		"endDate": "11/12/2010",
 		"imagePrincipal": "images/formedical.png",
-		"images": 
+		"images":
 				[
 					{
 						"imageURL": "image",
