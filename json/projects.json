@@ -1,12 +1,13 @@
 [
 	{
 	"id":"daitan-group",
-	"name": "Daitan Group: Testing & UX Internship",
+	"name": "Daitan Group: Internship & Software Test",
 	"company": "Daitan Group",
 	"type": "Full-time Employee",
 	"startDate": "07/06/2015",
-	"endDate": "",
+	"endDate": "Current Job",
 	"imagePrincipal": "images/daitan.png",
+	"activeItem": "in",
 	"images":
 			[
 				{
@@ -29,7 +30,6 @@
 		"startDate": "06/23/2014",
 		"endDate": "12/30/2014",
 		"imagePrincipal": "images/sms.png",
-		"activeItem": "in",
 		"images":
 				[
 					{
