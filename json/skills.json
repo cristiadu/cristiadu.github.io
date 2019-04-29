@@ -1,50 +1,62 @@
 [
 	{
-		"image": "images/php.png",
-		"text": "PHP"
-	},
-	{
-		"image": "images/jquery.png",
-		"text": "Jquery"
-	},
-	{
-		"image": "images/java.png",
+		"image": "skills/java.png",
 		"text": "Java"
-	},	
+	},
 	{
-		"image": "images/js.png",
+		"image": "skills/spring.png",
+		"text": "Spring Framework"
+	},
+	{
+		"image": "skills/kubernetes.png",
+		"text": "Kubernetes"
+	},
+	{
+		"image": "skills/js.png",
 		"text": "Javascript"
 	},
 	{
-		"image": "images/aspmvc.png",
-		"text": "ASP.NET MVC"
+		"image": "skills/aws_gcp.png",
+		"text": "AWS & Google Cloud Platforms"
 	},
 	{
-		"image": "images/sql.png",
+		"image": "skills/nosql.png",
+		"text": "NoSQL Databases"
+	},
+	{
+		"image": "skills/sql.png",
 		"text": "SQL"
 	},
 	{
-		"image": "images/vb.png",
-		"text": "VB.NET"
+		"image": "skills/scrum.png",
+		"text": "Scrum Agile Methodology"
 	},
 	{
-		"image": "images/c.png",
-		"text": "C Language"
+		"image": "skills/maven.png",
+		"text": "Maven"
 	},
 	{
-		"image": "images/cplusplus.png",
-		"text": "C++"
+		"image": "skills/jenkins-pipeline.png",
+		"text": "Jenkins Pipeline"
 	},
 	{
-		"image": "images/uml.png",
-		"text": "UML"
+		"image": "skills/jbehave.png",
+		"text": "JBehave"
 	},
 	{
-		"image": "images/html.png",
-		"text": "HTML5"
+		"image": "skills/python.png",
+		"text": "Python"
 	},
 	{
-		"image": "images/languages.png",
+		"image": "skills/bash-scripting.png",
+		"text": "Bash Scripting"
+	},
+	{
+		"image": "skills/languages.png",
 		"text": "Speak Portuguese & English"
+	},
+	{
+		"image": "skills/html.png",
+		"text": "HTML5"
 	}
 ]
