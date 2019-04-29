@@ -6,7 +6,7 @@
 		"type": "Full-time Employee",
 		"startDate": "06/11/2016",
 		"endDate": "Current Job",
-		"imagePrincipal": "projects/daitan-old.png",
+		"imagePrincipal": "projects/daitan.png",
 		"activeItem": "in",
 		"descriptionHTML": "<p>Currently working on the new site of Daitan Group in Victoria, British Columbia, Canada.</p><p>Our client is a major communication company located on California/US.</p><p>The project I am working on consists of a communication system that is focused on security and end-to-end encryption. It is built on Spring Framework and ReactJS, and it uses a Microservice-based infrastructure, with components deployed on both GCP and AWS cloud platforms.</p><p>I work mainly as a Software Developer, with my team being focused on constructing Public APIs that allows apps and other services to communicate with our system. I have worked with multiple technologies, helping the team build tools that make the job for App Developers easier, as well as developing integration-tests that assure those Public APIs, and the App infrastructure are working as expected.</p><p>After working a while with the team, I was assigned the Tech Lead role, being responsible for providing technical leadership on our Public API team. Participating in architectural discussions of the applications our team is involved, discussing and defining patterns to follow and technologies to use. Also providing hands-on knowledge on the application components, and helping everyone understand what needs to be done in order to achieve our team's goals.</p>"
 	},
@@ -15,7 +15,7 @@
 		"name": "Daitan Group: VOIP Testing",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
-		"startDate": "06/01/2016",
+		"startDate": "01/06/2016",
 		"endDate": "06/10/2016",
 		"imagePrincipal": "projects/daitan-old.png",
 		"descriptionHTML": "<p>Worked with a client that is a major provider for network equipments around the globe.</p><p>Our team responsibilities were mainly test VOIP functionalities of the Optical Network Terminal (ONT) equipments that our client was releasing, assuring that the functionalities on the ONT embedded software were working as expected.</p><p>I worked on testing ONTs, verifying VOIP interactions between the equipments, following a Test plan, and looking at all the network packets and their specific info during a call. Protocols being used and tested include SIP, MGCP, and H.248.</p>"
