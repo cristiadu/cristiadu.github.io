@@ -1,76 +1,83 @@
+:root {
+  /* Website's Color Scheme */
+  --primary-bg-color: #3936D3;
+  --secondary-bg-color: #171738;
+  --tertiary-bg-color: #38686A;
+  --borders-color: #20FC8F;
+  --text-header-color: #BDD4E7;
+  --text-content-color: #BDD4E7;
+}
+
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  background: #723D46;
-  color: #f8f4e3;
+  background: var(--primary-bg-color);
+  color: var(--text-content-color);
   margin-bottom: 50px;
   padding-top: 100px;
 }
 
 body h1 {
-  color: #FFE1A8;
+  color: var(--text-header-color);
 }
 
 footer {
   position: absolute;
-  border-top: 1px solid #C9CBA3;
+  border-top: 1px solid var(--borders-color);
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 40px;
-  background-color: #B5583E;
-  color: #f8f4e3;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-content-color);
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* I know this code below looks strange, but it's the way I found (without the use of media queries) to fix the problem of the colors being wrong inside the footer when the screen is the smallest. */
-
 footer .container-fluid {
-  background-color: #B5583E;
+  background-color: var(--secondary-bg-color);
 }
 
-footer a, .aboutMe a, .navbar-text>h1, #menu>ul>li>a {
-  color: #FFE1A8;
+a, .navbar-text>h1, #menu>ul>li>a {
+  color: var(--text-header-color);
 }
 
-footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
-  color: #C9CBA3;
+a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
+  color: var(--borders-color);
 }
 
 .aboutMe {
-  background: rgb(181,88,62);
-  background: linear-gradient(90deg, rgba(181,88,62,1) 0%, rgba(181,88,62,1) 100%);
-  border-top: 1px solid #C9CBA3;
-  border-bottom: 1px solid #C9CBA3;
+  background: var(--secondary-bg-color);
+  border-top: 1px solid var(--borders-color);
+  border-bottom: 1px solid var(--borders-color);
 }
 
 .panel-default {
-  border: 1px solid #C9CBA3;
+  border: 1px solid var(--borders-color);
 }
 
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
-  border-color: #C9CBA3;
+  border-color: var(--borders-color);
 }
 
 .page-header {
-  border-color: #FFE1A8;
+  border-color: var(--text-header-color);
 }
 
 .panel-default>.panel-heading {
-  background-color: #B5583E;
+  background-color: var(--secondary-bg-color);
 }
 
 .panel-title {
-  color: #FFE1A8;
+  color: var(--text-header-color);
 }
 
 .panel-body {
-  background-color: #B2945B;
+  background-color: var(--tertiary-bg-color);
 }
 
 #content {
@@ -104,20 +111,20 @@ footer a:hover, .aboutMe a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
 /*  clear bootstrap header colors */
 
 .navbar-default {
-  background: #723D46;
-  border-color: #C9CBA3;
+  background: var(--primary-bg-color);
+  border-color: var(--borders-color);
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-toggle {
-  border-color: #C9CBA3;
+  border-color: var(--borders-color);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background: #f8f4e3;
+  background: var(--text-content-color);
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background: #C9CBA3;
+  background: var(--borders-color);
 }
 
 .profileImg-max-width {
