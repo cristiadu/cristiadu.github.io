@@ -124,7 +124,7 @@ a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background: var(--borders-color);
+  background: var(--secondary-bg-color);
 }
 
 .profileImg-max-width {
