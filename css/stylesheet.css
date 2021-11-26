@@ -1,11 +1,11 @@
 :root {
   /* Website's Color Scheme */
-  --primary-bg-color: #3936D3;
-  --secondary-bg-color: #171738;
-  --tertiary-bg-color: #38686A;
-  --borders-color: #20FC8F;
-  --text-header-color: #BDD4E7;
-  --text-content-color: #BDD4E7;
+  --primary-bg-color: #FCDEBE;
+  --secondary-bg-color: #F46771;
+  --tertiary-bg-color: #B04561;
+  --borders-color: #AF1D70;
+  --text-header-color: #AF5B5B;
+  --text-content-color: #F5F5F5;
 }
 
 html {
@@ -42,7 +42,11 @@ footer .container-fluid {
   background-color: var(--secondary-bg-color);
 }
 
-a, .navbar-text>h1, #menu>ul>li>a {
+a {
+  color: var(--text-content-color);
+}
+
+.navbar-text>h1, #menu>ul>li>a {
   color: var(--text-header-color);
 }
 
