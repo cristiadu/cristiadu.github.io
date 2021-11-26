@@ -8,16 +8,28 @@
 		"text": "Spring Framework"
 	},
 	{
-		"image": "skills/kubernetes.png",
-		"text": "Kubernetes"
+		"image": "skills/aws_gcp.png",
+		"text": "AWS & Google Cloud Platforms"
 	},
 	{
 		"image": "skills/js.png",
 		"text": "Javascript"
 	},
 	{
-		"image": "skills/aws_gcp.png",
-		"text": "AWS & Google Cloud Platforms"
+		"image": "skills/python.png",
+		"text": "Python"
+	},
+	{
+		"image": "skills/bash.png",
+		"text": "Bash Scripting"
+	},
+	{
+		"image": "skills/go-lang.png",
+		"text": "Go Lang"
+	},
+	{
+		"image": "skills/terraform.png",
+		"text": "Terraform"
 	},
 	{
 		"image": "skills/nosql.png",
@@ -26,6 +38,10 @@
 	{
 		"image": "skills/sql.png",
 		"text": "SQL"
+	},
+	{
+		"image": "skills/kubernetes.png",
+		"text": "Kubernetes"
 	},
 	{
 		"image": "skills/scrum.png",
@@ -42,14 +58,6 @@
 	{
 		"image": "skills/jbehave.png",
 		"text": "JBehave"
-	},
-	{
-		"image": "skills/python.png",
-		"text": "Python"
-	},
-	{
-		"image": "skills/bash.png",
-		"text": "Bash Scripting"
 	},
 	{
 		"image": "skills/languages.png",
