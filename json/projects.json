@@ -1,14 +1,25 @@
 [
 	{
+		"id": "daitan-group-ojo-labs",
+		"name": "Daitan Group: Full Stack Engineer - OJO Labs",
+		"company": "Daitan Group",
+		"type": "Full-time Employee",
+		"startDate": "Nov 2021",
+		"endDate": "Current Job",
+		"imagePrincipal": "projects/ojo.png",
+		"activeItem": "in",
+		"descriptionHTML": "<p>Working for OJO Labs as an Encora contractor (Encora being Daitan's parent company) as a Fullstack Engineer. OJO Labs helps connect real-estate agents with potential house buyers/sellers using machine learning analysis based on customer preferences, as well as providing automated processes that connect both interested parties when sealing a house deal.</p><p>Currently developing software using Kotlin for Backend systems that manage orchestration and other parts of agent matching (listening and sending RabbitMQ events). Also helping development on the Agent Tools system (built in ReactJS), which helps Agents to interact with OJO lead offer processes by setting their preferences for customers and accepting lead offers through the Agent Tools UI.</p>"
+	},
+	{
 		"id": "daitan-group-microservice-framework",
-		"name": "Daitan Group: Software Developer - Microservice Infrastructure Team",
+		"name": "Daitan Group: Software Developer - Microservice Infrastructure & Multitenant Monolith",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
 		"startDate": "Mar 2020",
-		"endDate": "Current Job",
+		"endDate": "Nov 2021",
 		"imagePrincipal": "projects/daitan.png",
 		"activeItem": "in",
-		"descriptionHTML": "<p>Kept collaborating with Symphony (<a href='https://symphony.com/'>https://symphony.com</a>) as a contractor from Daitan Group.</p><p>Currently I'm working on another team created to define patterns of micro-service development throughout Symphony. I work together with their developers on a team which is responsible for libraries, tooling and automation around micro-services development within the company, applying patterns and default configurations in a way that re-usage of those settings within micro-services is easily done and maintainable.</p><p>We created a few initiatives in the team: </p><ul><li>A spring-boot-starter framework based off the one created by Spring-Boot maintainers, which provides sub-modules for the most common used implementations with Symphony's context added to it.</li><li>The microservice-generator, which configures a new microservice by triggering a script execution that has repository generation/configuration on Github, boilerplate code and CICD automatically configured.</li><li>A reference music-store micro-service, which serves as an example of how to build new microservices within the company, showing examples of how multiple different kind of processes could be developed.</li><li>A configuration-service microservice using our developed frameworks and scripts. This service is now used as the configuration values source within Symphony.</li></ul>"
+		"descriptionHTML": "<p>Kept collaborating with Symphony (<a href='https://symphony.com/'>https://symphony.com</a>) as a contractor from Daitan Group.</p><p>Worked on a team created to define patterns of micro-service development throughout Symphony. I work together with their developers on a team which is responsible for libraries, tooling and automation around micro-services development within the company, applying patterns and default configurations in a way that re-usage of those settings within micro-services is easily done and maintainable.</p><p>We created a few initiatives in the team: </p><ul><li>A spring-boot-starter framework based off the one created by Spring-Boot maintainers, which provides sub-modules for the most common used implementations with Symphony's context added to it.</li><li>The microservice-generator, which configures a new microservice by triggering a script execution that has repository generation/configuration on Github, boilerplate code and CICD automatically configured.</li><li>A reference music-store micro-service, which serves as an example of how to build new microservices within the company, showing examples of how multiple different kind of processes could be developed.</li><li>A configuration-service microservice using our developed frameworks and scripts. This service is now used as the configuration values source within Symphony.</li></ul><p>Finally, worked for 4 months on a team with the goal of transforming the big single-tenant monolith system Symphony had into a multi-tenant one, having big savings on the costs with infrastructure, debugging and monitoring.</p>"
 	},
 	{
 		"id": "daitan-group-lead-platform",
