@@ -1,7 +1,7 @@
 [
 	{
 		"image": "skills/java.png",
-		"text": "Java"
+		"text": "Java & Kotlin"
 	},
 	{
 		"image": "skills/spring.png",
@@ -14,6 +14,10 @@
 	{
 		"image": "skills/js.png",
 		"text": "Javascript"
+	},
+	{
+		"image": "skills/reactjs.png",
+		"text": "React.js"
 	},
 	{
 		"image": "skills/python.png",
@@ -37,7 +41,7 @@
 	},
 	{
 		"image": "skills/sql.png",
-		"text": "SQL"
+		"text": "SQL Databases"
 	},
 	{
 		"image": "skills/kubernetes.png",
@@ -56,15 +60,11 @@
 		"text": "Jenkins Pipeline"
 	},
 	{
-		"image": "skills/jbehave.png",
-		"text": "JBehave"
+		"image": "skills/test-automation.png",
+		"text": "JBehave & Robot Framework"
 	},
 	{
 		"image": "skills/languages.png",
 		"text": "Speak Portuguese & English"
-	},
-	{
-		"image": "skills/html.png",
-		"text": "HTML5"
 	}
 ]
