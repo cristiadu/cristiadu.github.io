@@ -2,14 +2,14 @@
 [
 	{
 		"id": "ea-horizon3",
-		"name": "Electronic Arts - Horizon3 Team",
+		"name": "Electronic Arts - CAPTECH Team",
 		"company": "Electronic Arts",
 		"type": "Full-time Employee",
 		"startDate": "Apr 2022",
 		"endDate": "Current Job",
 		"imagePrincipal": "projects/ea.png",
 		"activeItem": "in",
-		"descriptionHTML": "<p>Working, in the Vancouver office, as a Full-stack Software Engineer.</p><p>Our team provides a framework used throughout multiple games. The framework abstract Kubernetes details and creates an easy way for clusters (AWS or GCP, as it's cloud agnostic) to have all services running properly. It includes both the Kubernetes infrastructure created (using Helm charts for templating & dependencies) as well as some of the common game services needed by multiple games (like anti-cheat services, for example).</p><p>Currently I am working as part of the team that maintains such framework, adding new features and supporting existing ones. I've been working with multiple languages as the challenges the team faces have a wide range of technologies needed. Some example of languages used are: Go Lang, Java, Kotlin, Typescript, and Python.</p>"
+		"descriptionHTML": "<p>Working, in the Vancouver office, as a Full-stack Software Engineer.</p><p>Our team provides a framework used throughout multiple games. The framework abstract Kubernetes details and creates an easy way for clusters (AWS or GCP, as it's cloud agnostic) to have all services running properly. It includes both the Kubernetes infrastructure created (using Helm charts for templating & dependencies) as well as some of the common game services needed by multiple games (like anti-cheat services, for example).</p><p>Currently I am working as part of the team that maintains such framework, adding new features and supporting existing ones. I've been working with multiple languages as the challenges the team faces have a wide range of technologies needed. Some example of languages and technologies used are: Helm Charts, ArgoCD, Istio, Keycloak, Go Lang, Java, Kotlin, Typescript, and Python.</p>"
 	},
 	{
 		"id": "daitan-group-ojo-labs",
