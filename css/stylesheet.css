@@ -1,11 +1,11 @@
 :root {
   /* Website's Color Scheme */
-  --primary-bg-color: #FCDEBE;
-  --secondary-bg-color: #F46771;
-  --tertiary-bg-color: #B04561;
-  --borders-color: #AF5B5B;
-  --text-header-color: #AF1D70;
-  --text-content-color: #F5F5F5;
+  --primary-bg-color: #f6f1d1;
+  --secondary-bg-color: #0b2027;
+  --tertiary-bg-color: #40798c;
+  --borders-color: #70a9a1;
+  --text-header-color: #0b2027;
+  --text-content-color: #f6f1d1;
 }
 
 html {
