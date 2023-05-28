@@ -8,12 +8,16 @@
 		"text": "Spring Framework"
 	},
 	{
+		"image": "skills/js.png",
+		"text": "Javascript"
+	},
+	{
 		"image": "skills/aws_gcp.png",
 		"text": "AWS & Google Cloud Platforms"
 	},
 	{
-		"image": "skills/js.png",
-		"text": "Javascript"
+		"image": "skills/go-lang.png",
+		"text": "Go Lang"
 	},
 	{
 		"image": "skills/reactjs.png",
@@ -28,12 +32,12 @@
 		"text": "Bash Scripting"
 	},
 	{
-		"image": "skills/go-lang.png",
-		"text": "Go Lang"
-	},
-	{
 		"image": "skills/terraform.png",
 		"text": "Terraform"
+	},
+	{
+		"image": "skills/kubernetes.png",
+		"text": "Kubernetes"
 	},
 	{
 		"image": "skills/nosql.png",
@@ -44,8 +48,8 @@
 		"text": "SQL Databases"
 	},
 	{
-		"image": "skills/kubernetes.png",
-		"text": "Kubernetes"
+		"image": "skills/helm.png",
+		"text": "Helm Charts"
 	},
 	{
 		"image": "skills/scrum.png",
@@ -62,6 +66,10 @@
 	{
 		"image": "skills/test-automation.png",
 		"text": "JBehave & Robot Framework"
+	},
+	{
+		"image": "skills/devops.png",
+		"text": "DevOps Tools"
 	},
 	{
 		"image": "skills/languages.png",
