@@ -46,11 +46,14 @@ a {
   color: var(--text-content-color);
 }
 
-.navbar-text>h1, #menu>ul>li>a {
+.navbar-text>h1,
+#menu>ul>li>a {
   color: var(--text-header-color);
 }
 
-a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
+a:hover,
+.navbar-text>h1:hover,
+#menu>ul>li>a:hover {
   color: var(--borders-color);
 }
 
@@ -123,7 +126,8 @@ a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
   margin-top: 12px;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-toggle {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-toggle {
   border-color: var(--borders-color);
 }
 
@@ -131,7 +135,8 @@ a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
   background: var(--borders-color);
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
   background: var(--secondary-bg-color);
 }
 
@@ -166,6 +171,7 @@ a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
   .navbar-text h1 {
     font-size: 27px;
   }
+
   .navbar-nav {
     padding-top: 28px;
   }
