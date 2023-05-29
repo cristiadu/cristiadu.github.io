@@ -3,7 +3,7 @@
   --primary-bg-color: #f6f1d1;
   --secondary-bg-color: #0b2027;
   --tertiary-bg-color: #336170;
-  --borders-color: #336170;
+  --borders-color: #70A9A1;
   --text-header-color: #0b2027;
   --text-content-color: #f6f1d1;
 }
@@ -119,12 +119,16 @@ a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
   border-color: var(--borders-color);
 }
 
+.navbar-toggle {
+  margin-top: 12px;
+}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-toggle {
   border-color: var(--borders-color);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background: var(--text-content-color);
+  background: var(--borders-color);
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -133,6 +137,11 @@ a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
 
 .profileImg-max-width {
   max-width: 200px;
+}
+
+.vspacing-project-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Fixing, using media queries, the brand inside the navbar, and the menu items alignment*/
@@ -165,8 +174,3 @@ a:hover, .navbar-text>h1:hover, #menu>ul>li>a:hover {
 }
 
 /* End of the media queries */
-
-.vspacing-project-img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
