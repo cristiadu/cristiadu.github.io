@@ -1,7 +1,7 @@
 [
 	{
 		"id": "ea-captech",
-		"name": "Electronic Arts - CAPTECH Team",
+		"name": "Electronic Arts: Software Engineer - CAPTECH Team",
 		"company": "Electronic Arts",
 		"type": "Full-time Employee",
 		"startDate": "Apr 2022",
@@ -12,7 +12,7 @@
 	},
 	{
 		"id": "daitan-group-ojo-labs",
-		"name": "OJO Labs: Full Stack Engineer (through Daitan Group)",
+		"name": "OJO Labs: Full Stack Engineer - Agent Team",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
 		"startDate": "Nov 2021",
@@ -32,7 +32,7 @@
 	},
 	{
 		"id": "daitan-group-lead-platform",
-		"name": "Symphony: Tech Lead - Platform Team (through Daitan Group)",
+		"name": "Symphony: Tech Lead - Platform Team",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
 		"startDate": "Jun 2016",
