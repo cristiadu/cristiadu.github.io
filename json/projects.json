@@ -5,14 +5,14 @@
 		"company": "Electronic Arts",
 		"type": "Full-time Employee",
 		"startDate": "Apr 2022",
-		"endDate": "May 2023",
+		"endDate": "Jun 2023",
 		"imagePrincipal": "projects/ea.png",
 		"activeItem": "in",
 		"descriptionHTML": "<p>Working, remotely, as a Full-stack Software Engineer/SRE.</p><p>Our team provided a framework used throughout multiple games. The framework abstract Kubernetes details and creates an easy way for clusters (AWS or GCP, as it's cloud agnostic) to have all services running properly. It includes both the Kubernetes infrastructure created (using Helm charts for templating & dependencies) as well as some of the common game services needed by multiple games (like anti-cheat services, for example).</p><p>Working as part of the team that maintains such framework, I added new features and supported existing ones. Some example of languages and technologies used are: Helm Charts, ArgoCD, Istio, Keycloak, Go Lang, Java, Kotlin, Typescript, and Python.</p>"
 	},
 	{
 		"id": "daitan-group-ojo-labs",
-		"name": "Daitan Group: Full Stack Engineer - OJO Labs",
+		"name": "OJO Labs: Full Stack Engineer (through Daitan Group)",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
 		"startDate": "Nov 2021",
@@ -22,7 +22,7 @@
 	},
 	{
 		"id": "daitan-group-microservice-framework",
-		"name": "Daitan Group: Software Developer - Microservice Infrastructure & Multitenant Monolith",
+		"name": "Symphony: Software Developer - Microservice Infrastructure & Multitenant Monolith",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
 		"startDate": "Mar 2020",
@@ -32,13 +32,13 @@
 	},
 	{
 		"id": "daitan-group-lead-platform",
-		"name": "Daitan Group: Tech Lead - Platform Team",
+		"name": "Symphony: Tech Lead - Platform Team (through Daitan Group)",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
 		"startDate": "Jun 2016",
 		"endDate": "Mar 2020",
 		"imagePrincipal": "projects/daitan.png",
-		"descriptionHTML": "<p>Worked on the new site of Daitan Group in Victoria, British Columbia, Canada.</p><p>Our client is a major communication company located on California/US.</p><p>The project I worked on consists of a communication system that is focused on security and end-to-end encryption. It is built on Spring Framework and ReactJS, and it uses a Microservice-based infrastructure, with components deployed on both GCP and AWS cloud platforms.</p><p>I worked mainly as a Software Developer, with my team being focused on constructing Public APIs that allows apps and other services to communicate with our system. I have worked with multiple technologies, helping the team build tools that make the job for App Developers easier, as well as developing integration-tests that assure those Public APIs, and the App infrastructure are working as expected.</p><p>After working a while with the team, I was assigned the Tech Lead role, being responsible for providing technical leadership on our Public API team. Participating in architectural discussions of the applications our team is involved, discussing and defining patterns to follow and technologies to use. Also providing hands-on knowledge on the application components, and helping everyone understand what needs to be done in order to achieve our team's goals.</p>"
+		"descriptionHTML": "<p>Worked on the new site of Daitan Group in Victoria, British Columbia, Canada.</p><p>Worked as a contractor for Symphony, which is a major communication company located on California/US.</p><p>The project I worked on consists of a communication system that is focused on security and end-to-end encryption. It is built on Spring Framework and ReactJS, and it uses a Microservice-based infrastructure, with components deployed on both GCP and AWS cloud platforms.</p><p>I worked mainly as a Software Developer, with my team being focused on constructing Public APIs that allows apps and other services to communicate with our system. I have worked with multiple technologies, helping the team build tools that make the job for App Developers easier, as well as developing integration-tests that assure those Public APIs, and the App infrastructure are working as expected.</p><p>After working a while with the team, I was assigned the Tech Lead role, being responsible for providing technical leadership on our Public API team. Participating in architectural discussions of the applications our team is involved, discussing and defining patterns to follow and technologies to use. Also providing hands-on knowledge on the application components, and helping everyone understand what needs to be done in order to achieve our team's goals.</p>"
 	},
 	{
 		"id": "daitan-group-test",
@@ -62,7 +62,7 @@
 	},
 	{
 		"id": "sms-access",
-		"name": "SMS-Access",
+		"name": "Telaeris: SMS-Access",
 		"company": "Telaeris",
 		"type": "Project (Internship)",
 		"startDate": "Jun 2014",
@@ -72,8 +72,8 @@
 	},
 	{
 		"id": "ufscar",
-		"name": "UFSCar's Human Resources Management System",
-		"company": "Federal University of São Carlos",
+		"name": "UFSCar: Human Resources Management System",
+		"company": "Federal University of São Carlos (UFSCar)",
 		"type": "Software Development Internship",
 		"startDate": "Jan 2012",
 		"endDate": "Jan 2013",
@@ -82,7 +82,7 @@
 	},
 	{
 		"id": "digicomm",
-		"name": "Digicomm ERP & CRM Software",
+		"name": "Digicomm: ERP & CRM Software",
 		"company": "Digicomm",
 		"type": "Full-time Employee",
 		"startDate": "Nov 2010",
@@ -92,8 +92,8 @@
 	},
 	{
 		"id": "formedical",
-		"name": "ForMedical Management System",
-		"company": "Alpphoria",
+		"name": "FOR MEDICAL: Management System",
+		"company": "FOR MEDICAL",
 		"type": "Full-time Employee",
 		"startDate": "Jan 2010",
 		"endDate": "Nov 2010",
