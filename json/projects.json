@@ -1,5 +1,16 @@
 [
 	{
+		"id": "giftbit",
+		"name": "Giftbit: Senior Software Developer",
+		"company": "Giftbit",
+		"type": "Full-time Employee",
+		"startDate": "Feb 2024",
+		"endDate": "Current Job",
+		"imagePrincipal": "projects/giftbit.png",
+		"activeItem": "in",
+		"descriptionHTML": "<p>Hired as a Senior Software Developer at Giftbit, in a hybrid working model (sometimes working from home, sometimes working from our office in Victoria/BC).</p><p>Giftbit is a company that provides a platform for businesses to send digital gift cards to their customers, employees, and partners.</p><p>My main responsibilities are to help the team to develop new features and maintain the platform, as well as to help the team to improve the platform's performance and scalability.</p><p>Giftbit's platform is built with frameworks like Grails, Next.JS, ReactJS and Spring.</p><p>My main focuses include backend, frontend and platform/infrastructure development, as well as leading new features development and helping with guidance for other developers from our company.</p>"
+	},
+	{
 		"id": "ea-captech",
 		"name": "Electronic Arts: Software Engineer - CAPTECH Team",
 		"company": "Electronic Arts",
@@ -7,7 +18,6 @@
 		"startDate": "Apr 2022",
 		"endDate": "Jun 2023",
 		"imagePrincipal": "projects/ea.png",
-		"activeItem": "in",
 		"descriptionHTML": "<p>Working, remotely, as a Full-stack Software Engineer/SRE.</p><p>Our team provided a framework used throughout multiple games. The framework abstract Kubernetes details and creates an easy way for clusters (AWS or GCP, as it's cloud agnostic) to have all services running properly. It includes both the Kubernetes infrastructure created (using Helm charts for templating & dependencies) as well as some of the common game services needed by multiple games (like anti-cheat services, for example).</p><p>Working as part of the team that maintains such framework, I added new features and supported existing ones. Some example of languages and technologies used are: Helm Charts, ArgoCD, Istio, Keycloak, Go Lang, Java, Kotlin, Typescript, and Python.</p>"
 	},
 	{
