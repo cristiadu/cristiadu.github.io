@@ -26,8 +26,7 @@ const HeaderNavBar = () => {
                                 target="_blank"><i className="fa fa-user"></i> Resume</a></li>
                             <li><a href="#projects"><i className="fa fa-cogs"></i> Projects</a></li>
                             <li><a href="#skills"><i className="fas fa-chess-rook"></i> Skills</a></li>
-                            <li><a href="https://www.linkedin.com/in/cristianofaustino/" target="_blank"><i className="fab fa-linkedin"></i>
-                                LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/cristianofaustino/" target="_blank"><i className="fab fa-linkedin"></i> LinkedIn</a></li>
                             <li><a href="#contact"><i className="fa fa-commenting-o"></i> Contact</a></li>
                         </ul>
                     </div>

@@ -32,7 +32,7 @@ const Contact = () => {
                             <a href="https://www.facebook.com/cristiano.faustino" target="_blank"><img className="img-icon-contacts"
                                 src="images/icons/facebook-icon.png" alt="Facebook" /></a>
                             <a href="https://www.linkedin.com/in/cristianofaustino/" target="_blank"><img className="img-icon-contacts"
-                                src="images/icons/linkedin-icon.png" alt="LinkedIn" /></a>&nbsp;
+                                src="images/icons/linkedin-icon.png" alt="LinkedIn" /></a>
                             <a href="https://github.com/cristiadu" target="_blank"><img className="img-icon-contacts"
                                 src="images/icons/github-icon.png" alt="Github" /></a>
                             <a href="http://www.last.fm/user/cristiadu" target="_blank"><img className="img-icon-contacts"
