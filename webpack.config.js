@@ -16,7 +16,7 @@ module.exports = {
         { from: 'public/images', to: 'images' },
         { from: 'public/json', to: 'json' },
         { from: 'favicon.ico', to: 'favicon.ico' },
-        { from: 'CNAME', to: 'CNAME' },
+        { from: 'CNAME', to: './CNAME' },
       ]
     }),
   ],
