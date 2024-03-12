@@ -1,0 +1,78 @@
+[
+	{
+		"image": "skills/java.png",
+		"text": "Java & Kotlin"
+	},
+	{
+		"image": "skills/spring.png",
+		"text": "Spring Framework"
+	},
+	{
+		"image": "skills/js.png",
+		"text": "Javascript"
+	},
+	{
+		"image": "skills/aws_gcp.png",
+		"text": "AWS & Google Cloud Platforms"
+	},
+	{
+		"image": "skills/go-lang.png",
+		"text": "Go Lang"
+	},
+	{
+		"image": "skills/reactjs.png",
+		"text": "React.js"
+	},
+	{
+		"image": "skills/python.png",
+		"text": "Python"
+	},
+	{
+		"image": "skills/bash.png",
+		"text": "Bash Scripting"
+	},
+	{
+		"image": "skills/terraform.png",
+		"text": "Terraform"
+	},
+	{
+		"image": "skills/kubernetes.png",
+		"text": "Kubernetes"
+	},
+	{
+		"image": "skills/nosql.png",
+		"text": "NoSQL Databases"
+	},
+	{
+		"image": "skills/sql.png",
+		"text": "SQL Databases"
+	},
+	{
+		"image": "skills/helm.png",
+		"text": "Helm Charts"
+	},
+	{
+		"image": "skills/scrum.png",
+		"text": "Scrum Agile Methodology"
+	},
+	{
+		"image": "skills/maven.png",
+		"text": "Maven"
+	},
+	{
+		"image": "skills/jenkins-pipeline.png",
+		"text": "Jenkins Pipeline"
+	},
+	{
+		"image": "skills/test-automation.png",
+		"text": "JBehave & Robot Framework"
+	},
+	{
+		"image": "skills/devops.png",
+		"text": "DevOps Tools"
+	},
+	{
+		"image": "skills/languages.png",
+		"text": "Speak Portuguese & English"
+	}
+]

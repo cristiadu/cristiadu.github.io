@@ -1,0 +1,186 @@
+:root {
+  /* Website's Color Scheme */
+  --primary-bg-color: #f6f1d1;
+  --secondary-bg-color: #0b2027;
+  --tertiary-bg-color: #336170;
+  --borders-color: #70A9A1;
+  --text-header-color: #0b2027;
+  --text-content-color: #f6f1d1;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: var(--primary-bg-color);
+  color: var(--text-content-color);
+  margin-bottom: 50px;
+  padding-top: 100px;
+}
+
+body h1 {
+  color: var(--text-header-color);
+}
+
+footer {
+  position: absolute;
+  border-top: 1px solid var(--borders-color);
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-content-color);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer .container-fluid {
+  background-color: var(--secondary-bg-color);
+}
+
+a {
+  color: var(--text-content-color);
+}
+
+.navbar-text>h1,
+#menu>ul>li>a {
+  color: var(--text-header-color);
+}
+
+a:hover,
+.navbar-text>h1:hover,
+#menu>ul>li>a:hover {
+  color: var(--borders-color);
+}
+
+.aboutMe {
+  background: var(--secondary-bg-color);
+  border-top: 1px solid var(--borders-color);
+  border-bottom: 1px solid var(--borders-color);
+}
+
+.panel-default {
+  border: 1px solid var(--borders-color);
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-color: var(--borders-color);
+}
+
+.page-header {
+  border-color: var(--text-header-color);
+}
+
+.panel-default>.panel-heading {
+  background-color: var(--secondary-bg-color);
+}
+
+.panel-title {
+  color: var(--text-content-color);
+}
+
+.panel-body {
+  background-color: var(--tertiary-bg-color);
+}
+
+#content {
+  margin-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-icon-contacts {
+  width: 30px;
+  height: 30px;
+}
+
+.content-aboutMe {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.justifyParagraph {
+  text-align: justify;
+}
+
+.navbar-text {
+  font-family: Century Gothic, sans-serif;
+}
+
+.navbar-text:hover {
+  text-decoration: none;
+}
+
+/*  clear bootstrap header colors */
+
+.navbar-default {
+  background: var(--primary-bg-color);
+  border-color: var(--borders-color);
+}
+
+.navbar-toggle {
+  margin-top: 12px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-toggle {
+  border-color: var(--borders-color);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: var(--borders-color);
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background: var(--secondary-bg-color);
+}
+
+.profileImg-max-width {
+  max-width: 200px;
+}
+
+.vspacing-project-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Fixing, using media queries, the brand inside the navbar, and the menu items alignment*/
+
+@media (max-width: 767px) {
+  .navbar-text h1 {
+    font-size: 24px;
+  }
+
+  .navbar-text-container {
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pull-right-sm-md {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-text h1 {
+    font-size: 27px;
+  }
+
+  .navbar-nav {
+    padding-top: 28px;
+  }
+}
+
+@media (min-width: 993px) {
+  .navbar-nav {
+    padding-top: 35px;
+  }
+}
+
+/* End of the media queries */
