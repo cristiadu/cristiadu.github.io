@@ -2,15 +2,15 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <article name="contact" id="contact" class="aboutMe">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-3 content-aboutMe">
-                        <img class="img-thumbnail profileImg-max-width" src="images/profile-pic.jpg" alt="My Photo" />
+        <article name="contact" id="contact" className="aboutMe">
+            <div className="container">
+                <div className="row">
+                    <div className="col-xs-12 col-sm-4 col-md-3 content-aboutMe">
+                        <img className="img-thumbnail profileImg-max-width" src="images/profile-pic.jpg" alt="My Photo" />
                     </div>
-                    <div class="col-xs-12 col-sm-5 col-md-6 content-aboutMe">
+                    <div className="col-xs-12 col-sm-5 col-md-6 content-aboutMe">
                         <h3>About Me</h3>
-                        <p class="justifyParagraph">
+                        <p className="justifyParagraph">
                             Currently living in Victoria, British Columbia, Canada.
                             Highly passionate professional who thrives on working with challenges using technology,
                             particularly through lines of code and logical reasoning.
@@ -22,9 +22,9 @@ const Contact = () => {
                             skills and drive the development of innovative solutions.
                         </p>
                     </div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 pull-right content-aboutMe">
+                    <div className="col-xs-12 col-sm-3 col-md-3 pull-right content-aboutMe">
                         <h3>Contact Information</h3>
-                        <div class="col-xs-12 col-md-12">
+                        <div className="col-xs-12 col-md-12">
 
                             <address>
                                 <strong>Cristiano de Oliveira Faustino</strong><br />
@@ -32,14 +32,14 @@ const Contact = () => {
                                 Phone: +1 (250) 516-6800
                             </address>
                         </div>
-                        <div class="col-xs-12 col-md-12">
-                            <a href="https://www.facebook.com/cristiano.faustino" target="_blank"><img class="img-icon-contacts"
+                        <div className="col-xs-12 col-md-12">
+                            <a href="https://www.facebook.com/cristiano.faustino" target="_blank"><img className="img-icon-contacts"
                                 src="images/icons/facebook-icon.png" alt="Facebook" /></a>
-                            <a href="https://www.linkedin.com/in/cristianofaustino/" target="_blank"><img class="img-icon-contacts"
+                            <a href="https://www.linkedin.com/in/cristianofaustino/" target="_blank"><img className="img-icon-contacts"
                                 src="images/icons/linkedin-icon.png" alt="LinkedIn" /></a>
-                            <a href="https://github.com/cristiadu" target="_blank"><img class="img-icon-contacts"
+                            <a href="https://github.com/cristiadu" target="_blank"><img className="img-icon-contacts"
                                 src="images/icons/github-icon.png" alt="Github" /></a>
-                            <a href="http://www.last.fm/user/cristiadu" target="_blank"><img class="img-icon-contacts"
+                            <a href="http://www.last.fm/user/cristiadu" target="_blank"><img className="img-icon-contacts"
                                 src="images/icons/lastfm-icon.png" alt="LastFM" /></a>
                         </div>
                     </div>

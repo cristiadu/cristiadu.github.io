@@ -5,7 +5,7 @@ import Skills from '../Skills';
 
 const MainContent = () => {
     return (
-        <section class="container-fluid" id="content">
+        <section className="container-fluid" id="content">
             <Contact />
             <Projects />
             <Skills />
