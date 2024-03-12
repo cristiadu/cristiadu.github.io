@@ -1,7 +1,7 @@
 {
     "name": "my-portfolio",
-    "version": "1.0.0",
-    "description": "My React App",
+    "version": "2024.0.3",
+    "description": "Cristiano Faustino: Portfolio",
     "scripts": {
         "start": "webpack-dev-server --mode development --open",
         "build": "webpack --mode production"
