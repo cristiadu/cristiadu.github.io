@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Skill from './Skill';
 
 // Create component that renders all skills from the json file
-const Skills = () => {
-    const [skills, setSkills] = useState([]);
+const SkillsList = () => {
+    const [skillsList, setSkillsList] = useState([]);
     useEffect(() => {
         axios.get('json/skills.json')
             .then(response => {
-                setSkills(response.data);
+                setSkillsList(response.data);
             });
     }, []);
 
@@ -19,16 +20,12 @@ const Skills = () => {
                 </div>
             </div>
             <div className="row">
-                {skills.map((skill, index) => (
-                    <div className="col-md-3 col-xs-6" key={index}>
-                        <span className="thumbnail">
-                            <img className="img-responsive" src={'images/' + skill.image} alt={skill.text} />
-                        </span>
-                    </div>
+                {skillsList.map(skill => (
+                    <Skill skill={skill} key={skill.text} />
                 ))}
             </div>
         </article>
     );
 };
 
-export default Skills;
+export default SkillsList;
