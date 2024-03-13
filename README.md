@@ -4,9 +4,9 @@ This is the source code for the personal Portfolio published on https://cristian
 
 ## Application Details
 
-This application was originally built using JQuery 1.11.3, Bootstrap v3.3.5 and Angular v1.4.2 back in 2014, and a few changes, mostly surrounding layout & projects (not frameworks used), were made in the past couple of years.
+This application was originally built using JQuery 1.11.3, Bootstrap v3.3.5 and Angular v1.4.2 back in 2014.
 
-I have transitioned it into a React.JS application now. With more robustness and customization to it.
+In 2024 I have migrated it into a React.JS application, it has more robustness and customization to it.
 
 ### Implementation
 The app uses JSON files for loading it's projects and skills, and new projects are easily maintainable without having to change the index.html structure.
