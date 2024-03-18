@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Project = ({ project }) => {
+    const [isActive, setIsActive] = useState(project.activeItem === 'in' ? true : false);
+
+    const toggleActive = () => {
+        setIsActive(!isActive);
+    }
+
     return (
         <div className="panel panel-default" key={project.id}>
             <div className="panel-heading" role="tab" id={project.id + 'heading'}>
                 <h4 className="panel-title">
-                    <i className="fa fa-plus"></i>&nbsp;
-                    <a className="link-project" role="button" data-toggle="collapse" href={'#' + project.id}
+                    <i className={`fa ${isActive ? 'fa-minus' : 'fa-plus'}`}></i>&nbsp;
+                    <a className="link-project" role="button" onClick={toggleActive} data-toggle="collapse" href={'#' + project.id}
                         aria-expanded="true" aria-controls="collapseOne">
                         {project.name}
                     </a>
