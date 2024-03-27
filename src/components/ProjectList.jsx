@@ -21,7 +21,7 @@ const ProjectList = () => {
                 </div>
             </Row>
             <Row>
-                <Accordion defaultActiveKey="0">
+                <Accordion>
                     {projectList.map(project => (
                         <Project project={project} key={project.id} />
                     ))}

@@ -50,13 +50,19 @@ a {
 #menu a {
   color: var(--text-header-color);
   font-family: Century Gothic, sans-serif;
+  text-decoration: none;
 }
+
+#menu h1:hover,
+#menu a:hover {
+  text-decoration: none;
+}
+
 
 a:hover,
 #menu h1:hover,
 #menu a:hover {
   color: var(--borders-color);
-  text-decoration: none;
 }
 
 .aboutMe {
@@ -69,7 +75,7 @@ a:hover,
   border: 1px solid var(--borders-color);
 }
 
-.panel-default>.panel-heading+.panel-collapse>.panel-body {
+.accordion-item {
   border-color: var(--borders-color);
 }
 
@@ -77,15 +83,13 @@ a:hover,
   border-color: var(--text-header-color);
 }
 
-.panel-default>.panel-heading {
-  background-color: var(--secondary-bg-color);
+.accordion-button {
+  color: var(--text-content-color) !important;
+  background-color: var(--secondary-bg-color) !important;
 }
 
-.panel-title {
+.accordion-body {
   color: var(--text-content-color);
-}
-
-.panel-body {
   background-color: var(--tertiary-bg-color);
 }
 

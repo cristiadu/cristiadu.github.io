@@ -10,7 +10,7 @@ const Project = ({ project }) => {
     }
 
     return (
-        <Accordion.Item eventKey={project.id} active={isActive}>
+        <Accordion.Item eventKey={project.id}>
             <Accordion.Header onClick={toggleActive}>
                 <i className={`fa ${isActive ? 'fa-minus' : 'fa-plus'}`}></i>&nbsp;
                 {project.name}
