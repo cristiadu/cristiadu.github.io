@@ -5,17 +5,17 @@ import { Link } from 'react-scroll';
 const HeaderNavBar = () => {
     return (
         <header>
-            <Navbar fixed="top" expand="lg" collapseOnSelect as="nav">
+            <Navbar fixed="top" expand="lg" collapseOnSelect as="nav" id="menu" key="menu">
                 <Container fluid>
-                    <Navbar.Brand href="index.html">Cristiano Faustino</Navbar.Brand>
+                    <Navbar.Brand href="index.html"><h1>Cristiano Faustino</h1></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="https://drive.google.com/file/d/1cD4wZK0Z4qqOXOH_8XwoIVWl1uVh9lZ-/view?usp=sharing" target="_blank">Resume</Nav.Link>
-                            <Nav.Link as={Link} to="projects" spy={true} smooth={true} offset={-100} duration={900}>Projects</Nav.Link>
-                            <Nav.Link as={Link} to="skills" spy={true} smooth={true} offset={-100} duration={900}>Skills</Nav.Link>
-                            <Nav.Link href="https://www.linkedin.com/in/cristianofaustino/" target="_blank">LinkedIn</Nav.Link>
-                            <Nav.Link as={Link} to="contact" spy={true} smooth={true} offset={-100} duration={900}>Contact</Nav.Link>
+                            <Link as="a" href="https://drive.google.com/file/d/1cD4wZK0Z4qqOXOH_8XwoIVWl1uVh9lZ-/view?usp=sharing" target="_blank"><i className="fa fa-user"></i> Resume</Link>
+                            <Link as="a" to="projects" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-cogs"></i> Projects</Link>
+                            <Link as="a" to="skills" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-chess-rook"></i> Skills</Link>
+                            <Link as="a" href="https://www.linkedin.com/in/cristianofaustino/" target="_blank"><i className="fab fa-linkedin"></i> LinkedIn</Link>
+                            <Link as="a" to="contact" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-commenting-o"></i> Contact</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

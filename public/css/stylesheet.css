@@ -46,15 +46,17 @@ a {
   color: var(--text-content-color);
 }
 
-.navbar-text>h1,
-#menu>ul>li>a {
+#menu h1,
+#menu a {
   color: var(--text-header-color);
+  font-family: Century Gothic, sans-serif;
 }
 
 a:hover,
-.navbar-text>h1:hover,
-#menu>ul>li>a:hover {
+#menu h1:hover,
+#menu a:hover {
   color: var(--borders-color);
+  text-decoration: none;
 }
 
 .aboutMe {
@@ -105,14 +107,6 @@ a:hover,
 
 .justifyParagraph {
   text-align: justify;
-}
-
-.navbar-text {
-  font-family: Century Gothic, sans-serif;
-}
-
-.navbar-text:hover {
-  text-decoration: none;
 }
 
 /*  clear bootstrap header colors */
