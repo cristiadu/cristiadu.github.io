@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Skill from './Skill';
+import { Container, Row } from 'react-bootstrap';
 
 // Create component that renders all skills from the json file
 const SkillsList = () => {
@@ -13,18 +14,18 @@ const SkillsList = () => {
     }, []);
 
     return (
-        <article id="skills" className="container">
-            <div className="row">
+        <Container as="article" id="skills">
+            <Row>
                 <div className="page-header">
                     <h1>Main Skills</h1>
                 </div>
-            </div>
-            <div className="row">
+            </Row>
+            <Row>
                 {skillsList.map(skill => (
                     <Skill skill={skill} key={skill.text} />
                 ))}
-            </div>
-        </article>
+            </Row>
+        </Container>
     );
 };
 
