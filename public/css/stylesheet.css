@@ -71,26 +71,26 @@ a:hover,
   border-bottom: 1px solid var(--borders-color);
 }
 
-.panel-default {
+.accordion-item, .accordion-body {
   border: 1px solid var(--borders-color);
 }
 
-.accordion-item {
-  border-color: var(--borders-color);
-}
-
 .page-header {
-  border-color: var(--text-header-color);
-}
-
-.accordion-button {
-  color: var(--text-content-color) !important;
-  background-color: var(--secondary-bg-color) !important;
+  border-bottom: 1px solid var(--text-header-color);
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
 }
 
 .accordion-body {
   color: var(--text-content-color);
   background-color: var(--tertiary-bg-color);
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: var(--text-content-color);
+  background-color: var(--secondary-bg-color);
+  box-shadow: none;
 }
 
 #content {
@@ -115,26 +115,27 @@ a:hover,
 
 /*  clear bootstrap header colors */
 
-.navbar-default {
+.navbar {
   background: var(--primary-bg-color);
   border-color: var(--borders-color);
+  border-bottom: 1px solid var(--borders-color);
 }
 
-.navbar-toggle {
+#menu h1 {
   margin-top: 12px;
 }
 
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-toggle {
+.navbar .navbar-collapse,
+.navbar .navbar-toggler {
   border-color: var(--borders-color);
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background: var(--borders-color);
+.navbar-toggler-icon {
+  background: var(--borders-color) var(--bs-navbar-toggler-icon-bg);
 }
 
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
   background: var(--secondary-bg-color);
 }
 
@@ -147,36 +148,36 @@ a:hover,
   margin-bottom: 20px;
 }
 
+.skill-item {
+  margin: 10px;
+  padding: 5px;
+}
+
+.me-auto a {
+  padding: 8px;
+}
+
 /* Fixing, using media queries, the brand inside the navbar, and the menu items alignment*/
 
 @media (max-width: 767px) {
-  .navbar-text h1 {
+  .navbar h1 {
     font-size: 24px;
-  }
-
-  .navbar-text-container {
     padding-left: 5px;
   }
 }
 
-@media (min-width: 768px) {
-  .pull-right-sm-md {
-    float: right;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
-  .navbar-text h1 {
+  .navbar h1 {
     font-size: 27px;
   }
 
-  .navbar-nav {
+  .navbar {
     padding-top: 28px;
   }
 }
 
 @media (min-width: 993px) {
-  .navbar-nav {
+  .navbar {
     padding-top: 35px;
   }
 }
