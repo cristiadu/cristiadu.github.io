@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Project from './Project';
+import { Accordion, Container, Row } from 'react-bootstrap';
 
 // Create component that renders all ProjectList from the json file
 const ProjectList = () => {
@@ -13,20 +14,20 @@ const ProjectList = () => {
     }, []);
 
     return (
-        <article id="projects" className="container">
-            <div className="row">
+        <Container as="article" id="projects">
+            <Row>
                 <div className="page-header">
                     <h1>Jobs & Projects</h1>
                 </div>
-            </div>
-            <div className="row">
-                <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            </Row>
+            <Row>
+                <Accordion defaultActiveKey="0">
                     {projectList.map(project => (
                         <Project project={project} key={project.id} />
                     ))}
-                </div>
-            </div>
-        </article>
+                </Accordion>
+            </Row>
+        </Container>
     );
 };
 

@@ -2,14 +2,15 @@ import React from 'react';
 import Contact from '../Contact';
 import ProjectList from '../ProjectList';
 import SkillsList from '../SkillsList';
+import Container from 'react-bootstrap/Container';
 
 const MainContent = () => {
     return (
-        <section className="container-fluid" id="content">
+        <Container fluid id="content" key="content" as="section">
             <Contact />
             <ProjectList />
             <SkillsList />
-        </section>
+        </Container>
     )
 }
 

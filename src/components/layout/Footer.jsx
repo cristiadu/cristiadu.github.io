@@ -1,14 +1,20 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
     return (
         <footer>
-            <div className="col-md-4"></div>
-            <div className="container-fluid col-md-8">
-                <div className="col-md-7 col-xs-12">Cristiano Faustino's Portfolio © 2024. All rights reserved.</div>
-                <div className="col-md-4 col-xs-12">Email: <a href="mailto:cristiadu@gmail.com">cristiadu@gmail.com</a>
-                </div>
-            </div>
+            <Container fluid>
+                <Row>
+                    <Col md={4}></Col>
+                    <Col md={8}>
+                        <Row>
+                            <Col md={7} xs={12}>Cristiano Faustino's Portfolio © 2024. All rights reserved.</Col>
+                            <Col md={4} xs={12}>Email: <a href="mailto:cristiadu@gmail.com">cristiadu@gmail.com</a></Col>
+                        </Row>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     )
 }
