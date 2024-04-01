@@ -14,7 +14,7 @@
         "react-scroll": "^1.9.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.24.0",
+        "@babel/core": "^7.24.3",
         "@babel/plugin-syntax-jsx": "^7.24.1",
         "@babel/preset-env": "^7.24.3",
         "@babel/preset-react": "^7.24.1",
