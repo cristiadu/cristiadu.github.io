@@ -4,7 +4,7 @@ import { Col, Card } from 'react-bootstrap';
 
 const Skill = ({ skill }) => {
     return ( 
-        <Col md={3} xs={6}>
+        <Col md={3} xs={12}>
             <Card  className="skill-item">
                 <Card.Img variant="top" src={'images/' + skill.image} alt={skill.text} />
             </Card>
