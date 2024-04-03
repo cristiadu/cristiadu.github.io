@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Accordion, Image, Row, Col, Card } from 'react-bootstrap';
 
 const Project = ({ project }) => {
     const [isActive, setIsActive] = useState(project.activeItem === 'in' ? true : false);
@@ -9,41 +10,34 @@ const Project = ({ project }) => {
     }
 
     return (
-        <div className="panel panel-default" key={project.id}>
-            <div className="panel-heading" role="tab" id={project.id + 'heading'}>
-                <h4 className="panel-title">
-                    <i className={`fa ${isActive ? 'fa-minus' : 'fa-plus'}`}></i>&nbsp;
-                    <a className="link-project" role="button" onClick={toggleActive} data-toggle="collapse" href={'#' + project.id}
-                        aria-expanded="true" aria-controls="collapseOne">
-                        {project.name}
-                    </a>
-                </h4>
-            </div>
-            <div id={project.id} className={'panel-collapse collapse ' + project.activeItem} role="tabpanel"
-                aria-labelledby={project.id + 'heading'}>
-                <div className="panel-body">
-                    <div className="col-xs-12 col-md-8 col-sm-8">
+        <Card>
+            <Accordion.Button as={Card.Header} key={project.id} onClick={toggleActive} >
+                <i className={`fa ${isActive ? 'fa-minus' : 'fa-plus'}`}></i>&nbsp;
+                {project.name}
+            </Accordion.Button>
+            <Accordion.Collapse as={Card.Body} in={isActive} eventKey={project.id}>
+                <Row>
+                    <Col xs={12} md={8} sm={8}>
                         <strong>Company:</strong> {project.company}
-                    </div>
-                    <div className="col-xs-12 col-md-4 col-sm-4">
-                        <span className="pull-right-sm-md"><strong>Type:</strong> {project.type}</span>
-                    </div>
-                    <div className="col-xs-12 col-md-3 col-sm-4">
+                    </Col>
+                    <Col xs={12} md={4} sm={4} className="text-md-end">
+                        <strong>Type:</strong> {project.type}
+                    </Col>
+                    <Col xs={12} md={3} sm={4}>
                         <strong>Started:</strong> {project.startDate}
-                    </div>
-                    <div className="col-xs-12 col-md-3 col-sm-4">
+                    </Col>
+                    <Col xs={12} md={3} sm={4}>
                         <strong>Ended:</strong> {project.endDate}
-                    </div>
-                    <div className="col-md-6 col-md-offset-3 col-sm-7 col-sm-offset-2 col-xs-12 vspacing-project-img">
-                        <img src={"images/" + project.imagePrincipal} className="img-responsive center-block" />
-                    </div>
-                    <div className="col-xs-12 col-md-12">
+                    </Col>
+                    <Col xs={12} md={{ span: 6, offset: 3 }} sm={{ span: 7, offset: 2 }} className="vspacing-project-img">
+                        <Image src={"images/" + project.imagePrincipal} fluid />
+                    </Col>
+                    <Col xs={12} md={12}>
                         <div className="justifyParagraph" dangerouslySetInnerHTML={{ __html: project.descriptionHTML }} />
-                    </div>
-
-                </div>
-            </div>
-        </div>
+                    </Col>
+                </Row>
+            </Accordion.Collapse>
+        </Card>
     );
 };
 

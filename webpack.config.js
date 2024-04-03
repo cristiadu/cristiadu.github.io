@@ -11,12 +11,11 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'public/js', to: 'js' },
         { from: 'public/css', to: 'css' },
         { from: 'public/images', to: 'images' },
         { from: 'public/json', to: 'json' },
         { from: 'favicon.ico', to: 'favicon.ico' },
-        { from: 'CNAME'},
+        { from: 'CNAME' },
       ]
     }),
   ],
@@ -35,6 +34,10 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react'], // Add this line
           },
         },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
