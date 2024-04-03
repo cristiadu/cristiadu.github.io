@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Accordion, Image, Row, Col } from 'react-bootstrap';
+import { Accordion, Image, Row, Col, Card } from 'react-bootstrap';
 
 const Project = ({ project }) => {
     const [isActive, setIsActive] = useState(project.activeItem === 'in' ? true : false);
@@ -10,12 +10,12 @@ const Project = ({ project }) => {
     }
 
     return (
-        <Accordion.Item eventKey={project.id}>
-            <Accordion.Header onClick={toggleActive}>
+        <Card>
+            <Accordion.Button as={Card.Header} key={project.id} onClick={toggleActive} >
                 <i className={`fa ${isActive ? 'fa-minus' : 'fa-plus'}`}></i>&nbsp;
                 {project.name}
-            </Accordion.Header>
-            <Accordion.Body>
+            </Accordion.Button>
+            <Accordion.Collapse as={Card.Body} in={isActive} eventKey={project.id}>
                 <Row>
                     <Col xs={12} md={8} sm={8}>
                         <strong>Company:</strong> {project.company}
@@ -36,8 +36,8 @@ const Project = ({ project }) => {
                         <div className="justifyParagraph" dangerouslySetInnerHTML={{ __html: project.descriptionHTML }} />
                     </Col>
                 </Row>
-            </Accordion.Body>
-        </Accordion.Item>
+            </Accordion.Collapse>
+        </Card>
     );
 };
 

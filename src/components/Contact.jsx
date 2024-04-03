@@ -7,7 +7,7 @@ const Contact = () => {
             <Container>
                 <Row>
                     <Col xs={12} sm={4} md={3} className="content-aboutMe">
-                        <Image className="profileImg-max-width" src="images/profile-pic.jpg" alt="My Photo" thumbnail />
+                        <Image xs={12} sm={4} md={3} src="images/profile-pic.jpg" alt="My Photo" thumbnail />
                     </Col>
                     <Col xs={12} sm={5} md={6} className="content-aboutMe">
                         <h3>About Me</h3>
