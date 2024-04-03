@@ -18,6 +18,7 @@ body {
   color: var(--text-content-color);
   margin-bottom: 50px;
   padding-top: 100px;
+  font-size: 0.96em; /* Adjust as needed */
 }
 
 body h1 {
