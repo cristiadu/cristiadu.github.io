@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 
 const MainContent = () => {
     return (
-        <Container fluid id="content" key="content" as="section">
+        <Container fluid as="section">
             <Contact />
             <ProjectList />
             <SkillsList />

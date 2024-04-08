@@ -3,13 +3,13 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <article name="contact" id="contact" className="aboutMe">
+        <article className="about-me" id="contact">
             <Container>
-                <Row>
-                    <Col xs={12} sm={4} md={3} className="content-aboutMe">
+                <Row className="content-about-me">
+                    <Col xs={12} sm={4} md={3}>
                         <Image xs={12} sm={4} md={3} src="images/profile-pic.jpg" alt="My Photo" thumbnail />
                     </Col>
-                    <Col xs={12} sm={5} md={6} className="content-aboutMe">
+                    <Col xs={12} sm={5} md={6} className="content-about-me">
                         <h3>About Me</h3>
                         <p className="justifyParagraph">
                             I am a Senior Software Developer at Giftbit, a company that offers innovative solutions for digital gift cards and rewards.
@@ -19,7 +19,7 @@ const Contact = () => {
                             Some of the main technologies I have used in my career include Spring Boot, Java, Kubernetes, ReactJS, GoLang, and Kotlin.
                         </p>
                     </Col>
-                    <Col xs={12} sm={3} md={3} className="content-aboutMe">
+                    <Col xs={12} sm={3} md={3}>
                         <h3>Contact Information</h3>
                         <Col xs={12} md={12}>
                             <address>
