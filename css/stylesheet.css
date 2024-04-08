@@ -98,6 +98,11 @@ a:hover,
   box-shadow: none;
 }
 
+.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .img-icon-contacts {
   width: 30px;
   height: 30px;
