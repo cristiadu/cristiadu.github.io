@@ -40,6 +40,10 @@
 		"text": "Kubernetes"
 	},
 	{
+		"image": "skills/grails.png",
+		"text": "Grails Framework"
+	},
+	{
 		"image": "skills/nosql.png",
 		"text": "NoSQL Databases"
 	},
@@ -56,12 +60,12 @@
 		"text": "Scrum Agile Methodology"
 	},
 	{
-		"image": "skills/maven.png",
-		"text": "Maven"
+		"image": "skills/java-package-managers.png",
+		"text": "Maven & Gradle"
 	},
 	{
-		"image": "skills/jenkins-pipeline.png",
-		"text": "Jenkins Pipeline"
+		"image": "skills/ci-tools.png",
+		"text": "Github Actions & Jenkins Pipeline"
 	},
 	{
 		"image": "skills/test-automation.png",
