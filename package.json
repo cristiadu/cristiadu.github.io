@@ -4,7 +4,8 @@
     "description": "Cristiano Faustino: Portfolio",
     "scripts": {
         "start": "webpack-dev-server --mode development --open",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "update-dependencies": "npx npm-check-updates -u"
     },
     "dependencies": {
         "axios": "^1.7.9",
