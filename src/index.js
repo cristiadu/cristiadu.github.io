@@ -1,5 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import PortfolioApp from './PortfolioApp.jsx';
 
-ReactDOM.render(<PortfolioApp />, document.getElementById('root'))
+ReactDOM
+    .createRoot(document.getElementById('root'))
+    .render(<PortfolioApp />);
