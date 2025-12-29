@@ -6,6 +6,10 @@
   --borders-color: #70A9A1;
   --text-header-color: #0b2027;
   --text-content-color: #f6f1d1;
+  
+  /* Transition variables */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.3s ease-in-out;
 }
 
 html {
@@ -18,7 +22,7 @@ body {
   color: var(--text-content-color);
   margin-bottom: 50px;
   padding-top: 100px;
-  font-size: 0.96em; /* Adjust as needed */
+  font-size: 0.96em;
 }
 
 body h1 {
@@ -30,7 +34,6 @@ footer {
   border-top: 1px solid var(--borders-color);
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 40px;
   background-color: var(--secondary-bg-color);
   color: var(--text-content-color);
@@ -45,25 +48,38 @@ footer .container-fluid {
 
 a {
   color: var(--text-content-color);
+  transition: color var(--transition-fast);
 }
 
 #menu h1,
 #menu a {
   color: var(--text-header-color);
-  font-family: Century Gothic, sans-serif;
+  font-family: 'Century Gothic', 'Apple Gothic', 'URW Gothic L', sans-serif;
   text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
 #menu h1:hover,
 #menu a:hover {
   text-decoration: none;
 }
-
 
 a:hover,
 #menu h1:hover,
 #menu a:hover {
   color: var(--borders-color);
+}
+
+/* Focus states for accessibility */
+a:focus,
+.navbar-toggler:focus,
+.accordion-button:focus {
+  outline: 2px solid var(--borders-color);
+  outline-offset: 2px;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 2px var(--borders-color);
 }
 
 .about-me {
@@ -81,9 +97,15 @@ a:hover,
   padding-bottom: 9px;
   margin: 40px 0 20px;
 }
+
 .accordion-button:after,
 .accordion-button:not(.collapsed)::after {
   background-image: none;
+}
+
+.accordion-button i {
+  transition: transform var(--transition-fast);
+  margin-right: 8px;
 }
 
 .card-body {
@@ -96,6 +118,11 @@ a:hover,
   color: var(--text-content-color);
   background-color: var(--secondary-bg-color);
   box-shadow: none;
+  transition: background-color var(--transition-fast);
+}
+
+.accordion-button:hover {
+  background-color: var(--tertiary-bg-color);
 }
 
 .content {
@@ -106,6 +133,12 @@ a:hover,
 .img-icon-contacts {
   width: 30px;
   height: 30px;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.img-icon-contacts:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .content-about-me {
@@ -118,7 +151,6 @@ a:hover,
 }
 
 /*  clear bootstrap header colors */
-
 .navbar {
   background: var(--primary-bg-color);
   border-color: var(--borders-color);
@@ -130,6 +162,10 @@ a:hover,
   border-color: var(--borders-color);
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.navbar-collapse {
+  transition: height var(--transition-medium);
 }
 
 .navbar-toggler-icon {
@@ -162,6 +198,12 @@ a:hover,
 .skill-item {
   margin: 10px;
   padding: 5px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .me-auto a {
@@ -171,5 +213,19 @@ a:hover,
 @media (max-width: 991.98px) {
   #menu h1 {
     margin-top: 15px;
+  }
+  
+  .me-auto {
+    padding: 10px 0;
+  }
+  
+  .me-auto a {
+    display: block;
+    padding: 12px 8px;
+    border-bottom: 1px solid var(--borders-color);
+  }
+  
+  .me-auto a:last-child {
+    border-bottom: none;
   }
 }

@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Col, Card } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Col, Card } from 'react-bootstrap'
 
 const Skill = ({ skill }) => {
-    return ( 
-        <Col md={4} sm={4} xs={6}>
-            <Card className="skill-item">
-                <Card.Img variant="top" src={'images/' + skill.image} alt={skill.text} />
-            </Card>
-        </Col>
-    );
-};
+  return ( 
+    <Col md={4} sm={4} xs={6}>
+      <Card className="skill-item">
+        <Card.Img variant="top" src={'images/' + skill.image} alt={skill.text} />
+      </Card>
+    </Col>
+  )
+}
 
 Skill.propTypes = {
-    skill: PropTypes.shape({
-        image: PropTypes.string.isRequired,
-        text: PropTypes.string.isRequired,
-    }).isRequired,
-};
+  skill: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired
+  }).isRequired
+}
 
-export default Skill;
+export default Skill

@@ -1,7 +1,7 @@
-import React from 'react';
-import HeaderNavBar from './components/layout/HeaderNavBar';
-import Footer from './components/layout/Footer';
-import MainContent from './components/layout/MainContent';
+import React from 'react'
+import HeaderNavBar from '@layout/HeaderNavBar'
+import Footer from '@layout/Footer'
+import MainContent from '@layout/MainContent'
 
 const PortfolioApp = () => {
   return (
@@ -10,7 +10,7 @@ const PortfolioApp = () => {
       <MainContent />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default PortfolioApp;
+export default PortfolioApp
