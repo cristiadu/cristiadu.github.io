@@ -12,10 +12,10 @@ const HeaderNavBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <NavLink href="https://drive.google.com/file/d/1cD4wZK0Z4qqOXOH_8XwoIVWl1uVh9lZ-/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i className="fa fa-user"></i> Resume</NavLink>
-              <Link to="projects" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-cogs"></i> Projects</Link>
-              <Link to="skills" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-chess-rook"></i> Skills</Link>
-              <NavLink href="https://www.linkedin.com/in/cristianofaustino/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> LinkedIn</NavLink>
-              <Link to="contact" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-commenting-o"></i> Contact</Link>
+              <Link as="a" to="projects" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-cogs"></i> Projects</Link>
+              <Link as="a" to="skills" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-chess-rook"></i> Skills</Link>
+              <NavLink as="a" href="https://www.linkedin.com/in/cristianofaustino/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> LinkedIn</NavLink>
+              <Link as="a" to="contact" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-commenting-o"></i> Contact</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

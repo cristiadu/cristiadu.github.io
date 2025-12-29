@@ -1,7 +1,7 @@
 import React from 'react'
-import Project from '@components/Project'
+import Project from '@/components/Project'
 import { Accordion, Container, Row } from 'react-bootstrap'
-import useJsonData from '@hooks/useJsonData'
+import useJsonData from '@/hooks/useJsonData'
 
 const ProjectList = () => {
   const { data: projectList, loading, error } = useJsonData('json/projects.json')

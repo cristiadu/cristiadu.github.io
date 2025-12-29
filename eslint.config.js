@@ -62,7 +62,7 @@ export default [
         patterns: [
           {
             group: ['../*'],
-            message: 'Use path aliases instead of relative imports (e.g., @components, @hooks, @layout)'
+            message: 'Use @/ alias instead of relative imports (e.g., @/components, @/hooks)'
           }
         ]
       }]

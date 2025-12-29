@@ -1,7 +1,7 @@
 import React from 'react'
-import Skill from '@components/Skill'
+import Skill from '@/components/Skill'
 import { Container, Row } from 'react-bootstrap'
-import useJsonData from '@hooks/useJsonData'
+import useJsonData from '@/hooks/useJsonData'
 
 const SkillsList = () => {
   const { data: skillsList, loading, error } = useJsonData('json/skills.json')

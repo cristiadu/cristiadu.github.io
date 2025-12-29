@@ -48,10 +48,7 @@ export default {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@hooks': path.resolve(__dirname, 'src/hooks'),
-      '@layout': path.resolve(__dirname, 'src/components/layout')
+      '@': path.resolve(__dirname, 'src')
     }
   },
   devServer: {

@@ -1,7 +1,7 @@
 import React from 'react'
-import HeaderNavBar from '@layout/HeaderNavBar'
-import Footer from '@layout/Footer'
-import MainContent from '@layout/MainContent'
+import HeaderNavBar from '@/components/layout/HeaderNavBar'
+import Footer from '@/components/layout/Footer'
+import MainContent from '@/components/layout/MainContent'
 
 const PortfolioApp = () => {
   return (
