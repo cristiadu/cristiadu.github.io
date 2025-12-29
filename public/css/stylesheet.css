@@ -122,7 +122,7 @@ a:focus,
 }
 
 .accordion-button:hover {
-  background-color: var(--tertiary-bg-color);
+  background-color: var(--borders-color);
 }
 
 .content {
