@@ -13,7 +13,7 @@ describe('ProjectList', () => {
 
     render(<ProjectList />)
 
-    expect(screen.getByText('Jobs & Projects')).toBeInTheDocument()
+    expect(screen.getByText('Career')).toBeInTheDocument()
   })
 
   it('shows loading state', () => {
@@ -21,7 +21,7 @@ describe('ProjectList', () => {
 
     render(<ProjectList />)
 
-    expect(screen.getByText('Loading projects...')).toBeInTheDocument()
+    expect(screen.getByText('Loading career history...')).toBeInTheDocument()
   })
 
   it('shows error state', () => {
@@ -29,7 +29,7 @@ describe('ProjectList', () => {
 
     render(<ProjectList />)
 
-    expect(screen.getByText('Failed to load projects: Network error')).toBeInTheDocument()
+    expect(screen.getByText(/Failed to load career history/)).toBeInTheDocument()
   })
 
   it('renders projects when data is loaded', () => {
@@ -66,13 +66,20 @@ describe('ProjectList', () => {
     expect(screen.getByText('Project 2')).toBeInTheDocument()
   })
 
-  it('has correct article id for navigation', () => {
+  it('has correct section id for navigation', () => {
     useJsonData.mockReturnValue({ data: [], loading: false, error: null })
 
     render(<ProjectList />)
 
-    const article = document.querySelector('#projects')
-    expect(article).toBeInTheDocument()
+    const section = document.querySelector('#career')
+    expect(section).toBeInTheDocument()
+  })
+
+  it('renders subhead text', () => {
+    useJsonData.mockReturnValue({ data: [], loading: false, error: null })
+
+    render(<ProjectList />)
+
+    expect(screen.getByText('Click any headline to read the full story')).toBeInTheDocument()
   })
 })
-

@@ -13,7 +13,7 @@ describe('SkillsList', () => {
 
     render(<SkillsList />)
 
-    expect(screen.getByText('Main Skills')).toBeInTheDocument()
+    expect(screen.getByText('Skills')).toBeInTheDocument()
   })
 
   it('shows loading state', () => {
@@ -29,7 +29,7 @@ describe('SkillsList', () => {
 
     render(<SkillsList />)
 
-    expect(screen.getByText('Failed to load skills: Failed to fetch')).toBeInTheDocument()
+    expect(screen.getByText(/Failed to load skills/)).toBeInTheDocument()
   })
 
   it('renders skills when data is loaded', () => {
@@ -46,13 +46,12 @@ describe('SkillsList', () => {
     expect(screen.getByAltText('Java')).toBeInTheDocument()
   })
 
-  it('has correct article id for navigation', () => {
+  it('has correct section id for navigation', () => {
     useJsonData.mockReturnValue({ data: [], loading: false, error: null })
 
     render(<SkillsList />)
 
-    const article = document.querySelector('#skills')
-    expect(article).toBeInTheDocument()
+    const section = document.querySelector('#skills')
+    expect(section).toBeInTheDocument()
   })
 })
-

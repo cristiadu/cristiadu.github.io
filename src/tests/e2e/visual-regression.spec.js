@@ -8,10 +8,9 @@ test.describe('Page Content Tests', () => {
 
   test('renders all main sections', async ({ page }) => {
     await expect(page.locator('header')).toContainText('Cristiano Faustino')
-    await expect(page.getByText('About Me')).toBeVisible()
-    await expect(page.getByText('Contact Information')).toBeVisible()
-    await expect(page.getByText('Jobs & Projects')).toBeVisible()
-    await expect(page.getByText('Main Skills')).toBeVisible()
+    await expect(page.getByText(/Senior Software Engineer/)).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Career' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Skills' })).toBeVisible()
 
     const currentYear = new Date().getFullYear()
     await expect(page.locator('footer')).toContainText(`© ${currentYear}`)
@@ -19,25 +18,19 @@ test.describe('Page Content Tests', () => {
 
   test('renders header navigation with all links', async ({ page }) => {
     const header = page.locator('header')
-    const menuToggle = header.locator('.navbar-toggler')
-
-    if (await menuToggle.isVisible()) {
-      await menuToggle.click()
-      await page.locator('.navbar-collapse.show').waitFor({ state: 'visible' })
-    }
 
     await expect(header.getByText(/Resume/)).toBeVisible()
-    await expect(header.getByText(/Projects/)).toBeVisible()
-    await expect(header.getByText(/Skills/)).toBeVisible()
+    await expect(header.getByText('About')).toBeVisible()
+    await expect(header.getByText('Career')).toBeVisible()
+    await expect(header.getByText('Skills')).toBeVisible()
     await expect(header.getByText(/LinkedIn/)).toBeVisible()
-    await expect(header.getByText(/Contact/)).toBeVisible()
   })
 
   test('renders contact section with profile image and social links', async ({ page }) => {
-    await expect(page.getByAltText('My Photo')).toBeVisible()
-    await expect(page.getByText(/Cristiano de Oliveira Faustino/)).toBeVisible()
+    await expect(page.getByAltText('Cristiano Faustino')).toBeVisible()
+    await expect(page.getByText(/Senior Software Developer at Giftbit/)).toBeVisible()
     await expect(page.getByRole('link', { name: 'Facebook' })).toBeVisible()
-    await expect(page.getByRole('link', { name: 'Github' })).toBeVisible()
+    await expect(page.getByRole('link', { name: 'GitHub' })).toBeVisible()
   })
 
   test('external links have security attributes', async ({ page }) => {
@@ -51,25 +44,25 @@ test.describe('Page Content Tests', () => {
 
   test('navigation links scroll to correct sections', async ({ page }) => {
     const header = page.locator('header')
-    const menuToggle = header.locator('.navbar-toggler')
 
-    const clickNavLink = async (linkPattern) => {
-      if (await menuToggle.isVisible()) {
-        await menuToggle.click()
-        await header.getByText(linkPattern).waitFor({ state: 'visible' })
-      }
-      await header.getByText(linkPattern).click()
-      await page.waitForTimeout(1000)
-    }
+    await header.getByText('Career').click()
+    await page.waitForTimeout(1000)
+    await expect(page.locator('#career')).toBeInViewport()
 
-    await clickNavLink(/Projects/)
-    await expect(page.locator('#projects')).toBeInViewport()
-
-    await clickNavLink(/Skills/)
+    await header.getByText('Skills').click()
+    await page.waitForTimeout(1000)
     await expect(page.locator('#skills')).toBeInViewport()
 
-    await clickNavLink(/Contact/)
-    await expect(page.locator('#contact')).toBeInViewport()
+    await header.getByText('About').click()
+    await page.waitForTimeout(1000)
+    await expect(page.locator('#about')).toBeInViewport()
+  })
+
+  test('contact bar is visible with contact info', async ({ page }) => {
+    const contactBar = page.locator('.contact-bar')
+    await expect(contactBar).toBeVisible()
+    await expect(contactBar.getByRole('link', { name: 'cristiadu@gmail.com' })).toBeVisible()
+    await expect(contactBar.getByText(/Victoria, British Columbia/)).toBeVisible()
   })
 })
 
@@ -77,7 +70,7 @@ test.describe('Visual Regression Tests', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
     await page.waitForLoadState('networkidle')
-    await page.locator('nav.navbar').waitFor({ state: 'visible' })
+    await page.locator('header.masthead').waitFor({ state: 'visible' })
     await page.waitForTimeout(300)
   })
 
@@ -89,13 +82,13 @@ test.describe('Visual Regression Tests', () => {
   })
 
   test('header navigation', async ({ page }) => {
-    const navbar = page.locator('nav.navbar')
-    await expect(navbar).toHaveScreenshot('header-nav.png')
+    const masthead = page.locator('header.masthead')
+    await expect(masthead).toHaveScreenshot('header-nav.png')
   })
 
   test('about me section', async ({ page }) => {
-    const aboutMe = page.locator('.about-me')
-    await aboutMe.scrollIntoViewIfNeeded()
+    const aboutSection = page.locator('article.lead-story')
+    await aboutSection.scrollIntoViewIfNeeded()
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('about-me-section.png', {
       fullPage: false,
@@ -104,8 +97,8 @@ test.describe('Visual Regression Tests', () => {
   })
 
   test('projects section', async ({ page }) => {
-    const projects = page.locator('#projects')
-    await projects.scrollIntoViewIfNeeded()
+    const career = page.locator('#career')
+    await career.scrollIntoViewIfNeeded()
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('projects-section.png', {
       fullPage: false,
@@ -134,7 +127,7 @@ test.describe('Visual Regression Tests', () => {
   })
 
   test('expanded project accordion', async ({ page }) => {
-    const firstProject = page.locator('.accordion .card').first()
+    const firstProject = page.locator('.archive-article').first()
     await firstProject.scrollIntoViewIfNeeded()
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('expanded-project.png', {
@@ -144,11 +137,11 @@ test.describe('Visual Regression Tests', () => {
   })
 
   test('collapsed project accordion', async ({ page }) => {
-    const firstProjectHeader = page.locator('.accordion-button').first()
+    const firstProjectHeader = page.locator('.archive-header').first()
     await firstProjectHeader.click()
     await page.waitForTimeout(500)
 
-    const firstProject = page.locator('.accordion .card').first()
+    const firstProject = page.locator('.archive-article').first()
     await firstProject.scrollIntoViewIfNeeded()
     await expect(page).toHaveScreenshot('collapsed-project.png', {
       fullPage: false,
@@ -162,7 +155,7 @@ test.describe('Responsive Layout Tests', () => {
     await page.setViewportSize({ width: 768, height: 1024 })
     await page.goto('/')
     await page.waitForLoadState('networkidle')
-    await page.locator('nav.navbar').waitFor({ state: 'visible' })
+    await page.locator('header.masthead').waitFor({ state: 'visible' })
     await page.waitForTimeout(300)
 
     await expect(page).toHaveScreenshot('tablet-layout.png', {
@@ -175,7 +168,7 @@ test.describe('Responsive Layout Tests', () => {
     await page.setViewportSize({ width: 375, height: 667 })
     await page.goto('/')
     await page.waitForLoadState('networkidle')
-    await page.locator('nav.navbar').waitFor({ state: 'visible' })
+    await page.locator('header.masthead').waitFor({ state: 'visible' })
     await page.waitForTimeout(300)
 
     await expect(page).toHaveScreenshot('mobile-layout.png', {
@@ -184,22 +177,18 @@ test.describe('Responsive Layout Tests', () => {
     })
   })
 
-  test('mobile navigation menu', async ({ page }) => {
+  test('mobile navigation wraps correctly', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 })
     await page.goto('/')
     await page.waitForLoadState('networkidle')
-    await page.locator('nav.navbar').waitFor({ state: 'visible' })
+    await page.locator('header.masthead').waitFor({ state: 'visible' })
     await page.waitForTimeout(300)
 
-    const menuToggle = page.locator('.navbar-toggler')
-    await menuToggle.click()
-    await page.locator('.navbar-collapse.show').waitFor({ state: 'visible' })
-    await page.waitForTimeout(300)
-
+    const nav = page.locator('nav.masthead-nav')
+    await expect(nav).toBeVisible()
     await expect(page).toHaveScreenshot('mobile-menu-open.png', {
       fullPage: false,
       animations: 'disabled'
     })
   })
 })
-
