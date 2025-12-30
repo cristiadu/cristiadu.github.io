@@ -1,32 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Skill from './Skill';
-import { Container, Row } from 'react-bootstrap';
+import React from 'react'
+import Skill from '@/components/Skill'
+import { Container, Row } from 'react-bootstrap'
+import useJsonData from '@/hooks/useJsonData'
 
-// Create component that renders all skills from the json file
 const SkillsList = () => {
-    const [skillsList, setSkillsList] = useState([]);
-    useEffect(() => {
-        axios.get('json/skills.json')
-            .then(response => {
-                setSkillsList(response.data);
-            });
-    }, []);
+  const { data: skillsList, loading, error } = useJsonData('json/skills.json')
 
-    return (
-        <Container as="article" id="skills">
-            <Row>
-                <div className="page-header">
-                    <h1>Main Skills</h1>
-                </div>
-            </Row>
-            <Row>
-                {skillsList.map(skill => (
-                    <Skill skill={skill} key={skill.text} />
-                ))}
-            </Row>
-        </Container>
-    );
-};
+  const renderContent = () => {
+    if (loading) {
+      return <p>Loading skills...</p>
+    }
 
-export default SkillsList;
+    if (error) {
+      return <p>Failed to load skills: {error}</p>
+    }
+
+    return skillsList.map(skill => (
+      <Skill skill={skill} key={skill.text} />
+    ))
+  }
+
+  return (
+    <Container as="article" id="skills">
+      <Row>
+        <div className="page-header">
+          <h1>Main Skills</h1>
+        </div>
+      </Row>
+      <Row>
+        {renderContent()}
+      </Row>
+    </Container>
+  )
+}
+
+export default SkillsList

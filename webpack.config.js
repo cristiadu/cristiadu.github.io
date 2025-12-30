@@ -1,12 +1,16 @@
-const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+import path from 'path'
+import { fileURLToPath } from 'url'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
 
-module.exports = {
-  entry: "./src/index.js", // Entry point of your application
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+export default {
+  entry: './src/index.js',
+  devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-
       template: 'public/index.html'
     }),
     new CopyWebpackPlugin({
@@ -15,13 +19,13 @@ module.exports = {
         { from: 'public/images', to: 'images' },
         { from: 'public/json', to: 'json' },
         { from: 'favicon.ico', to: 'favicon.ico' },
-        { from: 'CNAME' },
+        { from: 'CNAME' }
       ]
-    }),
+    })
   ],
   output: {
-    filename: "bundle.js", // Output bundle file name
-    path: path.resolve(__dirname, "dist"), // Output directory
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -29,25 +33,28 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'], // Add this line
-          },
-        },
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
+        use: ['style-loader', 'css-loader']
+      }
+    ]
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['.js', '.jsx'],
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
   },
   devServer: {
-    static: path.join(__dirname, "public"), // Serve files from this directory
-    port: 3000, // Port for the development server
-    open: true, // Open the default web browser when the server starts
+    static: path.join(__dirname, 'public'),
+    port: 3000,
+    open: true,
     hot: true
-  },
-};
+  }
+}
