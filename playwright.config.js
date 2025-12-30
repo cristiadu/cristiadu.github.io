@@ -1,4 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
+import os from 'os'
+
+const platform = os.platform()
 
 export default defineConfig({
   testDir: './src/tests/e2e',
@@ -27,6 +30,6 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI,
     timeout: 120000
   },
-  snapshotPathTemplate: '{testDir}/__screenshots__/{projectName}/{arg}{ext}'
+  snapshotPathTemplate: `{testDir}/__screenshots__/${platform}/{projectName}/{arg}{ext}`
 })
 
