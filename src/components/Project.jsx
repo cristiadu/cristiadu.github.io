@@ -1,43 +1,65 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Accordion, Image, Row, Col, Card } from 'react-bootstrap'
 
 const Project = ({ project }) => {
-  const [isActive, setIsActive] = useState(project.activeItem === 'in')
+  const [isExpanded, setIsExpanded] = useState(project.activeItem === 'in')
 
-  const toggleActive = () => {
-    setIsActive(!isActive)
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded)
+  }
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      toggleExpanded()
+    }
   }
 
   return (
-    <Card>
-      <Accordion.Button as={Card.Header} key={project.id} onClick={toggleActive} >
-        <i className={`fa ${isActive ? 'fa-minus' : 'fa-plus'}`}></i>&nbsp;
-        {project.name}
-      </Accordion.Button>
-      <Accordion.Collapse as={Card.Body} in={isActive} eventKey={project.id}>
-        <Row>
-          <Col xs={12} md={8} sm={8}>
-            <strong>Company:</strong> {project.company}
-          </Col>
-          <Col xs={12} md={4} sm={4} className="text-md-end">
-            <strong>Type:</strong> {project.type}
-          </Col>
-          <Col xs={12} md={3} sm={4}>
-            <strong>Started:</strong> {project.startDate}
-          </Col>
-          <Col xs={12} md={3} sm={4}>
-            <strong>Ended:</strong> {project.endDate}
-          </Col>
-          <Col xs={12} md={{ span: 6, offset: 3 }} sm={{ span: 7, offset: 2 }} className="vspacing-project-img">
-            <Image src={'images/' + project.imagePrincipal} fluid />
-          </Col>
-          <Col xs={12} md={12}>
-            <div className="justifyParagraph" dangerouslySetInnerHTML={{ __html: project.descriptionHTML }} />
-          </Col>
-        </Row>
-      </Accordion.Collapse>
-    </Card>
+    <article className="archive-article">
+      <div 
+        className="archive-header" 
+        onClick={toggleExpanded}
+        onKeyDown={handleKeyDown}
+        role="button"
+        tabIndex={0}
+        aria-expanded={isExpanded}
+      >
+        <span className={`archive-toggle ${isExpanded ? 'expanded' : ''}`}>
+          ▸
+        </span>
+        <div className="archive-header-content">
+          <h3 className="archive-headline">{project.name}</h3>
+          <div className="archive-meta">
+            <span>{project.startDate} – {project.endDate}</span>
+            <span>{project.company}</span>
+            <span>{project.type}</span>
+          </div>
+        </div>
+      </div>
+      
+      <div className={`archive-body ${isExpanded ? 'expanded' : ''}`}>
+        <div className="archive-body-inner">
+          <img 
+            src={'images/' + project.imagePrincipal} 
+            alt={project.company}
+            className="archive-image"
+          />
+          <div className="archive-description">
+            <div dangerouslySetInnerHTML={{ __html: project.descriptionHTML }} />
+            <span 
+              className="archive-fold" 
+              onClick={toggleExpanded}
+              onKeyDown={handleKeyDown}
+              role="button"
+              tabIndex={0}
+            >
+              ↑ Fold story
+            </span>
+          </div>
+        </div>
+      </div>
+    </article>
   )
 }
 

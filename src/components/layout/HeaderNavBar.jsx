@@ -1,25 +1,43 @@
 import React from 'react'
-import { Navbar, Container, Nav, NavLink } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 
 const HeaderNavBar = () => {
+  const currentDate = new Date().toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+
   return (
-    <header>
-      <Navbar fixed="top" expand="lg" collapseOnSelect as="nav" id="menu" key="menu">
-        <Container fluid>
-          <Navbar.Brand href="index.html"><h1>Cristiano Faustino</h1></Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <NavLink href="https://drive.google.com/file/d/1cD4wZK0Z4qqOXOH_8XwoIVWl1uVh9lZ-/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i className="fa fa-user"></i> Resume</NavLink>
-              <Link as="a" to="projects" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-cogs"></i> Projects</Link>
-              <Link as="a" to="skills" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-chess-rook"></i> Skills</Link>
-              <NavLink as="a" href="https://www.linkedin.com/in/cristianofaustino/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> LinkedIn</NavLink>
-              <Link as="a" to="contact" spy={true} smooth={true} offset={-100} duration={900}><i className="fa fa-commenting-o"></i> Contact</Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <header className="masthead">
+      <div className="masthead-inner">
+        <div className="masthead-top">
+          <span>Software Developer Since 2010</span>
+          <span>{currentDate}</span>
+        </div>
+        
+        <h1 className="masthead-title">Cristiano Faustino</h1>
+        <p className="masthead-subtitle">Senior Software Developer</p>
+        
+        <nav className="masthead-nav">
+          <Link to="about" spy={true} smooth={true} offset={-20} duration={900}>
+            About
+          </Link>
+          <Link to="career" spy={true} smooth={true} offset={-20} duration={900}>
+            Career
+          </Link>
+          <Link to="skills" spy={true} smooth={true} offset={-20} duration={900}>
+            Skills
+          </Link>
+          <a href="https://drive.google.com/file/d/1cD4wZK0Z4qqOXOH_8XwoIVWl1uVh9lZ-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Resume ↗
+          </a>
+          <a href="https://www.linkedin.com/in/cristianofaustino/" target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗
+          </a>
+        </nav>
+      </div>
     </header>
   )
 }

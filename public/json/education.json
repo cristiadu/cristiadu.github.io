@@ -1,0 +1,47 @@
+[
+	{
+		"degreeType": "Micro-certificate",
+		"field": "Key Capabilities for Data Science",
+		"institution": "University of British Columbia",
+		"institutionShort": "UBC",
+		"location": "Vancouver, Canada",
+		"yearFrom": 2024,
+		"yearTo": 2025
+	},
+	{
+		"degreeType": "Specialization",
+		"field": "Software Engineering",
+		"institution": "UNICAMP",
+		"institutionShort": "UNICAMP",
+		"location": "Campinas, Brazil",
+		"yearFrom": 2018,
+		"yearTo": 2018
+	},
+	{
+		"degreeType": "Bachelor of Science",
+		"field": "Computer Science",
+		"institution": "Federal University of São Carlos",
+		"institutionShort": "UFSCar",
+		"location": "São Carlos, Brazil",
+		"yearFrom": 2011,
+		"yearTo": 2015
+	},
+	{
+		"degreeType": "Exchange Program",
+		"field": "Computer Science",
+		"institution": "University of California, San Diego",
+		"institutionShort": "UCSD",
+		"location": "San Diego, USA",
+		"yearFrom": 2014,
+		"yearTo": 2014
+	},
+	{
+		"degreeType": "Technical Degree",
+		"field": "Computer Science",
+		"institution": "Technical College - UNICAMP",
+		"institutionShort": "Cotil",
+		"location": "Limeira, São Paulo, Brazil",
+		"yearFrom": 2007,
+		"yearTo": 2009
+	}
+]

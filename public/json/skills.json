@@ -1,82 +1,101 @@
 [
 	{
 		"image": "skills/java.png",
-		"text": "Java & Kotlin"
+		"text": "Java & Kotlin",
+		"years": 7
 	},
 	{
 		"image": "skills/spring.png",
-		"text": "Spring Framework"
+		"text": "Spring / Spring Boot",
+		"years": 6
 	},
 	{
 		"image": "skills/js.png",
-		"text": "Javascript"
+		"text": "Javascript",
+		"years": 7
 	},
 	{
 		"image": "skills/aws_gcp.png",
-		"text": "AWS & Google Cloud Platforms"
+		"text": "AWS & Google Cloud",
+		"years": 7
 	},
 	{
 		"image": "skills/go-lang.png",
-		"text": "Go Lang"
+		"text": "Go Lang",
+		"years": 6
 	},
 	{
 		"image": "skills/reactjs.png",
-		"text": "React.js"
+		"text": "React.js",
+		"years": 6
 	},
 	{
 		"image": "skills/python.png",
-		"text": "Python"
+		"text": "Python",
+		"years": 3
 	},
 	{
 		"image": "skills/bash.png",
-		"text": "Bash Scripting"
+		"text": "Bash Scripting",
+		"years": 6
 	},
 	{
 		"image": "skills/terraform.png",
-		"text": "Terraform"
+		"text": "Terraform",
+		"years": 5
 	},
 	{
 		"image": "skills/kubernetes.png",
-		"text": "Kubernetes"
+		"text": "Kubernetes",
+		"years": 4
 	},
 	{
 		"image": "skills/grails.png",
-		"text": "Grails Framework"
+		"text": "Grails Framework",
+		"years": 2
 	},
 	{
 		"image": "skills/nosql.png",
-		"text": "NoSQL Databases"
+		"text": "DynamoDB & NoSQL",
+		"years": 2
 	},
 	{
 		"image": "skills/sql.png",
-		"text": "SQL Databases"
+		"text": "SQL Databases",
+		"years": 7
 	},
 	{
 		"image": "skills/helm.png",
-		"text": "Helm Charts"
+		"text": "Helm Charts",
+		"years": 4
 	},
 	{
 		"image": "skills/scrum.png",
-		"text": "Scrum Agile Methodology"
+		"text": "Scrum Agile",
+		"years": 10
 	},
 	{
 		"image": "skills/java-package-managers.png",
-		"text": "Maven & Gradle"
+		"text": "Maven & Gradle",
+		"years": 7
 	},
 	{
 		"image": "skills/ci-tools.png",
-		"text": "Github Actions & Jenkins Pipeline"
+		"text": "CI/CD Pipelines",
+		"years": 8
 	},
 	{
 		"image": "skills/test-automation.png",
-		"text": "JBehave & Robot Framework"
+		"text": "Test Automation",
+		"years": 10
 	},
 	{
 		"image": "skills/devops.png",
-		"text": "DevOps Tools"
+		"text": "OpenAPI / Swagger",
+		"years": 5
 	},
 	{
 		"image": "skills/languages.png",
-		"text": "Speak Portuguese & English"
+		"text": "Portuguese & English"
 	}
 ]

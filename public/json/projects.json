@@ -8,7 +8,7 @@
 		"endDate": "Current Job",
 		"imagePrincipal": "projects/giftbit.png",
 		"activeItem": "in",
-		"descriptionHTML": "<p>I'm currently a member of the team at Giftbit, a platform dedicated to providing rewarding experiences. My work arrangement is flexible, primarily remote, with occasional visits to our office in Victoria, BC.</p><p>Our small development team is committed to creating the software that ensures the Giftbit platform is reliable and user-friendly. We utilize a diverse tech stack, including the Grails Framework for backend APIs, ReactJS for the frontend, and GoLang/Python for our tooling. We also leverage AWS for cloud-based development and Github Actions for our CICD pipeline.</p><p>In my role, I engage with all aspects of the app, handling tasks related to frontend (ReactJS), backend (Grails/Groovy), and platform/tooling (GoLang, AWS, Github Actions). A significant portion of my time is devoted to API development, with focus on both public APIs and our own internal APIs, which are primarily built using Grails/Groovy. I also take a leadership role in the implementation of new features by designing the architecture, creating tasks, and discussing approaches with all developers involved.</p>"
+		"descriptionHTML": "<p>Senior developer at Giftbit, which provides a payouts ordering and delivery platform (gift cards, prepaid cards, etc.), based at the KWENCH co-working space in Victoria, BC. Currently contributing to the full rebuild of our V2 platform from the ground up.</p><p>In this complete redesign, we're developing APIs in GoLang and creating our frontend with NextJS, while incorporating services like Stytch (Authentication), Datadog (Monitoring), and AWS (Cloud infrastructure). Our development approach emphasizes Infrastructure as Code (IaC) principles and relies on OpenAPI Specifications as the single source of truth for all API definitions, using Github Actions to power our CICD pipeline.</p><p>Within our team, I provide leadership and guidance on the establishment of API standards and patterns as we move to pursue an \"API-first\" architecture. This approach ensures our platform is truly integration-friendly, allowing external developers to accomplish through our Public API everything that's possible in our user interface. I contribute across frontend, backend, and infrastructure components while helping design the architecture and implementation of new features throughout our platform.</p>"
 	},
 	{
 		"id": "ea-captech",
@@ -18,7 +18,7 @@
 		"startDate": "Apr 2022",
 		"endDate": "Jun 2023",
 		"imagePrincipal": "projects/ea.png",
-		"descriptionHTML": "<p>Working, remotely, as a Full-stack Software Engineer/SRE.</p><p>Our team provided a framework used throughout multiple games. The framework abstract Kubernetes details and creates an easy way for clusters (AWS or GCP, as it's cloud agnostic) to have all services running properly. It includes both the Kubernetes infrastructure created (using Helm charts for templating & dependencies) as well as some of the common game services needed by multiple games (like anti-cheat services, for example).</p><p>Working as part of the team that maintains such framework, I added new features and supported existing ones. Some example of languages and technologies used are: Helm Charts, ArgoCD, Istio, Keycloak, Go Lang, Java, Kotlin, Typescript, and Python.</p>"
+		"descriptionHTML": "<p>Worked remotely as a Full-stack Software Engineer/SRE.</p><p>Our team provided a framework used throughout multiple games. The framework abstracts Kubernetes details and creates an easy way for clusters (AWS or GCP, as it's cloud agnostic) to have all services running properly. It includes both the Kubernetes infrastructure created (using Helm charts for templating & dependencies) as well as some of the common game services needed by multiple games (like anti-cheat services, for example).</p><p>I collaborated as a member of a framework maintenance team, responsible for enhancing existing features and providing support. I successfully tackled diverse challenges, utilizing multiple programming languages such as Go, Java, Kotlin, TypeScript, and Python to address the team's wide-ranging technological requirements.</p>"
 	},
 	{
 		"id": "daitan-group-ojo-labs",
@@ -28,7 +28,7 @@
 		"startDate": "Nov 2021",
 		"endDate": "Mar 2022",
 		"imagePrincipal": "projects/ojo.png",
-		"descriptionHTML": "<p>Working for OJO Labs as an Encora contractor (Encora being Daitan's parent company) as a Fullstack Engineer.</p><p>OJO Labs helps connect real-estate agents with potential house buyers/sellers using machine learning analysis based on customer preferences, as well as providing automated processes that connect both interested parties when sealing a house deal.</p><p>Currently developing software using Kotlin for Backend systems that manage orchestration and other parts of agent matching (listening and sending RabbitMQ events).</p><p>Also helping development on the Agent Tools system (built in ReactJS), which helps Agents to interact with OJO lead offer processes by setting their preferences for customers and accepting lead offers through the Agent Tools UI.</p>"
+		"descriptionHTML": "<p>Worked for OJO Labs as an Encora contractor (Encora being Daitan's parent company). OJO Labs connects real estate agents with potential buyers and sellers through machine learning–driven customer preference analysis and automated deal-matching processes.</p><p>Developed backend software in Kotlin for systems managing orchestration and agent matching, including RabbitMQ event handling. Also contributed to the Agent Tools system (built with ReactJS), which enables agents to manage customer preferences and accept lead offers through the web interface.</p>"
 	},
 	{
 		"id": "daitan-group-microservice-framework",
@@ -52,13 +52,13 @@
 	},
 	{
 		"id": "daitan-group-test",
-		"name": "Daitan Group: VOIP Testing",
+		"name": "Calix (through Daitan Group): Software Tester",
 		"company": "Daitan Group",
 		"type": "Full-time Employee",
 		"startDate": "Jan 2016",
 		"endDate": "Jun 2016",
 		"imagePrincipal": "projects/daitan-old.png",
-		"descriptionHTML": "<p>Worked with a client that is a major provider for network equipments around the globe.</p><p>Our team responsibilities were mainly test VOIP functionalities of the Optical Network Terminal (ONT) equipments that our client was releasing, assuring that the functionalities on the ONT embedded software were working as expected.</p><p>I worked on testing ONTs, verifying VOIP interactions between the equipments, following a Test plan, and looking at all the network packets and their specific info during a call. Protocols being used and tested include SIP, MGCP, and H.248.</p>"
+		"descriptionHTML": "<p>Worked with Calix, a major provider for network equipments around the globe, through Daitan Group as a contractor.</p><p>Our team responsibilities were mainly to test VOIP functionalities of the Optical Network Terminal (ONT) equipments that Calix was releasing, assuring that the functionalities on the ONT embedded software were working as expected.</p><p>I worked on testing ONTs, verifying VOIP interactions between the equipments, following a Test plan, and looking at all the network packets and their specific info during a call. Protocols being used and tested include SIP, MGCP, and H.248.</p>"
 	},
 	{
 		"id": "daitan-group-internship",

@@ -1,6 +1,5 @@
 import React from 'react'
 import Skill from '@/components/Skill'
-import { Container, Row } from 'react-bootstrap'
 import useJsonData from '@/hooks/useJsonData'
 
 const SkillsList = () => {
@@ -8,29 +7,29 @@ const SkillsList = () => {
 
   const renderContent = () => {
     if (loading) {
-      return <p>Loading skills...</p>
+      return <p className="loading-message">Loading skills...</p>
     }
 
     if (error) {
-      return <p>Failed to load skills: {error}</p>
+      return <p className="error-message">Failed to load skills: {error}</p>
     }
 
-    return skillsList.map(skill => (
-      <Skill skill={skill} key={skill.text} />
-    ))
+    return (
+      <div className="classifieds-grid">
+        {skillsList.map(skill => (
+          <Skill skill={skill} key={skill.text} />
+        ))}
+      </div>
+    )
   }
 
   return (
-    <Container as="article" id="skills">
-      <Row>
-        <div className="page-header">
-          <h1>Main Skills</h1>
-        </div>
-      </Row>
-      <Row>
-        {renderContent()}
-      </Row>
-    </Container>
+    <section className="classifieds-section" id="skills">
+      <div className="section-header">
+        <h2>Skills</h2>
+      </div>
+      {renderContent()}
+    </section>
   )
 }
 
