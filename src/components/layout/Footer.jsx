@@ -7,13 +7,12 @@ const Footer = () => {
   return (
     <footer>
       <Container fluid>
-        <Row>
-          <Col md={4}></Col>
-          <Col md={8}>
-            <Row>
-              <Col md={7} xs={12}>Cristiano Faustino&apos;s Portfolio © {currentYear}. All rights reserved.</Col>
-              <Col md={4} xs={12}>Email: <a href="mailto:cristiadu@gmail.com">cristiadu@gmail.com</a></Col>
-            </Row>
+        <Row className="justify-content-center align-items-center">
+          <Col md="auto" xs={12} className="text-center">
+            Cristiano Faustino&apos;s Portfolio © {currentYear}. All rights reserved.
+          </Col>
+          <Col md="auto" xs={12} className="text-center">
+            Email: <a href="mailto:cristiadu@gmail.com">cristiadu@gmail.com</a>
           </Col>
         </Row>
       </Container>
