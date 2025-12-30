@@ -69,4 +69,40 @@ describe('Project', () => {
 
     expect(screen.getByText('↑ Fold story')).toBeInTheDocument()
   })
+
+  it('toggles accordion on Enter key press', () => {
+    render(<Project project={mockProject} />)
+
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).toHaveClass('expanded')
+
+    const header = document.querySelector('.archive-header')
+    fireEvent.keyDown(header, { key: 'Enter' })
+
+    expect(toggle).not.toHaveClass('expanded')
+  })
+
+  it('toggles accordion on Space key press', () => {
+    render(<Project project={mockProject} />)
+
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).toHaveClass('expanded')
+
+    const header = document.querySelector('.archive-header')
+    fireEvent.keyDown(header, { key: ' ' })
+
+    expect(toggle).not.toHaveClass('expanded')
+  })
+
+  it('does not toggle accordion on other key press', () => {
+    render(<Project project={mockProject} />)
+
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).toHaveClass('expanded')
+
+    const header = document.querySelector('.archive-header')
+    fireEvent.keyDown(header, { key: 'Tab' })
+
+    expect(toggle).toHaveClass('expanded')
+  })
 })
