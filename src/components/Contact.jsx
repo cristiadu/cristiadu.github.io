@@ -17,7 +17,7 @@ const Contact = () => {
           
           <div className="lead-content">
             <img 
-              src="images/profile-pic.jpg" 
+              src="images/profile-pic.png" 
               alt="Cristiano Faustino" 
               className="lead-photo" 
             />
@@ -45,13 +45,7 @@ const Contact = () => {
         
         <aside className="lead-sidebar">
           <Experience />
-
-          <div className="sidebar-section">
-            <h3 className="sidebar-title">Education</h3>
-            <div className="sidebar-content">
-              <EducationList />
-            </div>
-          </div>
+          <EducationList />
         </aside>
       </article>
 

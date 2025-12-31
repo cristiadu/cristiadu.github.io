@@ -27,7 +27,7 @@ describe('Contact', () => {
 
     const image = screen.getByAltText('Cristiano Faustino')
     expect(image).toBeInTheDocument()
-    expect(image).toHaveAttribute('src', 'images/profile-pic.jpg')
+    expect(image).toHaveAttribute('src', 'images/profile-pic.png')
   })
 
   it('renders lead headline', () => {
@@ -55,10 +55,9 @@ describe('Contact', () => {
     expect(screen.getByTestId('experience')).toBeInTheDocument()
   })
 
-  it('renders Education section with EducationList', () => {
+  it('renders EducationList component', () => {
     render(<Contact />)
 
-    expect(screen.getByText('Education')).toBeInTheDocument()
     expect(screen.getByTestId('education-list')).toBeInTheDocument()
   })
 

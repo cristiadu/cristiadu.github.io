@@ -2,7 +2,7 @@
 	{
 		"image": "skills/java.png",
 		"text": "Java & Kotlin",
-		"years": 7
+		"years": 8
 	},
 	{
 		"image": "skills/spring.png",
@@ -11,13 +11,13 @@
 	},
 	{
 		"image": "skills/js.png",
-		"text": "Javascript",
-		"years": 7
+		"text": "Javascript & TypeScript",
+		"years": 8
 	},
 	{
 		"image": "skills/aws_gcp.png",
 		"text": "AWS & Google Cloud",
-		"years": 7
+		"years": 8
 	},
 	{
 		"image": "skills/go-lang.png",
@@ -27,7 +27,7 @@
 	{
 		"image": "skills/reactjs.png",
 		"text": "React.js",
-		"years": 6
+		"years": 7
 	},
 	{
 		"image": "skills/python.png",
@@ -42,7 +42,7 @@
 	{
 		"image": "skills/terraform.png",
 		"text": "Terraform",
-		"years": 5
+		"years": 6
 	},
 	{
 		"image": "skills/kubernetes.png",
@@ -56,8 +56,8 @@
 	},
 	{
 		"image": "skills/nosql.png",
-		"text": "DynamoDB & NoSQL",
-		"years": 2
+		"text": "DynamoDB & MongoDB",
+		"years": 3
 	},
 	{
 		"image": "skills/sql.png",
@@ -67,7 +67,7 @@
 	{
 		"image": "skills/helm.png",
 		"text": "Helm Charts",
-		"years": 4
+		"years": 2
 	},
 	{
 		"image": "skills/scrum.png",
@@ -91,8 +91,8 @@
 	},
 	{
 		"image": "skills/devops.png",
-		"text": "OpenAPI / Swagger",
-		"years": 5
+		"text": "GitOps & Infrastructure as Code",
+		"years": 8
 	},
 	{
 		"image": "skills/languages.png",
