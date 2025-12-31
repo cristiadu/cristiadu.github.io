@@ -14,11 +14,14 @@ const EducationList = () => {
   }
 
   return (
-    <>
-      {educationList.map((edu, index) => (
-        <Education key={index} education={edu} />
-      ))}
-    </>
+    <div className="sidebar-section">
+      <h3 className="sidebar-title">Education</h3>
+      <div className="sidebar-content">
+        {educationList.map((edu, index) => (
+          <Education key={index} education={edu} />
+        ))}
+      </div>
+    </div>
   )
 }
 

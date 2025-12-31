@@ -53,6 +53,7 @@ describe('EducationList', () => {
 
     render(<EducationList />)
 
+    expect(screen.getByText('Education')).toBeInTheDocument()
     const items = screen.getAllByTestId('education-item')
     expect(items).toHaveLength(2)
     expect(screen.getByText('Computer Science')).toBeInTheDocument()

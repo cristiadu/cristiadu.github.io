@@ -61,6 +61,6 @@ jobs:
           gh pr create \
             --title "chore: update playwright screenshots for linux" \
             --body "Automated update of Playwright screenshots for Linux." \
-            --base main \
+            --base "${{ github.ref_name }}" \
             --head "$BRANCH_NAME"
 
