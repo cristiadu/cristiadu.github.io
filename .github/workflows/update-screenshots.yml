@@ -43,5 +43,5 @@ jobs:
           git add src/tests/e2e/__screenshots__/
           git pull --rebase --autostash
           git commit -m "chore: update playwright screenshots for linux" || echo "No changes to commit"
-          git push
+          git push -f
 
