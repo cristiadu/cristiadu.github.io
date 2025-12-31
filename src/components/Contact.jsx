@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="lead-text">
               <p>
                 Cristiano Faustino is a Senior Software Developer at Giftbit in Victoria, BC, 
-                with over 15 years in software development. He&apos;s at his best when there&apos;s a good 
+                with over 12 years in software development. He&apos;s at his best when there&apos;s a good 
                 problem to solve—thriving on challenges and genuinely enjoying picking up new technologies 
                 along the way.
               </p>
