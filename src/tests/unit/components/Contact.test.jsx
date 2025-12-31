@@ -33,20 +33,20 @@ describe('Contact', () => {
   it('renders lead headline', () => {
     render(<Contact />)
 
-    expect(screen.getByText(/Senior Software Engineer Leads Platform Rebuild at Giftbit/)).toBeInTheDocument()
+    expect(screen.getByText(/Brazilian Software Engineer Leads Platform Rebuild at Giftbit/)).toBeInTheDocument()
   })
 
   it('renders lead byline', () => {
     render(<Contact />)
 
-    expect(screen.getByText(/A passionate developer building scalable, reliable systems/)).toBeInTheDocument()
+    expect(screen.getByText(/He loves to tackle challenges and learning new technologies/)).toBeInTheDocument()
   })
 
   it('renders about text content', () => {
     render(<Contact />)
 
     expect(screen.getByText(/Senior Software Developer at Giftbit/)).toBeInTheDocument()
-    expect(screen.getByText(/15 years of experience/)).toBeInTheDocument()
+    expect(screen.getByText(/15 years in software development/)).toBeInTheDocument()
   })
 
   it('renders Experience component', () => {
