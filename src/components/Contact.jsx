@@ -9,10 +9,10 @@ const Contact = () => {
       <article className="lead-story" id="about">
         <div className="lead-article">
           <h2 className="lead-headline">
-            Senior Software Engineer Leads Platform Rebuild at Giftbit
+            Brazilian Software Engineer Leads Platform Rebuild at Giftbit
           </h2>
           <p className="lead-byline">
-            Victoria, BC — A passionate developer building scalable, reliable systems
+            He loves to tackle challenges and learning new technologies
           </p>
           
           <div className="lead-content">
@@ -23,21 +23,21 @@ const Contact = () => {
             />
             <div className="lead-text">
               <p>
-                I&apos;m a Senior Software Developer at Giftbit, based in Victoria, British Columbia, 
-                Canada. I&apos;m a passionate professional who thrives on tackling challenges through 
-                technology, code, and logical reasoning.
+                Cristiano Faustino is a Senior Software Developer at Giftbit in Victoria, BC, 
+                with over 15 years in software development. He&apos;s at his best when there&apos;s a good 
+                problem to solve—thriving on challenges and genuinely enjoying picking up new technologies 
+                along the way.
               </p>
               <p>
-                With over 15 years of experience in full-stack web development, quality assurance, 
-                and software architecture, I provide technical and architectural leadership for 
-                new and existing products. I enjoy building scalable, reliable systems and 
-                continuously learning new technologies.
+                At Giftbit, he&apos;s currently leading the architecture and development of their V2 
+                platform—a full rebuild from the ground up. That means shaping the technical direction, 
+                building APIs in GoLang, defining infrastructure as code, and contributing to the NextJS 
+                frontend. It&apos;s the kind of project where every decision matters.
               </p>
               <p>
-                Experienced with Go, Java, TypeScript, ReactJS, Kubernetes, and Terraform, 
-                I&apos;m driven by creating innovative solutions that make an impact. At Giftbit, 
-                I&apos;m currently contributing to the full rebuild of our V2 platform from the 
-                ground up, developing APIs in GoLang and creating our frontend with NextJS.
+                Over the years, he&apos;s worked with Go, Java, TypeScript, ReactJS, Kubernetes, Terraform, 
+                and plenty more—though the specific stack matters less to him than the puzzle itself. 
+                New languages, new frameworks—that&apos;s the fun part.
               </p>
             </div>
           </div>

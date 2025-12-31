@@ -142,7 +142,7 @@ body {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
   line-height: 1.25;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.15rem 0;
   color: var(--ink-charcoal);
 }
 
@@ -150,7 +150,7 @@ body {
   font-family: var(--font-sans);
   font-size: 0.85rem;
   color: var(--accent-sage);
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
   font-style: italic;
   font-weight: 500;
 }
@@ -180,11 +180,11 @@ body {
 
 .lead-text p:first-of-type::first-letter {
   font-family: var(--font-headline);
-  font-size: 3.25rem;
+  font-size: 3.5rem;
   float: left;
-  line-height: 1;
-  padding-right: 0.5rem;
-  padding-top: 0.15rem;
+  line-height: 0.65;
+  padding-right: 0.35rem;
+  margin-top: 0.35rem;
   font-weight: 600;
   color: var(--accent-terracotta);
 }
@@ -330,9 +330,12 @@ body {
   height: 24px;
 }
 
-/* ========================================
-   SECTION HEADERS
-   ======================================== */
+#about,
+#career,
+#skills,
+#contact {
+  scroll-margin-top: 10rem;
+}
 
 .section-header {
   display: flex;
@@ -457,7 +460,7 @@ body {
 
 .archive-body.expanded {
   max-height: 2000px;
-  padding: 0 0 0.75rem 1.5rem;
+  padding: 0 0 0.75rem 1.75rem;
 }
 
 .archive-body-inner {
@@ -500,19 +503,16 @@ body {
   color: var(--accent-terracotta);
 }
 
-.archive-fold {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
+.archive-description a {
   color: var(--accent-wine);
-  cursor: pointer;
-  margin-top: 0.5rem;
-  display: inline-block;
-  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--rule-light);
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
 }
 
-.archive-fold:hover {
+.archive-description a:hover {
   color: var(--accent-terracotta);
-  text-decoration: underline;
+  text-decoration-color: var(--accent-terracotta);
 }
 
 .classifieds-section {
@@ -577,17 +577,13 @@ body {
   font-weight: 500;
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
-
 .newspaper-footer {
   background: var(--ink-charcoal);
   color: var(--paper-cream);
   text-align: center;
-  padding: 1.25rem;
+  padding: 0.75rem 1rem;
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .newspaper-footer a {
@@ -607,7 +603,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
