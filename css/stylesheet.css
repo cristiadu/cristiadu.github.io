@@ -672,6 +672,10 @@ a:focus,
     grid-template-columns: 1fr;
   }
   
+  .lead-article {
+    margin-top: 1rem;
+  }
+  
   .lead-photo {
     width: 215px;
     height: 215px;
