@@ -1,24 +1,27 @@
 # Cristiano Faustino's Portfolio
 
-This is the source code for the personal Portfolio published on https://cristianofaustino.me.
+[![CI](https://github.com/cristiadu/cristiadu.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/cristiadu/cristiadu.github.io/actions/workflows/ci.yml)
+[![CD](https://github.com/cristiadu/cristiadu.github.io/actions/workflows/cd.yml/badge.svg)](https://github.com/cristiadu/cristiadu.github.io/actions/workflows/cd.yml)
 
-## Application Details
+This is the source code for the personal portfolio published at <https://cristianofaustino.me>.
 
-This application was originally built using `JQuery 1.11.3`, `Bootstrap v3.3.5` and `Angular v1.4.2` back in 2014.
+## Tech Stack
 
-In 2024 it was migrated to a React.JS application, and had the static libraries usage removed.
+- **React 19** with functional components and hooks
+- **Webpack** for bundling
+- **Vitest** for unit testing
+- **Playwright** for E2E and visual regression testing
+- **pnpm** for package management
 
-Now it uses `react-bootstrap`, `ReactJS` and created components for its code.
-
-### Implementation
-
-The app uses JSON files for loading it's projects and skills, and new projects are easily maintainable without having to change the index.html structure.
-
-It uses Bootstrap for responsiveness on different layouts, and a few customizations on Bootstrap stylings were made in order to be a more custom layout, as I didn't want this Portfolio to look exactly like Bootstrap's older layout, but still wanted the grid classes features from the framework.
-
-To run it you'll have to do the following:
+## Getting Started
 
 ```bash
-npm install
-npm run start
+pnpm install
+pnpm start
 ```
+
+## About
+
+Originally built in 2014 with jQuery, Bootstrap, and AngularJS. Migrated to React in 2024 with a custom newspaper-inspired design.
+
+The app loads career and skills data from JSON files, making content updates simple without source code changes.

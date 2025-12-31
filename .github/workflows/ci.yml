@@ -1,6 +1,7 @@
 name: Build, Lint, Test, and E2E Tests (CI)
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
