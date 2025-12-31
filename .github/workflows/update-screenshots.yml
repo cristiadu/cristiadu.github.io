@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-screenshots:
@@ -36,12 +37,30 @@ jobs:
       - name: Update Screenshots
         run: pnpm run test:e2e:update
 
-      - name: Commit Screenshots
+      - name: Create Pull Request
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are changes to commit
           git add src/tests/e2e/__screenshots__/
-          git pull --rebase --autostash
-          git commit -m "chore: update playwright screenshots for linux" || echo "No changes to commit"
-          git push -f
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          # Create a new branch with timestamp
+          BRANCH_NAME="chore/update-screenshots-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH_NAME"
+          git commit -m "chore: update playwright screenshots for linux"
+          git push origin "$BRANCH_NAME"
+          
+          # Create PR
+          gh pr create \
+            --title "chore: update playwright screenshots for linux" \
+            --body "Automated update of Playwright screenshots for Linux." \
+            --base main \
+            --head "$BRANCH_NAME"
 
