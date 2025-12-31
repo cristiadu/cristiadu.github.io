@@ -47,24 +47,62 @@ describe('Project', () => {
   it('toggles accordion on click', () => {
     render(<Project project={mockProject} />)
 
-    const header = screen.getByText('Test Project')
-    const icon = header.parentElement.querySelector('i')
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).toHaveClass('expanded')
 
-    expect(icon).toHaveClass('fa-minus')
-
+    const header = document.querySelector('.archive-header')
     fireEvent.click(header)
 
-    expect(icon).toHaveClass('fa-plus')
+    expect(toggle).not.toHaveClass('expanded')
   })
 
   it('starts collapsed when activeItem is not "in"', () => {
     const collapsedProject = { ...mockProject, activeItem: '' }
     render(<Project project={collapsedProject} />)
 
-    const header = screen.getByText('Test Project')
-    const icon = header.parentElement.querySelector('i')
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).not.toHaveClass('expanded')
+  })
 
-    expect(icon).toHaveClass('fa-plus')
+  it('renders fold button', () => {
+    render(<Project project={mockProject} />)
+
+    expect(screen.getByText('↑ Fold story')).toBeInTheDocument()
+  })
+
+  it('toggles accordion on Enter key press', () => {
+    render(<Project project={mockProject} />)
+
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).toHaveClass('expanded')
+
+    const header = document.querySelector('.archive-header')
+    fireEvent.keyDown(header, { key: 'Enter' })
+
+    expect(toggle).not.toHaveClass('expanded')
+  })
+
+  it('toggles accordion on Space key press', () => {
+    render(<Project project={mockProject} />)
+
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).toHaveClass('expanded')
+
+    const header = document.querySelector('.archive-header')
+    fireEvent.keyDown(header, { key: ' ' })
+
+    expect(toggle).not.toHaveClass('expanded')
+  })
+
+  it('does not toggle accordion on other key press', () => {
+    render(<Project project={mockProject} />)
+
+    const toggle = document.querySelector('.archive-toggle')
+    expect(toggle).toHaveClass('expanded')
+
+    const header = document.querySelector('.archive-header')
+    fireEvent.keyDown(header, { key: 'Tab' })
+
+    expect(toggle).toHaveClass('expanded')
   })
 })
-

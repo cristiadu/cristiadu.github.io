@@ -1,21 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Col, Card } from 'react-bootstrap'
 
 const Skill = ({ skill }) => {
-  return ( 
-    <Col md={4} sm={4} xs={6}>
-      <Card className="skill-item">
-        <Card.Img variant="top" src={'images/' + skill.image} alt={skill.text} />
-      </Card>
-    </Col>
+  return (
+    <div className="classified-item">
+      <img 
+        src={'images/' + skill.image} 
+        alt={skill.text}
+        className="classified-image"
+      />
+      <p className="classified-text">{skill.text}</p>
+      {skill.years && (
+        <p className="classified-years">{skill.years} {skill.years === 1 ? 'year' : 'years'}</p>
+      )}
+    </div>
   )
 }
 
 Skill.propTypes = {
   skill: PropTypes.shape({
     image: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    years: PropTypes.number
   }).isRequired
 }
 

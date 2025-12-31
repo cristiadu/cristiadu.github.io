@@ -4,22 +4,27 @@ import { describe, it, expect } from 'vitest'
 import HeaderNavBar from '@/components/layout/HeaderNavBar'
 
 describe('HeaderNavBar', () => {
-  it('renders the brand name with link to home', () => {
+  it('renders the brand name as heading', () => {
     render(<HeaderNavBar />)
 
-    const brandLink = screen.getByRole('link', { name: 'Cristiano Faustino' })
-    expect(brandLink).toBeInTheDocument()
-    expect(brandLink).toHaveAttribute('href', 'index.html')
+    const heading = screen.getByRole('heading', { name: 'Cristiano Faustino' })
+    expect(heading).toBeInTheDocument()
+  })
+
+  it('renders subtitle', () => {
+    render(<HeaderNavBar />)
+
+    expect(screen.getByText('Senior Software Developer')).toBeInTheDocument()
   })
 
   it('renders all navigation links', () => {
     render(<HeaderNavBar />)
 
     expect(screen.getByText(/Resume/)).toBeInTheDocument()
-    expect(screen.getByText(/Projects/)).toBeInTheDocument()
-    expect(screen.getByText(/Skills/)).toBeInTheDocument()
+    expect(screen.getByText('About')).toBeInTheDocument()
+    expect(screen.getByText('Career')).toBeInTheDocument()
+    expect(screen.getByText('Skills')).toBeInTheDocument()
     expect(screen.getByText(/LinkedIn/)).toBeInTheDocument()
-    expect(screen.getByText(/Contact/)).toBeInTheDocument()
   })
 
   it('renders external links with correct URLs and security attributes', () => {
@@ -36,30 +41,16 @@ describe('HeaderNavBar', () => {
     expect(linkedinLink).toHaveAttribute('rel', 'noopener noreferrer')
   })
 
-  it('renders internal scroll links as valid anchor elements', () => {
+  it('renders masthead info bar', () => {
     render(<HeaderNavBar />)
 
-    const projectsLink = screen.getByText(/Projects/).closest('a')
-    expect(projectsLink).toBeInTheDocument()
-    expect(projectsLink).not.toHaveAttribute('target', '_blank')
-    expect(projectsLink).not.toHaveAttribute('href', expect.stringContaining('http'))
-
-    const skillsLink = screen.getByText(/Skills/).closest('a')
-    expect(skillsLink).toBeInTheDocument()
-    expect(skillsLink).not.toHaveAttribute('target', '_blank')
-    expect(skillsLink).not.toHaveAttribute('href', expect.stringContaining('http'))
-
-    const contactLink = screen.getByText(/Contact/).closest('a')
-    expect(contactLink).toBeInTheDocument()
-    expect(contactLink).not.toHaveAttribute('target', '_blank')
-    expect(contactLink).not.toHaveAttribute('href', expect.stringContaining('http'))
+    expect(screen.getByText('Software Developer Since 2010')).toBeInTheDocument()
   })
 
-  it('renders navbar with fixed-top positioning', () => {
+  it('renders navbar with masthead-nav class', () => {
     render(<HeaderNavBar />)
 
     const navbar = screen.getByRole('navigation')
-    expect(navbar).toHaveClass('fixed-top')
+    expect(navbar).toHaveClass('masthead-nav')
   })
 })
-

@@ -8,30 +8,29 @@ vi.mock('@/hooks/useJsonData', () => ({
 }))
 
 describe('MainContent', () => {
-  it('renders Contact section', () => {
+  it('renders Contact section with lead headline', () => {
     render(<MainContent />)
 
-    expect(screen.getByText('About Me')).toBeInTheDocument()
-    expect(screen.getByText('Contact Information')).toBeInTheDocument()
+    expect(screen.getByText(/Senior Software Engineer/)).toBeInTheDocument()
+    expect(screen.getByText(/Senior Software Developer at Giftbit/)).toBeInTheDocument()
   })
 
   it('renders ProjectList section', () => {
     render(<MainContent />)
 
-    expect(screen.getByText('Jobs & Projects')).toBeInTheDocument()
+    expect(screen.getByText('Career')).toBeInTheDocument()
   })
 
   it('renders SkillsList section', () => {
     render(<MainContent />)
 
-    expect(screen.getByText('Main Skills')).toBeInTheDocument()
+    expect(screen.getByText('Skills')).toBeInTheDocument()
   })
 
-  it('renders as a section element', () => {
+  it('renders as a main element with newspaper-content class', () => {
     render(<MainContent />)
 
-    const section = document.querySelector('section.content')
-    expect(section).toBeInTheDocument()
+    const main = document.querySelector('main.newspaper-content')
+    expect(main).toBeInTheDocument()
   })
 })
-

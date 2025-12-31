@@ -1,6 +1,5 @@
 import React from 'react'
 import Project from '@/components/Project'
-import { Accordion, Container, Row } from 'react-bootstrap'
 import useJsonData from '@/hooks/useJsonData'
 
 const ProjectList = () => {
@@ -8,33 +7,29 @@ const ProjectList = () => {
 
   const renderContent = () => {
     if (loading) {
-      return <p>Loading projects...</p>
+      return <p className="loading-message">Loading career history...</p>
     }
 
     if (error) {
-      return <p>Failed to load projects: {error}</p>
+      return <p className="error-message">Failed to load career history: {error}</p>
     }
 
-    return (
-      <Accordion>
-        {projectList.map(project => (
-          <Project project={project} key={project.id} />
-        ))}
-      </Accordion>
-    )
+    return projectList.map(project => (
+      <Project project={project} key={project.id} />
+    ))
   }
 
   return (
-    <Container as="article" id="projects">
-      <Row>
-        <div className="page-header">
-          <h1>Jobs & Projects</h1>
-        </div>
-      </Row>
-      <Row>
+    <section className="career-list" id="career">
+      <div className="section-header">
+        <h2>Career</h2>
+      </div>
+      <p className="section-subhead">Click any headline to read the full story</p>
+      
+      <div className="career-list">
         {renderContent()}
-      </Row>
-    </Container>
+      </div>
+    </section>
   )
 }
 

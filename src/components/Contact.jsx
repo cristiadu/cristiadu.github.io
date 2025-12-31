@@ -1,47 +1,62 @@
 import React from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import EducationList from '@/components/EducationList'
+import ContactBar from '@/components/ContactBar'
+import Experience from '@/components/Experience'
 
 const Contact = () => {
   return (
-    <article className="about-me" id="contact">
-      <Container>
-        <Row className="content-about-me">
-          <Col xs={12} sm={4} md={3}>
-            <Image xs={12} sm={4} md={3} src="images/profile-pic.jpg" alt="My Photo" thumbnail />
-          </Col>
-          <Col xs={12} sm={5} md={6} className="content-about-me">
-            <h3>About Me</h3>
-            <p className="justifyParagraph">
-                            I am a Senior Software Developer at Giftbit, a company that offers innovative solutions for digital gift cards and rewards.
-                            With over 10 years of experience in software development, I have a strong foundation in full-stack web development, quality assurance, and software architecture.
-                            At Giftbit, I provide software development expertise and architectural leadership for their new solutions and existing products.
-                            I enjoy working with challenges using technology, particularly through lines of code and logical reasoning. I am always open to learning new technologies and embracing new challenges.
-                            Some of the main technologies I have used in my career include Spring Boot, Java, Kubernetes, ReactJS, GoLang, and Kotlin.
-            </p>
-          </Col>
-          <Col xs={12} sm={3} md={3}>
-            <h3>Contact Information</h3>
-            <Col xs={12} md={12}>
-              <address>
-                <strong>Cristiano de Oliveira Faustino</strong><br />
-                <a href="mailto:cristiadu@gmail.com">cristiadu@gmail.com</a><br />
-                                Phone: +1 (250) 516-6800
-              </address>
-            </Col>
-            <Col xs={12} md={12}>
-              <a href="https://www.facebook.com/cristiano.faustino" target="_blank" rel="noopener noreferrer"><Image className="img-icon-contacts"
-                src="images/icons/facebook-icon.png" alt="Facebook" /></a>
-              <a href="https://www.linkedin.com/in/cristianofaustino/" target="_blank" rel="noopener noreferrer"><Image className="img-icon-contacts"
-                src="images/icons/linkedin-icon.png" alt="LinkedIn" /></a>
-              <a href="https://github.com/cristiadu" target="_blank" rel="noopener noreferrer"><Image className="img-icon-contacts"
-                src="images/icons/github-icon.png" alt="Github" /></a>
-              <a href="http://www.last.fm/user/cristiadu" target="_blank" rel="noopener noreferrer"><Image className="img-icon-contacts"
-                src="images/icons/lastfm-icon.png" alt="LastFM" /></a>
-            </Col>
-          </Col>
-        </Row>
-      </Container>
-    </article>
+    <>
+      <article className="lead-story" id="about">
+        <div className="lead-article">
+          <h2 className="lead-headline">
+            Senior Software Engineer Leads Platform Rebuild at Giftbit
+          </h2>
+          <p className="lead-byline">
+            Victoria, BC — A passionate developer building scalable, reliable systems
+          </p>
+          
+          <div className="lead-content">
+            <img 
+              src="images/profile-pic.jpg" 
+              alt="Cristiano Faustino" 
+              className="lead-photo" 
+            />
+            <div className="lead-text">
+              <p>
+                I&apos;m a Senior Software Developer at Giftbit, based in Victoria, British Columbia, 
+                Canada. I&apos;m a passionate professional who thrives on tackling challenges through 
+                technology, code, and logical reasoning.
+              </p>
+              <p>
+                With over 15 years of experience in full-stack web development, quality assurance, 
+                and software architecture, I provide technical and architectural leadership for 
+                new and existing products. I enjoy building scalable, reliable systems and 
+                continuously learning new technologies.
+              </p>
+              <p>
+                Experienced with Go, Java, TypeScript, ReactJS, Kubernetes, and Terraform, 
+                I&apos;m driven by creating innovative solutions that make an impact. At Giftbit, 
+                I&apos;m currently contributing to the full rebuild of our V2 platform from the 
+                ground up, developing APIs in GoLang and creating our frontend with NextJS.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <aside className="lead-sidebar">
+          <Experience />
+
+          <div className="sidebar-section">
+            <h3 className="sidebar-title">Education</h3>
+            <div className="sidebar-content">
+              <EducationList />
+            </div>
+          </div>
+        </aside>
+      </article>
+
+      <ContactBar />
+    </>
   )
 }
 
