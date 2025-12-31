@@ -1,9 +1,10 @@
 name: Build, Lint, Test, and E2E Tests (CI)
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
-      - main
+      - '**'
 
 permissions:
   contents: write
@@ -29,7 +30,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Install Playwright Browsers
-        run: pnpm exec playwright install --with-deps
+        run: pnpm exec playwright install chromium webkit --with-deps
 
       - name: Lint
         run: pnpm run lint

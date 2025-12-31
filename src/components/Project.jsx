@@ -47,15 +47,6 @@ const Project = ({ project }) => {
           />
           <div className="archive-description">
             <div dangerouslySetInnerHTML={{ __html: project.descriptionHTML }} />
-            <span 
-              className="archive-fold" 
-              onClick={toggleExpanded}
-              onKeyDown={handleKeyDown}
-              role="button"
-              tabIndex={0}
-            >
-              ↑ Fold story
-            </span>
           </div>
         </div>
       </div>

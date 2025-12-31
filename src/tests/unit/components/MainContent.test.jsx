@@ -11,7 +11,7 @@ describe('MainContent', () => {
   it('renders Contact section with lead headline', () => {
     render(<MainContent />)
 
-    expect(screen.getByText(/Senior Software Engineer/)).toBeInTheDocument()
+    expect(screen.getByText(/Brazilian Software Engineer/)).toBeInTheDocument()
     expect(screen.getByText(/Senior Software Developer at Giftbit/)).toBeInTheDocument()
   })
 

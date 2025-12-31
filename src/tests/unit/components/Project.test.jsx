@@ -64,12 +64,6 @@ describe('Project', () => {
     expect(toggle).not.toHaveClass('expanded')
   })
 
-  it('renders fold button', () => {
-    render(<Project project={mockProject} />)
-
-    expect(screen.getByText('↑ Fold story')).toBeInTheDocument()
-  })
-
   it('toggles accordion on Enter key press', () => {
     render(<Project project={mockProject} />)
 

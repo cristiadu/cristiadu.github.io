@@ -8,7 +8,7 @@ test.describe('Page Content Tests', () => {
 
   test('renders all main sections', async ({ page }) => {
     await expect(page.locator('header')).toContainText('Cristiano Faustino')
-    await expect(page.getByText(/Senior Software Engineer/)).toBeVisible()
+    await expect(page.getByText(/Brazilian Software Engineer/)).toBeVisible()
     await expect(page.getByRole('heading', { name: 'Career' })).toBeVisible()
     await expect(page.getByRole('heading', { name: 'Skills' })).toBeVisible()
 

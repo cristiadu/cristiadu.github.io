@@ -21,13 +21,13 @@ const HeaderNavBar = () => {
         <p className="masthead-subtitle">Senior Software Developer</p>
         
         <nav className="masthead-nav">
-          <Link to="about" spy={true} smooth={true} offset={-20} duration={900}>
+          <Link to="about" spy={true} smooth={true} offset={-160} duration={900}>
             About
           </Link>
-          <Link to="career" spy={true} smooth={true} offset={-20} duration={900}>
+          <Link to="career" spy={true} smooth={true} offset={-160} duration={900}>
             Career
           </Link>
-          <Link to="skills" spy={true} smooth={true} offset={-20} duration={900}>
+          <Link to="skills" spy={true} smooth={true} offset={-160} duration={900}>
             Skills
           </Link>
           <a href="https://drive.google.com/file/d/1cD4wZK0Z4qqOXOH_8XwoIVWl1uVh9lZ-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
