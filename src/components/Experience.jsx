@@ -5,7 +5,7 @@ const Experience = () => {
     <div className="sidebar-section">
       <h3 className="sidebar-title">Experience</h3>
       <div className="sidebar-content">
-        <span className="experience-years">15+</span>
+        <span className="experience-years">12+</span>
         <span className="experience-label">Years in Software Development</span>
       </div>
     </div>

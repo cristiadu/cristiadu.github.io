@@ -46,7 +46,7 @@ describe('Contact', () => {
     render(<Contact />)
 
     expect(screen.getByText(/Senior Software Developer at Giftbit/)).toBeInTheDocument()
-    expect(screen.getByText(/15 years in software development/)).toBeInTheDocument()
+    expect(screen.getByText(/12 years in software development/)).toBeInTheDocument()
   })
 
   it('renders Experience component', () => {

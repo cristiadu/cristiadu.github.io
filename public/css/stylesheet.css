@@ -454,13 +454,14 @@ body {
 .archive-body {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.2s ease-out;
   padding: 0 0 0 1.75rem;
 }
 
 .archive-body.expanded {
-  max-height: 2000px;
+  max-height: 1200px;
   padding: 0 0 0.75rem 1.75rem;
+  transition: max-height 0.5s ease-out, padding 0.4s ease-out;
 }
 
 .archive-body-inner {

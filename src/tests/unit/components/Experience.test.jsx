@@ -13,7 +13,7 @@ describe('Experience', () => {
   it('renders years of experience', () => {
     render(<Experience />)
 
-    expect(screen.getByText('15+')).toBeInTheDocument()
+    expect(screen.getByText('12+')).toBeInTheDocument()
   })
 
   it('renders experience label', () => {
