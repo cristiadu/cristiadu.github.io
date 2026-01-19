@@ -55,11 +55,11 @@ importers:
         specifier: ^6.9.1
         version: 6.9.1
       '@testing-library/react':
-        specifier: ^16.3.1
-        version: 16.3.1(@testing-library/dom@10.4.1)(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: ^16.3.2
+        version: 16.3.2(@testing-library/dom@10.4.1)(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@vitest/coverage-v8':
         specifier: ^4.0.17
-        version: 4.0.17(vitest@4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.44.1))
+        version: 4.0.17(vitest@4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.46.0))
       babel-loader:
         specifier: ^10.0.0
         version: 10.0.0(@babel/core@7.28.6)(webpack@5.104.1(webpack-cli@6.0.1))
@@ -82,8 +82,8 @@ importers:
         specifier: ^17.0.0
         version: 17.0.0
       html-webpack-plugin:
-        specifier: ^5.6.5
-        version: 5.6.5(webpack@5.104.1(webpack-cli@6.0.1))
+        specifier: ^5.6.6
+        version: 5.6.6(webpack@5.104.1(webpack-cli@6.0.1))
       jsdom:
         specifier: ^27.4.0
         version: 27.4.0
@@ -92,7 +92,7 @@ importers:
         version: 4.0.0(webpack@5.104.1(webpack-cli@6.0.1))
       vitest:
         specifier: ^4.0.17
-        version: 4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.44.1)
+        version: 4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.46.0)
       webpack:
         specifier: ^5.104.1
         version: 5.104.1(webpack-cli@6.0.1)
@@ -1200,8 +1200,8 @@ packages:
     resolution: {integrity: sha512-zIcONa+hVtVSSep9UT3jZ5rizo2BsxgyDYU7WFD5eICBE7no3881HGeb/QkGfsJs6JTkY1aQhT7rIPC7e+0nnA==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
 
-  '@testing-library/react@16.3.1':
-    resolution: {integrity: sha512-gr4KtAWqIOQoucWYD/f6ki+j5chXfcPc74Col/6poTyqTmn7zRmodWahWRCp8tYd+GMqBonw6hstNzqjbs6gjw==}
+  '@testing-library/react@16.3.2':
+    resolution: {integrity: sha512-XU5/SytQM+ykqMnAnvB2umaJNIOsLF3PVv//1Ew4CTcpz0/BRyy/af40qqrt7SjKpDdT1saBMc42CUok5gaw+g==}
     engines: {node: '>=18'}
     peerDependencies:
       '@testing-library/dom': ^10.0.0
@@ -2293,8 +2293,8 @@ packages:
     engines: {node: '>=12'}
     hasBin: true
 
-  html-webpack-plugin@5.6.5:
-    resolution: {integrity: sha512-4xynFbKNNk+WlzXeQQ+6YYsH2g7mpfPszQZUi3ovKlj+pDmngQ7vRXjrrmGROabmKwyQkcgcX5hqfOwHbFmK5g==}
+  html-webpack-plugin@5.6.6:
+    resolution: {integrity: sha512-bLjW01UTrvoWTJQL5LsMRo1SypHW80FTm12OJRSnr3v6YHNhfe+1r0MYUZJMACxnCHURVnBWRwAsWs2yPU9Ezw==}
     engines: {node: '>=10.13.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
@@ -3390,6 +3390,11 @@ packages:
 
   terser@5.44.1:
     resolution: {integrity: sha512-t/R3R/n0MSwnnazuPpPNVO60LX0SKL45pyl9YlvxIdkH0Of7D5qM2EVe+yASRIlY5pZ73nclYJfNANGWPwFDZw==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  terser@5.46.0:
+    resolution: {integrity: sha512-jTwoImyr/QbOWFFso3YoU3ik0jBBDJ6JTOQiy/J2YxVJdZCc+5u7skhNwiOR3FQIygFqVUPHl7qbbxtjW2K3Qg==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4990,9 +4995,9 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
 
-  '@testing-library/react@16.3.1(@testing-library/dom@10.4.1)(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@testing-library/dom': 10.4.1
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
@@ -5113,7 +5118,7 @@ snapshots:
     dependencies:
       '@types/node': 25.0.6
 
-  '@vitest/coverage-v8@4.0.17(vitest@4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.44.1))':
+  '@vitest/coverage-v8@4.0.17(vitest@4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.46.0))':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/utils': 4.0.17
@@ -5125,7 +5130,7 @@ snapshots:
       obug: 2.1.1
       std-env: 3.10.0
       tinyrainbow: 3.0.3
-      vitest: 4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.44.1)
+      vitest: 4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.46.0)
 
   '@vitest/expect@4.0.17':
     dependencies:
@@ -5136,13 +5141,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.17(vite@7.3.1(@types/node@25.0.6)(terser@5.44.1))':
+  '@vitest/mocker@4.0.17(vite@7.3.1(@types/node@25.0.6)(terser@5.46.0))':
     dependencies:
       '@vitest/spy': 4.0.17
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(@types/node@25.0.6)(terser@5.44.1)
+      vite: 7.3.1(@types/node@25.0.6)(terser@5.46.0)
 
   '@vitest/pretty-format@4.0.17':
     dependencies:
@@ -6312,9 +6317,9 @@ snapshots:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.44.1
+      terser: 5.46.0
 
-  html-webpack-plugin@5.6.5(webpack@5.104.1(webpack-cli@6.0.1)):
+  html-webpack-plugin@5.6.6(webpack@5.104.1(webpack-cli@6.0.1)):
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
@@ -7538,6 +7543,13 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
+  terser@5.46.0:
+    dependencies:
+      '@jridgewell/source-map': 0.3.11
+      acorn: 8.15.0
+      commander: 2.20.3
+      source-map-support: 0.5.21
+
   thingies@2.5.0(tslib@2.8.1):
     dependencies:
       tslib: 2.8.1
@@ -7683,7 +7695,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite@7.3.1(@types/node@25.0.6)(terser@5.44.1):
+  vite@7.3.1(@types/node@25.0.6)(terser@5.46.0):
     dependencies:
       esbuild: 0.27.2
       fdir: 6.5.0(picomatch@4.0.3)
@@ -7694,12 +7706,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 25.0.6
       fsevents: 2.3.3
-      terser: 5.44.1
+      terser: 5.46.0
 
-  vitest@4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.44.1):
+  vitest@4.0.17(@types/node@25.0.6)(jsdom@27.4.0)(terser@5.46.0):
     dependencies:
       '@vitest/expect': 4.0.17
-      '@vitest/mocker': 4.0.17(vite@7.3.1(@types/node@25.0.6)(terser@5.44.1))
+      '@vitest/mocker': 4.0.17(vite@7.3.1(@types/node@25.0.6)(terser@5.46.0))
       '@vitest/pretty-format': 4.0.17
       '@vitest/runner': 4.0.17
       '@vitest/snapshot': 4.0.17
@@ -7716,7 +7728,7 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.3.1(@types/node@25.0.6)(terser@5.44.1)
+      vite: 7.3.1(@types/node@25.0.6)(terser@5.46.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 25.0.6
