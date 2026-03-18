@@ -1,24 +1,29 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
 import Contact from '@/components/Contact'
 
+function MockEducationList() {
+  return <div data-testid="education-list">Education List</div>
+}
+
+function MockContactBar() {
+  return <div data-testid="contact-bar">Contact Bar</div>
+}
+
+function MockExperience() {
+  return <div data-testid="experience">Experience</div>
+}
+
 vi.mock('@/components/EducationList', () => ({
-  default: function MockEducationList() {
-    return <div data-testid="education-list">Education List</div>
-  }
+  default: MockEducationList
 }))
 
 vi.mock('@/components/ContactBar', () => ({
-  default: function MockContactBar() {
-    return <div data-testid="contact-bar">Contact Bar</div>
-  }
+  default: MockContactBar
 }))
 
 vi.mock('@/components/Experience', () => ({
-  default: function MockExperience() {
-    return <div data-testid="experience">Experience</div>
-  }
+  default: MockExperience
 }))
 
 describe('Contact', () => {

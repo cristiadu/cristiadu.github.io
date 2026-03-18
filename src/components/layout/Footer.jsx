@@ -1,8 +1,6 @@
-import React from 'react'
+const currentYear = new Date().getFullYear()
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
-    
   return (
     <footer className="newspaper-footer">
       <div className="footer-content">

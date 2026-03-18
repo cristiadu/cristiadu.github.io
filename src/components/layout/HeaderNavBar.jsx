@@ -1,14 +1,13 @@
-import React from 'react'
 import { Link } from 'react-scroll'
 
-const HeaderNavBar = () => {
-  const currentDate = new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
+const currentDate = new Intl.DateTimeFormat('en-US', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}).format(new Date())
 
+const HeaderNavBar = () => {
   return (
     <header className="masthead">
       <div className="masthead-inner">

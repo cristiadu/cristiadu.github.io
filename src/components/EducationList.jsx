@@ -1,4 +1,3 @@
-import React from 'react'
 import useJsonData from '@/hooks/useJsonData'
 import Education from '@/components/Education'
 
@@ -17,8 +16,11 @@ const EducationList = () => {
     <div className="sidebar-section">
       <h3 className="sidebar-title">Education</h3>
       <div className="sidebar-content">
-        {educationList.map((edu, index) => (
-          <Education key={index} education={edu} />
+        {educationList.map((edu) => (
+          <Education
+            key={`${edu.institutionShort}-${edu.degreeType}-${edu.yearFrom}`}
+            education={edu}
+          />
         ))}
       </div>
     </div>

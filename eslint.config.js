@@ -4,10 +4,7 @@ import eslintReact from '@eslint-react/eslint-plugin'
 
 const sharedRules = {
   'semi': ['error', 'never'],
-  'no-unused-vars': ['warn', {
-    'argsIgnorePattern': '^_',
-    'varsIgnorePattern': '^React$'
-  }],
+  'no-unused-vars': ['warn', { 'argsIgnorePattern': '^_' }],
   'no-console': ['warn', { 'allow': ['warn', 'error'] }],
   'prefer-const': 'error',
   'no-var': 'error',
@@ -58,12 +55,6 @@ export default [
       ...pluginJs.configs.recommended.rules,
       ...eslintReact.configs.recommended.rules,
       ...sharedRules,
-      '@eslint-react/component-hook-factories': 'off',
-      '@eslint-react/dom/no-dangerously-set-innerhtml': 'off',
-      '@eslint-react/no-missing-component-display-name': 'warn',
-      '@eslint-react/no-missing-context-display-name': 'warn',
-      '@eslint-react/no-array-index-key': 'off',
-      '@eslint-react/purity': 'off',
       'no-restricted-imports': ['error', {
         patterns: [
           {

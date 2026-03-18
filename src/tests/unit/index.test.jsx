@@ -1,6 +1,9 @@
-import React from 'react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import ReactDOM from 'react-dom/client'
+
+function MockPortfolioApp() {
+  return <div data-testid="portfolio-app">Portfolio App</div>
+}
 
 vi.mock('react-dom/client', () => ({
   default: {
@@ -11,9 +14,7 @@ vi.mock('react-dom/client', () => ({
 }))
 
 vi.mock('@/PortfolioApp', () => ({
-  default: function MockPortfolioApp() {
-    return <div data-testid="portfolio-app">Portfolio App</div>
-  }
+  default: MockPortfolioApp
 }))
 
 describe('index.jsx', () => {

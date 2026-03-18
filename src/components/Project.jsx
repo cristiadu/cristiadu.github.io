@@ -1,5 +1,58 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
+
+const ELEMENT_NODE = 1
+const TEXT_NODE = 3
+
+const renderDescriptionNode = (node, key) => {
+  if (node.nodeType === TEXT_NODE) {
+    return node.textContent
+  }
+
+  if (node.nodeType !== ELEMENT_NODE) {
+    return null
+  }
+
+  const children = Array.from(node.childNodes).map((child, index) => (
+    renderDescriptionNode(child, `${key}-${index}`)
+  ))
+
+  switch (node.tagName.toLowerCase()) {
+    case 'a':
+      return (
+        <a key={key} href={node.getAttribute('href') ?? '#'}>
+          {children}
+        </a>
+      )
+    case 'br':
+      return <br key={key} />
+    case 'em':
+      return <em key={key}>{children}</em>
+    case 'li':
+      return <li key={key}>{children}</li>
+    case 'ol':
+      return <ol key={key}>{children}</ol>
+    case 'p':
+      return <p key={key}>{children}</p>
+    case 'span':
+      return <span key={key}>{children}</span>
+    case 'strong':
+      return <strong key={key}>{children}</strong>
+    case 'ul':
+      return <ul key={key}>{children}</ul>
+    default:
+      return children
+  }
+}
+
+const renderDescription = (descriptionHTML) => {
+  const parser = new DOMParser()
+  const document = parser.parseFromString(descriptionHTML, 'text/html')
+
+  return Array.from(document.body.childNodes).map((node, index) => (
+    renderDescriptionNode(node, `description-${index}`)
+  ))
+}
 
 const Project = ({ project }) => {
   const [isExpanded, setIsExpanded] = useState(project.activeItem === 'in')
@@ -46,7 +99,7 @@ const Project = ({ project }) => {
             className="archive-image"
           />
           <div className="archive-description">
-            <div dangerouslySetInnerHTML={{ __html: project.descriptionHTML }} />
+            {renderDescription(project.descriptionHTML)}
           </div>
         </div>
       </div>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ContactBar = () => {
   return (
     <div className="contact-bar" id="contact">

@@ -1,4 +1,3 @@
-import React from 'react'
 import Contact from '@/components/Contact'
 import ProjectList from '@/components/ProjectList'
 import SkillsList from '@/components/SkillsList'
