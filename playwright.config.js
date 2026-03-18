@@ -1,7 +1,9 @@
+
 import { defineConfig, devices } from '@playwright/test'
 import os from 'os'
 
 const platform = os.platform()
+const baseURL = 'http://127.0.0.1:4173'
 
 export default defineConfig({
   testDir: './src/tests/e2e',
@@ -11,7 +13,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL,
     trace: 'on-first-retry'
   },
   projects: [
@@ -25,11 +27,10 @@ export default defineConfig({
     }
   ],
   webServer: {
-    command: 'pnpm run start',
-    url: 'http://localhost:3000',
-    reuseExistingServer: !process.env.CI,
+    command: 'pnpm run start:e2e',
+    url: baseURL,
+    reuseExistingServer: process.env.PLAYWRIGHT_REUSE_SERVER === '1',
     timeout: 120000
   },
   snapshotPathTemplate: `{testDir}/__screenshots__/${platform}/{projectName}/{arg}{ext}`
 })
-

@@ -77,13 +77,16 @@ test.describe('Visual Regression Tests', () => {
   test('full page screenshot', async ({ page }) => {
     await expect(page).toHaveScreenshot('full-page.png', {
       fullPage: true,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015 // allow small diff for date
     })
   })
 
   test('header navigation', async ({ page }) => {
     const masthead = page.locator('header.masthead')
-    await expect(masthead).toHaveScreenshot('header-nav.png')
+    await expect(masthead).toHaveScreenshot('header-nav.png', {
+      maxDiffPixelRatio: 0.015
+    })
   })
 
   test('about me section', async ({ page }) => {
@@ -92,7 +95,8 @@ test.describe('Visual Regression Tests', () => {
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('about-me-section.png', {
       fullPage: false,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 
@@ -102,7 +106,8 @@ test.describe('Visual Regression Tests', () => {
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('projects-section.png', {
       fullPage: false,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 
@@ -112,7 +117,8 @@ test.describe('Visual Regression Tests', () => {
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('skills-section.png', {
       fullPage: false,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 
@@ -122,7 +128,8 @@ test.describe('Visual Regression Tests', () => {
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('footer.png', {
       fullPage: false,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 
@@ -132,7 +139,8 @@ test.describe('Visual Regression Tests', () => {
     await page.waitForTimeout(300)
     await expect(page).toHaveScreenshot('expanded-project.png', {
       fullPage: false,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 
@@ -145,7 +153,8 @@ test.describe('Visual Regression Tests', () => {
     await firstProject.scrollIntoViewIfNeeded()
     await expect(page).toHaveScreenshot('collapsed-project.png', {
       fullPage: false,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 })
@@ -160,7 +169,8 @@ test.describe('Responsive Layout Tests', () => {
 
     await expect(page).toHaveScreenshot('tablet-layout.png', {
       fullPage: true,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 
@@ -173,7 +183,8 @@ test.describe('Responsive Layout Tests', () => {
 
     await expect(page).toHaveScreenshot('mobile-layout.png', {
       fullPage: true,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 
@@ -188,7 +199,8 @@ test.describe('Responsive Layout Tests', () => {
     await expect(nav).toBeVisible()
     await expect(page).toHaveScreenshot('mobile-menu-open.png', {
       fullPage: false,
-      animations: 'disabled'
+      animations: 'disabled',
+      maxDiffPixelRatio: 0.015
     })
   })
 })

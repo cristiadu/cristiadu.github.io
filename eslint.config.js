@@ -23,7 +23,14 @@ const sharedRules = {
 
 export default [
   {
-    ignores: ['dist/**', 'node_modules/**', 'public/**']
+    ignores: [
+      'coverage/**',
+      'dist/**',
+      'node_modules/**',
+      'playwright-report/**',
+      'public/**',
+      'test-results/**'
+    ]
   },
   {
     files: ['src/**/*.{js,jsx}'],
