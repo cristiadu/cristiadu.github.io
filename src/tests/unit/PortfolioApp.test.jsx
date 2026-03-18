@@ -1,24 +1,29 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
 import PortfolioApp from '@/PortfolioApp'
 
+function MockHeaderNavBar() {
+  return <header data-testid="header-navbar">Header</header>
+}
+
+function MockMainContent() {
+  return <main data-testid="main-content">Main Content</main>
+}
+
+function MockFooter() {
+  return <footer data-testid="footer">Footer</footer>
+}
+
 vi.mock('@/components/layout/HeaderNavBar', () => ({
-  default: function MockHeaderNavBar() {
-    return <header data-testid="header-navbar">Header</header>
-  }
+  default: MockHeaderNavBar
 }))
 
 vi.mock('@/components/layout/MainContent', () => ({
-  default: function MockMainContent() {
-    return <main data-testid="main-content">Main Content</main>
-  }
+  default: MockMainContent
 }))
 
 vi.mock('@/components/layout/Footer', () => ({
-  default: function MockFooter() {
-    return <footer data-testid="footer">Footer</footer>
-  }
+  default: MockFooter
 }))
 
 describe('PortfolioApp', () => {

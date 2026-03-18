@@ -1,4 +1,3 @@
-import React from 'react'
 import Skill from '@/components/Skill'
 import useJsonData from '@/hooks/useJsonData'
 

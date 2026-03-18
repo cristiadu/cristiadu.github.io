@@ -1,4 +1,3 @@
-import React from 'react'
 import EducationList from '@/components/EducationList'
 import ContactBar from '@/components/ContactBar'
 import Experience from '@/components/Experience'

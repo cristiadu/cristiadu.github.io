@@ -1,7 +1,6 @@
 import globals from 'globals'
 import pluginJs from '@eslint/js'
-import pluginReact from 'eslint-plugin-react'
-import pluginReactHooks from 'eslint-plugin-react-hooks'
+import eslintReact from '@eslint-react/eslint-plugin'
 
 const sharedRules = {
   'semi': ['error', 'never'],
@@ -23,7 +22,14 @@ const sharedRules = {
 
 export default [
   {
-    ignores: ['dist/**', 'node_modules/**', 'public/**']
+    ignores: [
+      'coverage/**',
+      'dist/**',
+      'node_modules/**',
+      'playwright-report/**',
+      'public/**',
+      'test-results/**'
+    ]
   },
   {
     files: ['src/**/*.{js,jsx}'],
@@ -40,24 +46,15 @@ export default [
       }
     },
     plugins: {
-      react: pluginReact,
-      'react-hooks': pluginReactHooks
+      ...eslintReact.configs.recommended.plugins
     },
     settings: {
-      react: {
-        version: 'detect'
-      }
+      ...eslintReact.configs.recommended.settings
     },
     rules: {
       ...pluginJs.configs.recommended.rules,
-      ...pluginReact.configs.recommended.rules,
-      ...pluginReactHooks.configs.recommended.rules,
+      ...eslintReact.configs.recommended.rules,
       ...sharedRules,
-      'react/react-in-jsx-scope': 'off',
-      'react/jsx-filename-extension': ['warn', { 'extensions': ['.js', '.jsx'] }],
-      'react/prop-types': 'warn',
-      'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
       'no-restricted-imports': ['error', {
         patterns: [
           {

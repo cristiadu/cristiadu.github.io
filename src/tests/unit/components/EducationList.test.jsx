@@ -1,4 +1,3 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
 import EducationList from '@/components/EducationList'
@@ -6,10 +5,12 @@ import useJsonData from '@/hooks/useJsonData'
 
 vi.mock('@/hooks/useJsonData')
 
+function MockEducation({ education }) {
+  return <div data-testid="education-item">{education.field}</div>
+}
+
 vi.mock('@/components/Education', () => ({
-  default: function MockEducation({ education }) {
-    return <div data-testid="education-item">{education.field}</div>
-  }
+  default: MockEducation
 }))
 
 describe('EducationList', () => {
