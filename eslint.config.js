@@ -1,6 +1,7 @@
 import globals from 'globals'
 import pluginJs from '@eslint/js'
 import eslintReact from '@eslint-react/eslint-plugin'
+import pluginReactHooks from 'eslint-plugin-react-hooks'
 
 const sharedRules = {
   'semi': ['error', 'never'],
@@ -46,7 +47,8 @@ export default [
       }
     },
     plugins: {
-      ...eslintReact.configs.recommended.plugins
+      ...eslintReact.configs.recommended.plugins,
+      'react-hooks': pluginReactHooks
     },
     settings: {
       ...eslintReact.configs.recommended.settings
@@ -54,7 +56,10 @@ export default [
     rules: {
       ...pluginJs.configs.recommended.rules,
       ...eslintReact.configs.recommended.rules,
+      ...pluginReactHooks.configs.recommended.rules,
       ...sharedRules,
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
       'no-restricted-imports': ['error', {
         patterns: [
           {

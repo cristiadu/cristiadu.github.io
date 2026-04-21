@@ -12,7 +12,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://localhost:4174',
     trace: 'on-first-retry'
   },
   projects: [
@@ -26,11 +26,10 @@ export default defineConfig({
     }
   ],
   webServer: {
-    command: 'pnpm run start',
-    url: 'http://localhost:3000',
-    reuseExistingServer: !process.env.CI,
+    command: 'PORT=4174 NO_OPEN=1 pnpm run start',
+    url: 'http://localhost:4174',
+    reuseExistingServer: false,
     timeout: 120000
   },
   snapshotPathTemplate: `{testDir}/__screenshots__/${platform}/{projectName}/{arg}{ext}`
 })
-

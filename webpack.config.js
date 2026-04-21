@@ -56,8 +56,8 @@ export default {
   },
   devServer: {
     static: path.join(__dirname, 'public'),
-    port: 3000,
-    open: true,
+    port: Number(process.env.PORT) || 3000,
+    open: process.env.NO_OPEN !== '1',
     hot: true
   }
 }
