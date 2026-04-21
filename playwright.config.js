@@ -12,7 +12,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://127.0.0.1:4174',
+    baseURL: 'http://localhost:3000',
     trace: 'on-first-retry'
   },
   projects: [
@@ -26,8 +26,8 @@ export default defineConfig({
     }
   ],
   webServer: {
-    command: 'PORT=4174 NO_OPEN=1 pnpm run start',
-    url: 'http://127.0.0.1:4174',
+    command: 'NO_OPEN=1 pnpm run start',
+    url: 'http://localhost:3000',
     reuseExistingServer: false,
     timeout: 120000
   },
