@@ -1,7 +1,35 @@
 import { test, expect } from '@playwright/test'
 
+const FIXED_TEST_DATE = '2026-04-21T12:00:00.000Z'
+
+const freezeDateForVisualTests = async (page) => {
+  await page.addInitScript((isoDate) => {
+    const fixedTime = new Date(isoDate).getTime()
+    const OriginalDate = Date
+
+    class MockDate extends OriginalDate {
+      constructor(...args) {
+        if (args.length === 0) {
+          super(fixedTime)
+          return
+        }
+        super(...args)
+      }
+
+      static now() {
+        return fixedTime
+      }
+    }
+
+    MockDate.UTC = OriginalDate.UTC
+    MockDate.parse = OriginalDate.parse
+    window.Date = MockDate
+  }, FIXED_TEST_DATE)
+}
+
 test.describe('Page Content Tests', () => {
   test.beforeEach(async ({ page }) => {
+    await freezeDateForVisualTests(page)
     await page.goto('/')
     await page.waitForLoadState('networkidle')
   })
@@ -12,7 +40,7 @@ test.describe('Page Content Tests', () => {
     await expect(page.getByRole('heading', { name: 'Career' })).toBeVisible()
     await expect(page.getByRole('heading', { name: 'Skills' })).toBeVisible()
 
-    const currentYear = new Date().getFullYear()
+    const currentYear = new Date(FIXED_TEST_DATE).getUTCFullYear()
     await expect(page.locator('footer')).toContainText(`© ${currentYear}`)
   })
 
@@ -68,6 +96,7 @@ test.describe('Page Content Tests', () => {
 
 test.describe('Visual Regression Tests', () => {
   test.beforeEach(async ({ page }) => {
+    await freezeDateForVisualTests(page)
     await page.goto('/')
     await page.waitForLoadState('networkidle')
     await page.locator('header.masthead').waitFor({ state: 'visible' })
@@ -162,6 +191,7 @@ test.describe('Visual Regression Tests', () => {
 test.describe('Responsive Layout Tests', () => {
   test('tablet viewport', async ({ page }) => {
     await page.setViewportSize({ width: 768, height: 1024 })
+    await freezeDateForVisualTests(page)
     await page.goto('/')
     await page.waitForLoadState('networkidle')
     await page.locator('header.masthead').waitFor({ state: 'visible' })
@@ -176,6 +206,7 @@ test.describe('Responsive Layout Tests', () => {
 
   test('mobile viewport', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 })
+    await freezeDateForVisualTests(page)
     await page.goto('/')
     await page.waitForLoadState('networkidle')
     await page.locator('header.masthead').waitFor({ state: 'visible' })
@@ -190,6 +221,7 @@ test.describe('Responsive Layout Tests', () => {
 
   test('mobile navigation wraps correctly', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 })
+    await freezeDateForVisualTests(page)
     await page.goto('/')
     await page.waitForLoadState('networkidle')
     await page.locator('header.masthead').waitFor({ state: 'visible' })
