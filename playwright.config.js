@@ -26,7 +26,7 @@ export default defineConfig({
     }
   ],
   webServer: {
-    command: 'pnpm exec webpack serve --mode development --port 4174 --no-open',
+    command: 'PORT=4174 NO_OPEN=1 pnpm run start',
     url: 'http://127.0.0.1:4174',
     reuseExistingServer: false,
     timeout: 120000
