@@ -17,7 +17,7 @@
         "upgrade-deps": "pnpm up --latest"
     },
     "dependencies": {
-        "axios": "^1.19.0",
+        "axios": "^1.20.0",
         "prop-types": "^15.8.1",
         "react": "^19.2.8",
         "react-bootstrap": "^2.10.10",
@@ -35,20 +35,20 @@
         "@playwright/browser-webkit": "^1.62.1",
         "@playwright/test": "^1.62.1",
         "@testing-library/jest-dom": "^7.0.1",
-        "@testing-library/react": "^16.3.2",
+        "@testing-library/react": "^16.3.3",
         "@vitest/coverage-v8": "^4.1.11",
         "babel-loader": "^10.1.1",
         "copy-webpack-plugin": "^14.0.0",
-        "css-loader": "^7.1.4",
-        "eslint": "^10.9.0",
+        "css-loader": "^7.1.5",
+        "eslint": "^10.9.1",
         "eslint-plugin-react-hooks": "^7.1.1",
         "globals": "^17.11.0",
         "html-webpack-plugin": "^5.6.8",
         "jsdom": "^30.0.1",
         "style-loader": "^4.0.0",
         "vitest": "^4.1.11",
-        "webpack": "^5.109.2",
-        "webpack-cli": "^7.2.2",
+        "webpack": "^5.110.1",
+        "webpack-cli": "^7.2.3",
         "webpack-dev-server": "^6.0.0"
     }
 }
