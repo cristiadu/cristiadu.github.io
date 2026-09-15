@@ -10,14 +10,25 @@ export default (env, argv) => {
   const isProduction = argv.mode === 'production'
 
   return {
-    entry: './src/index.jsx',
+    entry: {
+      main: './src/index.jsx',
+      admin: './src/admin/preview.jsx'
+    },
     devtool: isProduction ? 'source-map' : 'eval-source-map',
     plugins: [
       new HtmlWebpackPlugin({
-        template: 'public/index.html'
+        template: 'public/index.html',
+        chunks: ['main']
+      }),
+      new HtmlWebpackPlugin({
+        template: 'public/admin/index.html',
+        filename: 'admin/index.html',
+        chunks: ['admin'],
+        publicPath: '/'
       }),
       new CopyWebpackPlugin({
         patterns: [
+          { from: 'public/admin/config.yml', to: 'admin/config.yml' },
           { from: 'public/css', to: 'css' },
           { from: 'public/images', to: 'images' },
           { from: 'public/json', to: 'json' },
@@ -55,6 +66,7 @@ export default (env, argv) => {
     resolve: {
       extensions: ['.js', '.jsx'],
       alias: {
+        '@content': path.resolve(__dirname, 'public/json'),
         '@': path.resolve(__dirname, 'src')
       }
     },
