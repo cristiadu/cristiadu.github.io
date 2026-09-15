@@ -8,7 +8,9 @@ export default defineConfig({
     include: ['src/tests/unit/**/*.test.{js,jsx}'],
     coverage: {
       include: ['src/**/*.{js,jsx}'],
-      exclude: ['src/tests/**'],
+      // src/admin is Sveltia CMS glue that needs the editor's globals; the
+      // e2e admin spec covers it.
+      exclude: ['src/tests/**', 'src/admin/**'],
       reporter: ['text', 'json', 'json-summary']
     },
     globals: true
