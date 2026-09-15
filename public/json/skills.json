@@ -1,121 +1,122 @@
 [
 	{
+		"text": "Java, Groovy & Kotlin",
+		"order": 2,
 		"image": "skills/java.png",
-		"text": "Java & Kotlin",
-		"years": 8,
-		"order": 2
+		"years": 10
 	},
 	{
-		"image": "skills/spring.png",
 		"text": "Spring / Spring Boot",
-		"years": 6,
-		"order": 5
+		"order": 5,
+		"image": "skills/spring.png",
+		"years": 7
 	},
 	{
-		"image": "skills/js.png",
 		"text": "Javascript & TypeScript",
-		"years": 8,
-		"order": 3
+		"order": 3,
+		"image": "skills/js.png",
+		"years": 10
 	},
 	{
+		"text": "Cloud Computing",
+		"order": 12,
 		"image": "skills/aws_gcp.png",
-		"text": "AWS & Google Cloud",
-		"years": 8,
-		"order": 12
+		"years": 10
 	},
 	{
-		"image": "skills/go-lang.png",
 		"text": "Go Lang",
-		"years": 6,
-		"order": 1
+		"order": 1,
+		"image": "skills/go-lang.png",
+		"years": 8
 	},
 	{
-		"image": "skills/reactjs.png",
 		"text": "React.js",
-		"years": 7,
-		"order": 7
+		"order": 7,
+		"image": "skills/reactjs.png",
+		"years": 8
 	},
 	{
-		"image": "skills/python.png",
 		"text": "Python",
-		"years": 3,
-		"order": 10
+		"order": 10,
+		"image": "skills/python.png",
+		"years": 5
 	},
 	{
-		"image": "skills/bash.png",
 		"text": "Bash Scripting",
-		"years": 6,
-		"order": 13
+		"order": 13,
+		"image": "skills/bash.png",
+		"years": 7
 	},
 	{
-		"image": "skills/terraform.png",
 		"text": "Terraform",
-		"years": 6,
-		"order": 4
+		"order": 4,
+		"image": "skills/terraform.png",
+		"years": 7
 	},
 	{
-		"image": "skills/kubernetes.png",
 		"text": "Kubernetes",
-		"years": 4,
-		"order": 11
+		"order": 11,
+		"image": "skills/kubernetes.png",
+		"years": 4
 	},
 	{
-		"image": "skills/grails.png",
 		"text": "Grails Framework",
-		"years": 2,
-		"order": 14
+		"order": 14,
+		"image": "skills/grails.png",
+		"years": 4
 	},
 	{
+		"text": "NoSQL Databases",
+		"order": 9,
 		"image": "skills/nosql.png",
-		"text": "DynamoDB & MongoDB",
-		"years": 3,
-		"order": 9
+		"years": 5
 	},
 	{
-		"image": "skills/sql.png",
 		"text": "SQL Databases",
-		"years": 7,
-		"order": 8
+		"order": 8,
+		"image": "skills/sql.png",
+		"years": 9
 	},
 	{
-		"image": "skills/helm.png",
 		"text": "Helm Charts",
-		"years": 2,
-		"order": 19
+		"order": 19,
+		"image": "skills/helm.png",
+		"years": 2
 	},
 	{
-		"image": "skills/scrum.png",
 		"text": "Scrum Agile",
-		"years": 10,
-		"order": 16
+		"order": 16,
+		"image": "skills/scrum.png",
+		"years": 12
 	},
 	{
-		"image": "skills/java-package-managers.png",
 		"text": "Maven & Gradle",
-		"years": 7,
-		"order": 20
+		"order": 20,
+		"image": "skills/java-package-managers.png",
+		"years": 8
 	},
 	{
-		"image": "skills/ci-tools.png",
 		"text": "CI/CD Pipelines",
-		"years": 8,
-		"order": 6
+		"order": 6,
+		"image": "skills/ci-tools.png",
+		"years": 10
 	},
 	{
-		"image": "skills/test-automation.png",
 		"text": "Test Automation",
-		"years": 10,
-		"order": 15
+		"order": 15,
+		"image": "skills/test-automation.png",
+		"years": 11
 	},
 	{
-		"image": "skills/devops.png",
 		"text": "GitOps & Infrastructure as Code",
-		"years": 8,
-		"order": 17
+		"order": 17,
+		"image": "skills/devops.png",
+		"years": 9
 	},
 	{
-		"image": "skills/languages.png",
 		"text": "Portuguese & English",
-		"order": 18
+		"order": 18,
+		"image": "skills/languages.png",
+		"years": 15
 	}
 ]
