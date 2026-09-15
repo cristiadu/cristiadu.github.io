@@ -2,100 +2,120 @@
 	{
 		"image": "skills/java.png",
 		"text": "Java & Kotlin",
-		"years": 8
+		"years": 8,
+		"order": 2
 	},
 	{
 		"image": "skills/spring.png",
 		"text": "Spring / Spring Boot",
-		"years": 6
+		"years": 6,
+		"order": 5
 	},
 	{
 		"image": "skills/js.png",
 		"text": "Javascript & TypeScript",
-		"years": 8
+		"years": 8,
+		"order": 3
 	},
 	{
 		"image": "skills/aws_gcp.png",
 		"text": "AWS & Google Cloud",
-		"years": 8
+		"years": 8,
+		"order": 12
 	},
 	{
 		"image": "skills/go-lang.png",
 		"text": "Go Lang",
-		"years": 6
+		"years": 6,
+		"order": 1
 	},
 	{
 		"image": "skills/reactjs.png",
 		"text": "React.js",
-		"years": 7
+		"years": 7,
+		"order": 7
 	},
 	{
 		"image": "skills/python.png",
 		"text": "Python",
-		"years": 3
+		"years": 3,
+		"order": 10
 	},
 	{
 		"image": "skills/bash.png",
 		"text": "Bash Scripting",
-		"years": 6
+		"years": 6,
+		"order": 13
 	},
 	{
 		"image": "skills/terraform.png",
 		"text": "Terraform",
-		"years": 6
+		"years": 6,
+		"order": 4
 	},
 	{
 		"image": "skills/kubernetes.png",
 		"text": "Kubernetes",
-		"years": 4
+		"years": 4,
+		"order": 11
 	},
 	{
 		"image": "skills/grails.png",
 		"text": "Grails Framework",
-		"years": 2
+		"years": 2,
+		"order": 14
 	},
 	{
 		"image": "skills/nosql.png",
 		"text": "DynamoDB & MongoDB",
-		"years": 3
+		"years": 3,
+		"order": 9
 	},
 	{
 		"image": "skills/sql.png",
 		"text": "SQL Databases",
-		"years": 7
+		"years": 7,
+		"order": 8
 	},
 	{
 		"image": "skills/helm.png",
 		"text": "Helm Charts",
-		"years": 2
+		"years": 2,
+		"order": 19
 	},
 	{
 		"image": "skills/scrum.png",
 		"text": "Scrum Agile",
-		"years": 10
+		"years": 10,
+		"order": 16
 	},
 	{
 		"image": "skills/java-package-managers.png",
 		"text": "Maven & Gradle",
-		"years": 7
+		"years": 7,
+		"order": 20
 	},
 	{
 		"image": "skills/ci-tools.png",
 		"text": "CI/CD Pipelines",
-		"years": 8
+		"years": 8,
+		"order": 6
 	},
 	{
 		"image": "skills/test-automation.png",
 		"text": "Test Automation",
-		"years": 10
+		"years": 10,
+		"order": 15
 	},
 	{
 		"image": "skills/devops.png",
 		"text": "GitOps & Infrastructure as Code",
-		"years": 8
+		"years": 8,
+		"order": 17
 	},
 	{
 		"image": "skills/languages.png",
-		"text": "Portuguese & English"
+		"text": "Portuguese & English",
+		"order": 18
 	}
 ]
