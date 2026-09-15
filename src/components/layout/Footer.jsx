@@ -11,7 +11,7 @@ const Footer = () => {
           Email: <a href="mailto:cristiadu@gmail.com">cristiadu@gmail.com</a>
         </span>
         <span>
-          <a href="/admin/" rel="nofollow">Edit Content</a>
+          <a href="/admin/" rel="nofollow">Admin Area</a>
         </span>
       </div>
     </footer>

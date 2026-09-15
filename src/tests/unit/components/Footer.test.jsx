@@ -10,10 +10,10 @@ describe('Footer', () => {
     expect(screen.getByText(new RegExp(`© ${currentYear}`))).toBeInTheDocument()
   })
 
-  it('links to the content admin', () => {
+  it('links to the admin area', () => {
     render(<Footer />)
 
-    const adminLink = screen.getByRole('link', { name: /edit content/i })
+    const adminLink = screen.getByRole('link', { name: /admin area/i })
     expect(adminLink).toBeInTheDocument()
     expect(adminLink).toHaveAttribute('href', '/admin/')
   })
