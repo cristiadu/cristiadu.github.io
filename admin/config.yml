@@ -1,0 +1,143 @@
+---
+backend:
+  name: github
+  repo: cristiadu/cristiadu.github.io
+  branch: main
+site_url: https://cristianofaustino.me
+display_url: https://cristianofaustino.me
+media_folder: public/images
+public_folder: "/images"
+output:
+  omit_empty_optional_fields: true
+  json:
+    indent_style: tab
+collections:
+- name: portfolio
+  label: Portfolio
+  files:
+  - name: projects
+    label: Career and Projects
+    file: public/json/projects.json
+    fields:
+    - name: projects
+      label: Career and Projects
+      label_singular: Entry
+      widget: list
+      root: true
+      required: false
+      collapsed: true
+      summary: "{{name}}"
+      fields:
+      - name: id
+        label: ID
+        widget: string
+        hint: Unique identifier, such as giftbit. Keep existing IDs unchanged.
+        pattern:
+        - "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        - Use lowercase letters, numbers, and hyphens.
+      - name: name
+        label: Title
+        widget: string
+      - name: company
+        label: Company
+        widget: string
+      - name: type
+        label: Employment or Project Type
+        widget: string
+      - name: startDate
+        label: Start Date
+        widget: string
+        hint: For example, Feb 2024.
+      - name: endDate
+        label: End Date
+        widget: string
+        hint: For example, Jun 2023 or Current Job.
+      - name: imagePrincipal
+        label: Image Path
+        widget: string
+        hint: Path inside public/images, for example projects/giftbit.png. Do not
+          include images/ at the start.
+      - name: activeItem
+        label: Initially Expanded
+        widget: select
+        required: false
+        options:
+        - label: Expanded
+          value: in
+        hint: Leave empty to start collapsed.
+      - name: descriptionHTML
+        label: Description (HTML)
+        widget: text
+        hint: Use HTML such as <p>Paragraph</p>, <strong>bold</strong>, and <ul><li>List
+          item</li></ul>.
+  - name: skills
+    label: Skills
+    file: public/json/skills.json
+    fields:
+    - name: skills
+      label: Skills
+      label_singular: Skill
+      widget: list
+      root: true
+      required: false
+      collapsed: true
+      summary: "{{text}}"
+      fields:
+      - name: text
+        label: Skill
+        widget: string
+      - name: order
+        label: Display Order
+        widget: number
+        value_type: int
+        min: 1
+        hint: Lower numbers appear first.
+      - name: image
+        label: Image Path
+        widget: string
+        hint: Path inside public/images, for example skills/java.png. Do not include
+          images/ at the start.
+      - name: years
+        label: Years of Experience
+        widget: number
+        value_type: int
+        min: 0
+        required: false
+  - name: education
+    label: Education
+    file: public/json/education.json
+    fields:
+    - name: education
+      label: Education
+      label_singular: Qualification
+      widget: list
+      root: true
+      required: false
+      collapsed: true
+      summary: "{{field}} — {{institutionShort}}"
+      fields:
+      - name: degreeType
+        label: Degree Type
+        widget: string
+      - name: field
+        label: Field of Study
+        widget: string
+      - name: institution
+        label: Institution
+        widget: string
+      - name: institutionShort
+        label: Institution Abbreviation
+        widget: string
+      - name: location
+        label: Location
+        widget: string
+      - name: yearFrom
+        label: Start Year
+        widget: number
+        value_type: int
+        min: 1
+      - name: yearTo
+        label: End Year
+        widget: number
+        value_type: int
+        min: 1

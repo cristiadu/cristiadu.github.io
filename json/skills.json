@@ -1,0 +1,122 @@
+[
+	{
+		"text": "Java, Groovy & Kotlin",
+		"order": 2,
+		"image": "skills/java.png",
+		"years": 10
+	},
+	{
+		"text": "Spring / Spring Boot",
+		"order": 5,
+		"image": "skills/spring.png",
+		"years": 7
+	},
+	{
+		"text": "Javascript & TypeScript",
+		"order": 3,
+		"image": "skills/js.png",
+		"years": 10
+	},
+	{
+		"text": "Cloud Computing",
+		"order": 12,
+		"image": "skills/aws_gcp.png",
+		"years": 10
+	},
+	{
+		"text": "Go Lang",
+		"order": 1,
+		"image": "skills/go-lang.png",
+		"years": 8
+	},
+	{
+		"text": "React.js",
+		"order": 7,
+		"image": "skills/reactjs.png",
+		"years": 8
+	},
+	{
+		"text": "Python",
+		"order": 10,
+		"image": "skills/python.png",
+		"years": 5
+	},
+	{
+		"text": "Bash Scripting",
+		"order": 13,
+		"image": "skills/bash.png",
+		"years": 7
+	},
+	{
+		"text": "Terraform",
+		"order": 4,
+		"image": "skills/terraform.png",
+		"years": 7
+	},
+	{
+		"text": "Kubernetes",
+		"order": 11,
+		"image": "skills/kubernetes.png",
+		"years": 4
+	},
+	{
+		"text": "Grails Framework",
+		"order": 14,
+		"image": "skills/grails.png",
+		"years": 4
+	},
+	{
+		"text": "NoSQL Databases",
+		"order": 9,
+		"image": "skills/nosql.png",
+		"years": 5
+	},
+	{
+		"text": "SQL Databases",
+		"order": 8,
+		"image": "skills/sql.png",
+		"years": 9
+	},
+	{
+		"text": "Helm Charts",
+		"order": 19,
+		"image": "skills/helm.png",
+		"years": 2
+	},
+	{
+		"text": "Scrum Agile",
+		"order": 16,
+		"image": "skills/scrum.png",
+		"years": 12
+	},
+	{
+		"text": "Maven & Gradle",
+		"order": 20,
+		"image": "skills/java-package-managers.png",
+		"years": 8
+	},
+	{
+		"text": "CI/CD Pipelines",
+		"order": 6,
+		"image": "skills/ci-tools.png",
+		"years": 10
+	},
+	{
+		"text": "Test Automation",
+		"order": 15,
+		"image": "skills/test-automation.png",
+		"years": 11
+	},
+	{
+		"text": "GitOps & Infrastructure as Code",
+		"order": 17,
+		"image": "skills/devops.png",
+		"years": 9
+	},
+	{
+		"text": "Portuguese & English",
+		"order": 18,
+		"image": "skills/languages.png",
+		"years": 15
+	}
+]
